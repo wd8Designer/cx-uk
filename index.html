@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CygnusX | Enterprise Technology Solutions — AI, Software, Data & Cloud</title>
+  <meta name="description" content="CygnusX is a leading enterprise technology company specializing in AI, software engineering, data analytics, and cloud solutions. From strategy to deployment, we help ambitious businesses build smarter and scale faster.">
+  <meta property="og:title" content="CygnusX | Enterprise Technology Solutions">
+  <meta property="og:description" content="From AI and software engineering to cloud, data and digital transformation, we help ambitious businesses turn complex challenges into scalable digital products.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cygnusx.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a1a1a'/%3E%3Ctext x='50%25' y='70%25' font-family='sans-serif' font-weight='bold' font-size='65' fill='%23FAF9F6' text-anchor='middle'%3EC%3C/text%3E%3Ccircle cx='75' cy='25' r='12' fill='%23f26e65'/%3E%3C/svg%3E">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__container container-fluid">
+      <a href="#" class="header__logo" aria-label="CygnusX Home">
+        <svg width="200" height="42" viewBox="0 0 150 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="26" font-family="Inter, sans-serif" font-weight="800" font-size="28" fill="var(--text-primary, #1a1a1a)">Cygnus</text>
+          <text x="110" y="26" font-family="Inter, sans-serif" font-weight="800" font-size="28" fill="var(--primary, #f26e65)">X</text>
+          <circle cx="138" cy="8" r="4" fill="var(--primary, #f26e65)" />
+        </svg>
+      </a>
+      <nav class="header__nav" aria-label="Main navigation" id="main-nav">
+        <!-- JS will render navigation items here via renderMegaMenus() -->
+      </nav>
+      <a href="#consultation" class="header__cta btn btn--primary">Let's Talk</a>
+      <button class="mobile-toggle" aria-label="Open navigation menu" aria-expanded="false" id="mobile-menu-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile drawer will be rendered by JS via renderMobileDrawer() -->
+    <div id="mobile-drawer-container"></div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-shapes">
+        <div class="hero__shape hero__shape--1"></div>
+        <div class="hero__shape hero__shape--2"></div>
+        <div class="hero__shape hero__shape--3"></div>
+      </div>
+      <div class="hero__container container">
+        <div class="hero__content">
+          <span class="hero__eyebrow eyebrow">Enterprise Technology Partner</span>
+          <h1 class="hero__title">Build Smarter.<br><span class="text-gradient">Scale Faster.</span><br>Transform with Technology.</h1>
+          <p class="hero__subtitle">From AI and software engineering to cloud, data and digital transformation, we help ambitious businesses turn complex challenges into scalable digital products.</p>
+          <div class="hero__actions">
+            <a href="#consultation" class="btn btn--primary btn--large">Start a Conversation</a>
+            <a href="#services" class="btn btn--secondary btn--large">Explore Our Services</a>
+          </div>
+          <div class="hero__trust fade-up" style="transition-delay: 200ms;">
+            <div class="hero__trust-stars">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--warning)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--warning)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--warning)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--warning)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--warning)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="hero__trust-text">
+              <strong>4.9/5 Rating</strong> by 150+ Enterprise Clients on Clutch & Google
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <section class="stats-strip" id="stats">
+      <div class="container">
+        <div class="stats-strip__grid">
+          <div class="stat-card fade-up">
+            <div class="stat-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <div class="stat-card__value">
+              <div class="stat-card__number" data-target="500">0</div><span class="stat-card__suffix">+</span>
+            </div>
+            <div class="stat-card__label">Projects Delivered</div>
+          </div>
+          <div class="stat-card fade-up" style="transition-delay: 100ms;">
+            <div class="stat-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="stat-card__value">
+              <div class="stat-card__number" data-target="100">0</div><span class="stat-card__suffix">+</span>
+            </div>
+            <div class="stat-card__label">Technology Experts</div>
+          </div>
+          <div class="stat-card fade-up" style="transition-delay: 200ms;">
+            <div class="stat-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="stat-card__value">
+              <div class="stat-card__number" data-target="15">0</div><span class="stat-card__suffix">+</span>
+            </div>
+            <div class="stat-card__label">Years of Experience</div>
+          </div>
+          <div class="stat-card fade-up" style="transition-delay: 300ms;">
+            <div class="stat-card__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <div class="stat-card__value">
+              <div class="stat-card__number" data-target="20">0</div><span class="stat-card__suffix">+</span>
+            </div>
+            <div class="stat-card__label">Industries Served</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="services-section__header fade-up">
+          <span class="eyebrow" style="margin-left: 0;">What We Do</span>
+          <h2 class="section-title">Four disciplines. <span class="text-gradient">One Accountable Partner.</span></h2>
+          <p class="section-subtitle">Discover how we help enterprises implement these capabilities with the right expertise, technology stack, and proven results.</p>
+        </div>
+        <div id="services-container">
+          <!-- JS renders 6 service cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- AI INNOVATION -->
+    <section class="section split-section" id="ai-innovation">
+      <div class="split-section__container container">
+        <div class="split-section__content fade-up">
+          <span class="split-section__eyebrow eyebrow">AI & Innovation</span>
+          <h2 class="split-section__title section-title">Turn Technology Into a<br><span class="text-gradient">Competitive Advantage</span></h2>
+          <p class="split-section__desc">Combine intelligent automation, modern engineering and actionable data to create faster, smarter and more scalable business operations.</p>
+          <div class="split-section__features">
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">AI-Powered Decision Making</span>
+            </div>
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">Intelligent Process Automation</span>
+            </div>
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">Predictive Business Analytics</span>
+            </div>
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">Natural Language Interfaces</span>
+            </div>
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">Computer Vision Solutions</span>
+            </div>
+          </div>
+          <a href="#consultation" class="btn btn--primary split-section__cta">Explore AI Solutions</a>
+        </div>
+        <div class="split-section__visual fade-up">
+          <div class="split-section__graphic split-section__graphic--ai">
+            <!-- CSS styled abstract AI visual -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA ANALYTICS -->
+    <section class="section section--alt split-section split-section--reverse" id="data-analytics">
+      <div class="split-section__container container">
+        <div class="split-section__content fade-up">
+          <span class="split-section__eyebrow eyebrow">Data & Analytics</span>
+          <h2 class="split-section__title section-title">Make Every Decision<br><span class="text-gradient">Data-Driven</span></h2>
+          <p class="split-section__desc">Build modern data infrastructure and transform raw information into actionable intelligence that drives business growth.</p>
+          <div class="split-section__features">
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">Data Engineering & Pipelines</span>
+            </div>
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">Modern Data Platforms</span>
+            </div>
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">BI & Dashboard Development</span>
+            </div>
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">Predictive Analytics & ML</span>
+            </div>
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">Data Integration & Migration</span>
+            </div>
+          </div>
+          <a href="#consultation" class="btn btn--primary split-section__cta">Build Your Data Strategy</a>
+        </div>
+        <div class="split-section__visual fade-up">
+          <div class="split-section__graphic split-section__graphic--data">
+            <!-- CSS styled abstract data/dashboard visual -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH TEAMS -->
+    <section class="section split-section" id="tech-teams">
+      <div class="split-section__container container">
+        <div class="split-section__content fade-up">
+          <span class="split-section__eyebrow eyebrow">Dedicated Teams</span>
+          <h2 class="split-section__title section-title">Build Your Dedicated<br><span class="text-gradient">Technology Team</span></h2>
+          <p class="split-section__desc">Access specialized engineers without the overhead of traditional hiring. Scale your team up or down based on project needs.</p>
+          <div class="split-section__features">
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">Flexible Team Models</span>
+            </div>
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">Pre-Vetted Senior Experts</span>
+            </div>
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">Faster Onboarding (&lt; 2 weeks)</span>
+            </div>
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">Time-Zone Compatible</span>
+            </div>
+            <div class="split-section__feature">
+              <svg class="split-section__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span class="split-section__feature-text">Scalable On Demand</span>
+            </div>
+          </div>
+          <div class="tech-chips">
+            <span class="tech-chip">React</span>
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">Node.js</span>
+            <span class="tech-chip">AI / ML</span>
+            <span class="tech-chip">Cloud</span>
+            <span class="tech-chip">Data</span>
+            <span class="tech-chip">Java</span>
+            <span class="tech-chip">.NET</span>
+          </div>
+          <a href="#consultation" class="btn btn--primary split-section__cta">Build Your Team</a>
+        </div>
+        <div class="split-section__visual fade-up">
+          <div class="split-section__graphic split-section__graphic--team">
+            <!-- CSS styled abstract team visual -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES -->
+    <section class="section section--alt" id="industries">
+      <div class="container">
+        <div id="industries-container">
+          <!-- JS renders sticky scroll layout here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section" id="why-choose-us">
+      <div class="container">
+        <div class="fade-up" style="text-align:center; margin-bottom:48px;">
+          <span class="eyebrow">Why CygnusX</span>
+          <h2 class="section-title">Built for Speed.<br><span class="text-gradient">Designed for Scale.</span></h2>
+        </div>
+        <div id="why-container">
+          <!-- JS renders 4 cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section section--alt tech-stack-section" id="tech-stack">
+      <div class="container">
+        <div class="fade-up" style="text-align:center; margin-bottom:48px;">
+          <span class="eyebrow">Technology</span>
+          <h2 class="section-title">Expertise Across<br><span class="text-gradient">Modern Technologies</span></h2>
+          <p class="section-subtitle" style="margin-left:auto; margin-right:auto;">We work with the tools and platforms that define the future of technology.</p>
+        </div>
+        <div id="tech-stack-container">
+          <!-- JS renders categorized tech badges here -->
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="fade-up" style="text-align:center; margin-bottom:48px;">
+          <span class="eyebrow">Testimonials</span>
+          <h2 class="section-title">What Our<br><span class="text-gradient">Clients Say</span></h2>
+        </div>
+        <div id="testimonials-container">
+          <!-- JS renders testimonial carousel here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOGNITION -->
+    <section class="section" id="recognition">
+      <div class="container">
+        <div class="fade-up" style="text-align:center; margin-bottom:48px;">
+          <span class="eyebrow">Recognition</span>
+          <h2 class="section-title">Recognized for<br><span class="text-gradient">Innovation</span></h2>
+        </div>
+        <div id="recognition-container">
+          <!-- JS renders recognition cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section section--alt" id="certifications">
+      <div class="container">
+        <div class="fade-up" style="text-align:center; margin-bottom:48px;">
+          <span class="eyebrow">Trust</span>
+          <h2 class="section-title">Our Partnerships,<br><span class="text-gradient">Certifications & Awards</span></h2>
+        </div>
+        <div id="certifications-container">
+          <!-- JS renders award badges here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta-section" id="final-cta">
+      <div class="cta-section__container container fade-up">
+        <h2 class="cta-section__title">Have a Challenge<br>Worth Solving?</h2>
+        <p class="cta-section__desc">Let's discuss your goals, identify the right technology approach and map out the next step together.</p>
+        <div class="cta-section__actions">
+          <a href="#consultation" class="btn btn--white btn--large">Talk to an Expert</a>
+          <a href="#consultation" class="btn btn--secondary btn--large" style="border-color:rgba(255,255,255,0.3); color:#FAF9F6;">Start a Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSULTATION -->
+    <section class="section consultation-section" id="consultation">
+      <div class="consultation__container container">
+        <div class="consultation__info fade-up">
+          <h2 class="consultation__info-title section-title">Let's Build Something<br><span class="text-gradient">That Matters</span></h2>
+          <p class="consultation__info-desc">Share your challenge and we'll get back to you within 24 hours with a tailored approach and next steps.</p>
+          <div class="consultation__person">
+            <div class="consultation__person-avatar">JD</div>
+            <div>
+              <div class="consultation__person-name">James Davidson</div>
+              <div class="consultation__person-role">Head of Client Solutions</div>
+            </div>
+          </div>
+          <div class="consultation__details">
+            <div class="consultation__detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary, #f26e65)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>hello@cygnusx.com</span>
+            </div>
+            <div class="consultation__detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary, #f26e65)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <span>+44 20 1234 5678</span>
+            </div>
+            <div class="consultation__detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary, #f26e65)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>London, United Kingdom</span>
+            </div>
+          </div>
+        </div>
+        <div class="consultation__form-wrapper fade-up">
+          <form class="consultation__form" id="consultation-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="full-name">Full Name *</label>
+                <input class="form-input" type="text" id="full-name" name="fullName" placeholder="John Smith" required>
+                <span class="form-error-text">Please enter your full name</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="work-email">Work Email *</label>
+                <input class="form-input" type="email" id="work-email" name="workEmail" placeholder="john@company.com" required>
+                <span class="form-error-text">Please enter a valid work email</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone</label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="+44 20 1234 5678">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="company">Company *</label>
+                <input class="form-input" type="text" id="company" name="company" placeholder="Company name" required>
+                <span class="form-error-text">Please enter your company name</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service">What can we help with? *</label>
+              <select class="form-input form-select" id="service" name="service" required>
+                <option value="" disabled selected>Select a service area</option>
+                <option value="ai">AI & Automation</option>
+                <option value="software">Software Engineering</option>
+                <option value="data">Data & Analytics</option>
+                <option value="cloud">Cloud & DevOps</option>
+                <option value="transformation">Digital Transformation</option>
+                <option value="product">Product Engineering</option>
+                <option value="team">Dedicated Team</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="form-error-text">Please select a service area</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Tell us about your project *</label>
+              <textarea class="form-input" id="message" name="message" rows="4" placeholder="Describe your project, goals, and any specific requirements..." required></textarea>
+              <span class="form-error-text">Please describe your project</span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--large form-submit">Send Inquiry</button>
+            <p class="form-privacy">By submitting this form, you agree to our privacy policy. We'll respond within 24 hours.</p>
+          </form>
+          <div class="form-success" id="form-success">
+            <div style="font-size:48px; margin-bottom:16px;">✅</div>
+            <h3 style="font-size:24px; font-weight:700; margin-bottom:8px;">Thank You!</h3>
+            <p style="color:var(--text-secondary, #555555);">Your inquiry has been received. We'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GLOBAL PRESENCE -->
+    <section class="section presence-section" id="global-presence">
+      <div class="container">
+        <div class="fade-up" style="text-align:center; margin-bottom:48px;">
+          <span class="eyebrow">Locations</span>
+          <h2 class="section-title">Global Reach.<br><span class="text-gradient">Local Understanding.</span></h2>
+        </div>
+        <div id="locations-container">
+          <!-- JS renders 4 location cards here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer__container container" id="footer-container">
+      <!-- JS renders footer grid + bottom bar here -->
+    </div>
+  </footer>
+</body>
+</html>
