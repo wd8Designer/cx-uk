@@ -3,7 +3,9 @@ async function loadInclude(selector, file) {
     if (!element) return false;
 
     try {
-        const response = await fetch(file);
+        // Append a timestamp to circumvent aggressive fetch caching
+        const cacheBuster = new Date().getTime();
+        const response = await fetch(`${file}?v=${cacheBuster}`);
         if (!response.ok) {
             throw new Error(`Failed to load ${file}: ${response.status}`);
         }
