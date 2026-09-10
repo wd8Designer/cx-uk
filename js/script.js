@@ -1,5 +1,5 @@
 /**
- * CygnusX Enterprise Landing Page - Main JavaScript
+ * Cypherox Enterprise Landing Page - Main JavaScript
  * This file contains all structured data, rendering logic, and interactive behavior.
  * 
  * STRUCTURE:
@@ -15,115 +15,154 @@
 
 const navigationData = [
   {
-    label: 'About',
-    href: '#',
-    type: 'mega',
-    megaMenu: {
-      columns: [
-        {
-          heading: 'Company',
-          links: [
-            { label: 'About Us', href: '#' },
-            { label: 'Our Story', href: '#' },
-            { label: 'Leadership', href: '#' },
-            { label: 'Our Approach', href: '#' },
-            { label: 'Why Choose Us', href: '#' }
-          ]
-        },
-        {
-          heading: 'Trust',
-          links: [
-            { label: 'Certifications', href: '#' },
-            { label: 'Awards', href: '#' },
-            { label: 'Partners', href: '#' },
-            { label: 'Client Reviews', href: '#' }
-          ]
-        },
-        {
-          heading: 'Company',
-          links: [
-            { label: 'Careers', href: '#' },
-            { label: 'Locations', href: '#' },
-            { label: 'Contact', href: '#' }
-          ]
-        }
-      ],
-      image: true
-    }
+    label: 'AI Agent',
+    href: '#'
   },
   {
     label: 'Services',
-    href: '#services',
-    type: 'mega',
-    megaMenu: {
-      columns: [
-        {
-          heading: 'AI & Automation',
-          links: [
-            { label: 'AI Development', href: '#' },
-            { label: 'Generative AI', href: '#' },
-            { label: 'AI Agents', href: '#' },
-            { label: 'Machine Learning', href: '#' },
-            { label: 'AI Consulting', href: '#' },
-            { label: 'Workflow Automation', href: '#' }
-          ]
-        },
-        {
-          heading: 'Software Dev',
-          links: [
-            { label: 'Web Development', href: '#' },
-            { label: 'Mobile Development', href: '#' },
-            { label: 'Custom Software', href: '#' },
-            { label: 'Product Engineering', href: '#' },
-            { label: 'API Development', href: '#' }
-          ]
-        },
-        {
-          heading: 'Data',
-          links: [
-            { label: 'Data Engineering', href: '#' },
-            { label: 'Data Analytics', href: '#' },
-            { label: 'Business Intelligence', href: '#' },
-            { label: 'Data Migration', href: '#' },
-            { label: 'Data Platforms', href: '#' }
-          ]
-        },
-        {
-          heading: 'Cloud & DevOps',
-          links: [
-            { label: 'Cloud Consulting', href: '#' },
-            { label: 'Cloud Migration', href: '#' },
-            { label: 'DevOps', href: '#' },
-            { label: 'Infrastructure', href: '#' },
-            { label: 'Cloud Security', href: '#' }
-          ]
-        }
-      ],
-      cta: true
-    }
-  },
-  {
-    label: 'Solutions',
     href: '#',
     type: 'mega',
     megaMenu: {
       columns: [
         {
-          heading: 'By Need',
+          heading: 'Generative AI Solutions',
           links: [
-            { label: 'Enterprise Solutions', href: '#' },
-            { label: 'Startup Solutions', href: '#' },
-            { label: 'Digital Transformation', href: '#' },
-            { label: 'Automation Solutions', href: '#' }
+            { label: 'AI Chatbot Development', href: '#' },
+            { label: 'Virtual Assistant Services', href: '#' },
+            { label: 'AI Language Translator', href: '#' },
+            { label: 'AI Content Generator', href: '#' },
+            { label: 'Virtual Research Assistant', href: '#' }
           ]
         },
         {
-          heading: 'By Tech',
+          heading: 'AI & ML Development',
           links: [
-            { label: 'AI Solutions', href: '#' },
-            { label: 'Data Solutions', href: '#' },
-            { label: 'Customer Experience', href: '#' },
-            { label: 'Business Intelligence', href: '#' }
+            { label: 'Predictive Maintenance', href: '#' },
+            { label: 'Fraud Detection', href: '#' },
+            { label: 'AutoML', href: '#' }
+          ]
+        },
+        {
+          heading: 'Consulting Services',
+          links: [
+            { label: 'IT Consulting', href: '#' },
+            { label: 'Startup IT Consulting', href: '#' },
+            { label: 'AI Strategy Consulting', href: '#' }
+          ]
+        },
+        {
+          heading: 'UI/UX Design Services',
+          links: [
+            { label: 'Responsive Web Design', href: '#' },
+            { label: 'Mobile App Design', href: '#' }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    label: 'Automation',
+    href: '#',
+    type: 'dropdown',
+    graphicNum: '85%',
+    graphicText: 'FASTER<br>PROCESSES',
+    ctaTitle: 'Streamline Your Operations',
+    ctaDesc: 'Schedule a discovery session to identify automation opportunities and reduce manual overhead.',
+    megaMenu: {
+      columns: [
+        {
+          heading: '',
+          links: [
+            { label: 'Business Process Automation (RPA)', href: '#' },
+            { label: 'Workflow Automation', href: '#' },
+            { label: 'Marketing & CRM Automation', href: '#' }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    label: 'Technology',
+    href: '#',
+    type: 'dropdown',
+    graphicNum: '50+',
+    graphicText: 'TECH<br>EXPERTS',
+    ctaTitle: 'Build Scalable Software',
+    ctaDesc: 'Let\'s discuss your tech stack and engineer a robust architecture for your next big product.',
+    megaMenu: {
+      columns: [
+        {
+          heading: '',
+          links: [
+            { label: 'Web Development', href: '#' },
+            { label: 'App Development', href: '#' },
+            { label: 'E-Commerce', href: '#' },
+            { label: 'CMS (WordPress, Drupal)', href: '#' }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    label: 'Hire Developers',
+    href: '#',
+    type: 'mega',
+    megaMenu: {
+      columns: [
+        {
+          heading: 'Mobile App Developers',
+          links: [
+            { label: 'Hire iOS Developers', href: '#' },
+            { label: 'Hire Android Developers', href: '#' },
+            { label: 'Hire Swift Developers', href: '#' },
+            { label: 'Hire Kotlin Developers', href: '#' },
+            { label: 'Hire Flutter Developers', href: '#' },
+            { label: 'Hire React Native Developers', href: '#' }
+          ]
+        },
+        {
+          heading: 'Front-End Web Developers',
+          links: [
+            { label: 'Hire AngularJS Developers', href: '#' },
+            { label: 'Hire ReactJS Developers', href: '#' },
+            { label: 'Hire VueJS Developers', href: '#' }
+          ]
+        },
+        {
+          heading: 'Back-End Web Developers',
+          links: [
+            { label: 'Hire NodeJS Developers', href: '#' },
+            { label: 'Hire Laravel Developers', href: '#' },
+            { label: 'Hire Python Developers', href: '#' },
+            { label: 'Hire PHP Developers', href: '#' }
+          ]
+        },
+        {
+          heading: 'E-Commerce Developers',
+          links: [
+            { label: 'Hire WordPress Developers', href: '#' },
+            { label: 'Hire Shopify Developers', href: '#' },
+            { label: 'Hire Magento Developers', href: '#' },
+            { label: 'Hire BigCommerce Developers', href: '#' },
+            { label: 'Hire WooCommerce Developers', href: '#' },
+            { label: 'Hire Chatbot Developers', href: '#' },
+            { label: 'Hire Graphic Designers', href: '#' },
+            { label: 'Hire UI/UX Designers', href: '#' },
+            { label: 'Hire Digital Marketers', href: '#' }
+          ]
+        },
+        {
+          heading: 'Trending Developers',
+          links: [
+            { label: 'Hire DevOps Developers', href: '#' },
+            { label: 'Hire AWS Developers', href: '#' },
+            { label: 'Hire AI Developers', href: '#' },
+            { label: 'Hire ML Developers', href: '#' },
+            { label: 'Hire Blockchain Developers', href: '#' },
+            { label: 'Hire AR Developers', href: '#' },
+            { label: 'Hire VR Developers', href: '#' },
+            { label: 'Hire Data Analytics Experts', href: '#' },
+            { label: 'Hire Full Stack Developers', href: '#' }
           ]
         }
       ]
@@ -131,124 +170,55 @@ const navigationData = [
   },
   {
     label: 'Industries',
-    href: '#industries',
-    type: 'mega',
-    megaMenu: {
-      columns: [
-        {
-          heading: 'Sectors',
-          links: [
-            { label: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg> Healthcare', href: '#' },
-            { label: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg> Finance', href: '#' },
-            { label: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> Retail', href: '#' },
-            { label: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg> Logistics', href: '#' },
-            { label: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Real Estate', href: '#' },
-            { label: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg> Education', href: '#' },
-            { label: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg> Manufacturing', href: '#' },
-            { label: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> Insurance', href: '#' },
-            { label: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Telecommunications', href: '#' }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    label: 'Technologies',
-    href: '#tech-stack',
-    type: 'mega',
-    megaMenu: {
-      columns: [
-        {
-          heading: 'Frontend',
-          links: [
-            { label: 'React', href: '#' },
-            { label: 'Angular', href: '#' },
-            { label: 'Vue', href: '#' },
-            { label: 'Next.js', href: '#' },
-            { label: 'TypeScript', href: '#' }
-          ]
-        },
-        {
-          heading: 'Backend',
-          links: [
-            { label: 'Node.js', href: '#' },
-            { label: 'Python', href: '#' },
-            { label: 'Java', href: '#' },
-            { label: 'PHP', href: '#' },
-            { label: '.NET', href: '#' }
-          ]
-        },
-        {
-          heading: 'AI',
-          links: [
-            { label: 'OpenAI', href: '#' },
-            { label: 'Gemini', href: '#' },
-            { label: 'Claude', href: '#' },
-            { label: 'LLM', href: '#' },
-            { label: 'RAG', href: '#' },
-            { label: 'ML', href: '#' }
-          ]
-        },
-        {
-          heading: 'Cloud & Data',
-          links: [
-            { label: 'AWS', href: '#' },
-            { label: 'Azure', href: '#' },
-            { label: 'Google Cloud', href: '#' },
-            { label: 'Snowflake', href: '#' },
-            { label: 'Databricks', href: '#' },
-            { label: 'Power BI', href: '#' },
-            { label: 'Tableau', href: '#' }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    label: 'Resources',
     href: '#',
     type: 'dropdown',
+    graphicNum: '12+',
+    graphicText: 'SECTORS<br>SERVED',
+    ctaTitle: 'Tailored Industry Solutions',
+    ctaDesc: 'Get bespoke technology strategies that comply with your specific industry regulations and needs.',
     megaMenu: {
       columns: [
         {
-          heading: 'Content',
+          heading: '',
           links: [
-            { label: 'Blog', href: '#' },
-            { label: 'Insights', href: '#' },
-            { label: 'Whitepapers', href: '#' },
-            { label: 'Guides', href: '#' },
-            { label: 'Webinars', href: '#' },
-            { label: 'FAQs', href: '#' },
-            { label: 'Documentation', href: '#' }
+            { label: 'Finance & Banking', href: '#' },
+            { label: 'Healthcare', href: '#' },
+            { label: 'Retail & Ecommerce', href: '#' },
+            { label: 'Manufacturing', href: '#' },
+            { label: 'Real Estate', href: '#' },
+            { label: 'Logistics & Transportation', href: '#' }
           ]
         }
       ]
     }
   },
   {
-    label: 'Case Studies',
-    href: '#case-studies',
+    label: 'Company',
+    href: '#',
     type: 'dropdown',
+    graphicNum: '100%',
+    graphicText: 'CLIENT<br>FOCUS',
+    ctaTitle: 'Partner with Cypherox',
+    ctaDesc: 'Reach out to our leadership team and discover how we can drive your digital transformation.',
     megaMenu: {
       columns: [
         {
-          heading: 'Work',
+          heading: '',
           links: [
-            { label: 'Featured Case Studies', href: '#' },
-            { label: 'By Industry', href: '#' },
-            { label: 'By Technology', href: '#' },
-            { label: 'Success Stories', href: '#' }
+            { label: 'About Us', href: '#' },
+            { label: 'Contact Us', href: '#' },
+            { label: 'Case Studies', href: '#' },
+            { label: 'Blog', href: '#' }
           ]
         }
       ]
     }
-  },
-  {
-    label: 'Contact',
-    href: '#consultation',
-    type: 'link'
   }
 ];
+
+
+
+
 
 const disciplinesData = [
   {
@@ -720,19 +690,36 @@ function renderMegaMenus() {
     let panelHtml = '';
     
     if (item.type === 'dropdown') {
-      // Simple compact dropdown (Resources, Case Studies)
       let linksHtml = '';
       if (item.megaMenu && item.megaMenu.columns) {
         item.megaMenu.columns.forEach(col => {
           col.links.forEach(link => {
-            linksHtml += `<a href="${link.href}" class="mega-menu__link">${link.label}</a>`;
+            linksHtml += `<a href="${link.href}" class="featured-dropdown__link">${link.label}</a>`;
           });
         });
       }
       panelHtml = `
-        <div class="mega-menu mega-menu--dropdown">
-          <div class="mega-menu__dropdown-inner">
-            ${linksHtml}
+        <div class="mega-menu featured-dropdown">
+          <div class="featured-dropdown__inner container">
+            <div class="featured-dropdown__top">
+              <div class="featured-dropdown__content">
+                <h3 class="featured-dropdown__title">${item.label}</h3>
+                <div class="featured-dropdown__grid">
+                  ${linksHtml}
+                </div>
+              </div>
+              <div class="featured-dropdown__graphic">
+                <div class="featured-dropdown__graphic-number">${item.graphicNum || '250+'}</div>
+                <div class="featured-dropdown__graphic-text">${item.graphicText || 'ENTERPRISE<br>PROJECTS'}</div>
+              </div>
+            </div>
+            <div class="featured-dropdown__bottom">
+              <div class="featured-dropdown__bottom-text">
+                <h4>${item.ctaTitle || 'Accelerate Your Digital Transformation'}</h4>
+                <p>${item.ctaDesc || 'Schedule a free discovery session to explore your needs and find tailored solutions with no obligation.'}</p>
+              </div>
+              <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
+            </div>
           </div>
         </div>
       `;
@@ -859,7 +846,9 @@ function renderMobileDrawer() {
 
   drawer.innerHTML = `
     <div class="mobile-drawer__header">
-      <div class="header__logo" style="font-weight: 800; font-size: 24px; color: var(--primary);">CygnusX</div>
+      <div class="header__logo">
+        <img src="images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto;">
+      </div>
       <button class="mobile-drawer__close" aria-label="Close menu" style="background: none; border: none; cursor: pointer;">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
@@ -867,8 +856,9 @@ function renderMobileDrawer() {
     <div class="mobile-drawer__body">
       ${itemsHtml}
     </div>
-    <div class="mobile-drawer__footer">
-      <a href="#consultation" class="btn btn--primary mobile-drawer__cta">Get a Consultation</a>
+    <div class="mobile-drawer__footer" style="display: flex; flex-direction: column; gap: 12px;">
+      <a href="#consultation" class="btn btn--outline" style="width: 100%; text-align: center; justify-content: center;">Let's Talk</a>
+      <a href="#consultation" class="btn btn--dark" style="width: 100%; text-align: center; justify-content: center;">Book A 15 Min Call</a>
     </div>
   `;
   
@@ -910,22 +900,29 @@ function renderServices() {
           <h3 class="bellows-item__title-vertical">${disc.tabName}</h3>
         </div>
         <div class="bellows-item__content">
-          <div class="bellows-item__inner">
-            <h3 class="discipline-panel__title">${disc.title}</h3>
-            <p class="discipline-panel__desc">${disc.description}</p>
-            <ul class="discipline-panel__features">${featuresHtml}</ul>
-            
-            <div style="margin-top: 32px;">
-              <h4 class="discipline-panel__subtitle">Tech & Platforms</h4>
-              <div class="discipline-panel__tags">${tagsHtml}</div>
+          <div class="bellows-item__inner bellows-content-grid">
+            <div class="bellows-col-left">
+              <h3 class="discipline-panel__title">${disc.title}</h3>
+              <p class="discipline-panel__desc">${disc.description}</p>
+              
+              <div class="discipline-panel__tech-section">
+                <h4 class="discipline-panel__subtitle">Tech & Platforms</h4>
+                <div class="discipline-panel__tags">${tagsHtml}</div>
+              </div>
+              
+              <div style="margin-top: 16px;">
+                <a href="${disc.ctaLink}" class="btn btn--primary">${disc.ctaText}</a>
+              </div>
             </div>
             
-            <div style="margin-top: 24px;">
-              <h4 class="discipline-panel__subtitle">Typical Outcomes</h4>
-              <div class="discipline-panel__outcomes">${outcomesHtml}</div>
+            <div class="bellows-col-right">
+              <ul class="discipline-panel__features">${featuresHtml}</ul>
+              
+              <div class="discipline-panel__outcomes-section">
+                <h4 class="discipline-panel__subtitle">Typical Outcomes</h4>
+                <div class="discipline-panel__outcomes">${outcomesHtml}</div>
+              </div>
             </div>
-            
-            <a href="${disc.ctaLink}" class="btn btn--primary">${disc.ctaText}</a>
           </div>
         </div>
       </div>
@@ -1267,7 +1264,9 @@ function renderFooter() {
   container.innerHTML = `
     <div class="footer__grid">
       <div class="footer__brand">
-        <div class="footer__brand-logo">CygnusX</div>
+        <div class="footer__brand-logo">
+          <img src="images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto; filter: invert(1) brightness(2);">
+        </div>
         <p class="footer__brand-desc">Enterprise technology solutions that drive digital transformation and accelerate growth.</p>
         <div class="footer__social">
           <a href="#" class="footer__social-link" aria-label="LinkedIn">
@@ -1284,7 +1283,7 @@ function renderFooter() {
       ${colsHtml}
     </div>
     <div class="footer__bottom">
-      <div class="footer__copyright">&copy; ${new Date().getFullYear()} CygnusX. All rights reserved.</div>
+      <div class="footer__copyright">&copy; ${new Date().getFullYear()} Cypherox. All rights reserved.</div>
       <div class="footer__legal">
         <a href="#" class="footer__legal-link">Privacy Policy</a>
         <a href="#" class="footer__legal-link">Terms of Service</a>
@@ -1705,7 +1704,7 @@ function initSmoothScroll() {
 // PART 4: INITIALIZATION
 // ==========================================
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('includesLoaded', () => {
   // Render dynamic content
   renderMegaMenus();
   renderMobileDrawer();
