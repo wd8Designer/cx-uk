@@ -356,7 +356,7 @@ img, picture, svg, video {
   left: 0;
   width: 100%;
   height: var(--header-height);
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(26, 26, 26, 0.95);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
   z-index: 1000;
@@ -378,6 +378,7 @@ img, picture, svg, video {
 }
 
 .header__logo {
+  margin-right: auto;
   font-size: 24px;
   font-weight: 800;
   color: var(--text-primary);
@@ -394,6 +395,7 @@ img, picture, svg, video {
 }
 
 .header__nav {
+  margin-right: 32px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -411,7 +413,7 @@ img, picture, svg, video {
   gap: 4px;
   font-size: 15px;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: #ffffff !important;
   cursor: pointer;
   transition: color 0.2s ease;
 }
@@ -1787,7 +1789,7 @@ img, picture, svg, video {
   font-weight: 800;
   color: rgba(242, 110, 101, 0.15);
   line-height: 1;
-  background: var(--bg-white);
+  background: #f5f3ef;
   padding: 0 16px;
   margin-left: -16px; 
 }
@@ -3611,4 +3613,21 @@ textarea.form-input {
   .footer__brand {
     grid-column: 1 / -1 !important;
   }
+}
+
+
+/* Dark Header Specific Overrides */
+.header__logo img {
+  filter: invert(1) brightness(2) !important;
+}
+.mobile-toggle {
+  color: var(--text-white) !important;
+}
+.header__actions .btn--outline {
+  border-color: rgba(255,255,255,0.3) !important;
+  color: var(--text-white) !important;
+}
+.header__actions .btn--outline:hover {
+  background-color: rgba(255,255,255,0.1) !important;
+  border-color: rgba(255,255,255,0.6) !important;
 }
