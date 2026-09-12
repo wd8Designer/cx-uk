@@ -3819,3 +3819,73 @@ textarea.form-input {
     grid-template-columns: 1fr;
   }
 }
+
+/* Header Pill Button Styles */
+.btn--pill-outline {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 99px !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.btn--pill-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn--pill-primary {
+  background-color: var(--primary);
+  color: var(--text-white);
+  border: 1px solid var(--primary);
+  border-radius: 99px !important;
+}
+
+.btn--pill-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* AI Agent Pill Nav Link */
+.header__nav .nav-item:first-child .nav-item__link {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 99px;
+  padding: 4px 12px !important;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-right: 8px; /* space between AI agent and next link */
+}
+
+.header__nav .nav-item:first-child .nav-item__link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Ensure padding on nav-items is adjusted if we added borders */
+.header__nav .nav-item:first-child {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+@media(min-width:1620px) {
+    .header__container.container-fluid {
+        max-width:1600px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .nav-item__link {
+        font-size:16px !important;
+    }
+
+    .header__actions .btn {
+        padding: 10px 22px !important;
+        font-size: 16px !important;
+    }
+    
+    .header__logo img {
+        height: auto !important;
+        width: 230px !important;
+        max-width: none !important;
+    }
+}

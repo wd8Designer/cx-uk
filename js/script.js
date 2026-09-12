@@ -223,79 +223,71 @@ const navigationData = [
 const disciplinesData = [
   {
     id: 'ai-development',
-    tabName: 'AI Development',
-    title: 'AI & Generative AI Development',
-    description: 'From proof-of-concept to production-grade AI, we build LLM applications, RAG systems, and ML platforms that are governed, explainable, and safe for regulated Australian industries.',
+    tabName: 'AI Engineering',
+    title: 'AI and Machine Learning Engineering',
+    description: 'We build AI systems around your data, workflows, and business rules, with the evaluation, integration, and controls needed for reliable production use.',
     features: [
-      'Custom LLM & RAG applications with enterprise guardrails',
-      'AI agents & workflow automation',
-      'Predictive ML models & MLOps pipelines',
-      'Responsible-AI, data residency & PII controls'
+      'AI agent design and orchestration',
+      'Large language model development and fine-tuning',
+      'Generative AI applications',
+      'Computer vision and NLP',
+      'ML model evaluation and monitoring'
     ],
-    ctaText: 'TALK TO AI CONSULTANT',
+    ctaText: 'Learn About AI Development',
     ctaLink: '#',
-    techTags: ['OpenAI', 'Anthropic Claude', 'LangChain', 'Bedrock', 'Vertex AI', 'PyTorch', 'Pinecone', 'Hugging Face'],
-    outcomes: [
-      { highlight: '6 wks', text: 'From idea to a working AI pilot in production' },
-      { highlight: '40%', text: 'Reduction in manual, repetitive back-office work' }
-    ]
+    techTags: ['Python', 'PyTorch', 'LangChain', 'OpenAI', 'Hugging Face', 'AWS SageMaker'],
+    outcomes: []
+  },
+  {
+    id: 'software-engineering',
+    tabName: 'Software Engineering',
+    title: 'Software Engineering',
+    description: 'Web, mobile, APIs, and backend systems built for scale, maintained for the long term, and designed to fit the platform you already run.',
+    features: [
+      'Custom web and mobile applications',
+      'API design and development',
+      'Backend architecture and microservices',
+      'CMS and ecommerce platforms',
+      'Legacy system modernization'
+    ],
+    ctaText: 'Learn About Software Engineering',
+    ctaLink: '#',
+    techTags: ['React', 'Node.js', 'Python', 'Flutter', 'Laravel', 'PostgreSQL'],
+    outcomes: []
   },
   {
     id: 'data-engineering',
-    tabName: 'Data Engineering & Analytics',
-    title: 'Modern Data Platforms & Analytics',
-    description: 'We engineer robust data pipelines, scalable data lakes, and real-time analytics platforms that turn your fragmented data into a unified, actionable asset for strategic decision-making.',
+    tabName: 'Data & Cloud',
+    title: 'Data and Cloud Engineering',
+    description: 'Infrastructure, pipelines, and governance underneath your applications. Reliable data. Secure, observable, and cost-controlled cloud.',
     features: [
-      'Data lakehouse & warehouse architecture',
-      'Real-time streaming pipelines & ETL/ELT',
-      'Advanced business intelligence & dashboards',
-      'Data governance & quality management'
+      'Cloud architecture and migration',
+      'Data pipeline design and integration',
+      'Business intelligence and analytics',
+      'DevOps automation and CI/CD',
+      'Cloud security and compliance'
     ],
-    ctaText: 'TALK TO DATA CONSULTANT',
+    ctaText: 'Learn About Cloud and Data',
     ctaLink: '#',
-    techTags: ['Snowflake', 'Databricks', 'AWS Redshift', 'dbt', 'Airflow', 'Power BI', 'Tableau', 'Kafka'],
-    outcomes: [
-      { highlight: '10x', text: 'Faster query performance and reporting times' },
-      { highlight: '360°', text: 'Unified view of customer and operational data' }
-    ]
+    techTags: ['AWS', 'Azure', 'GCP', 'Terraform', 'Docker', 'Kubernetes'],
+    outcomes: []
   },
   {
-    id: 'cloud-devops',
-    tabName: 'Cloud & DevOps Engineering',
-    title: 'Cloud Infrastructure & DevOps Automation',
-    description: 'We modernize legacy infrastructure with secure, scalable cloud architectures and implement mature DevOps practices to accelerate deployment velocity and ensure high availability.',
+    id: 'consulting',
+    tabName: 'Consulting',
+    title: 'Product and Technology Consulting',
+    description: 'The architecture, scope, and approach decisions made before a line of code is written often determine whether a project delivers or stalls.',
     features: [
-      'Cloud migration & modernization (AWS/Azure/GCP)',
-      'Infrastructure as Code (IaC) & automation',
-      'CI/CD pipeline implementation',
-      'Cloud security, compliance & FinOps'
+      'Technical architecture review',
+      'AI readiness assessment',
+      'Product roadmap and scoping',
+      'Technology selection and vendor evaluation',
+      'Digital strategy and planning'
     ],
-    ctaText: 'TALK TO CLOUD EXPERT',
+    ctaText: 'Speak to a Consultant',
     ctaLink: '#',
-    techTags: ['AWS', 'Azure', 'GCP', 'Kubernetes', 'Terraform', 'Docker', 'Jenkins', 'GitLab CI'],
-    outcomes: [
-      { highlight: '99.99%', text: 'Uptime reliability for mission-critical apps' },
-      { highlight: '3x', text: 'Faster release cycles through automation' }
-    ]
-  },
-  {
-    id: 'product-engineering',
-    tabName: 'Product Engineering',
-    title: 'End-to-End Digital Product Engineering',
-    description: 'We turn ambitious ideas into scalable, user-centric digital products. From UX/UI design to robust full-stack development, we deliver resilient software that drives market growth.',
-    features: [
-      'Custom enterprise web & mobile applications',
-      'SaaS platform architecture & development',
-      'API design & microservices integration',
-      'Agile product management & UI/UX design'
-    ],
-    ctaText: 'TALK TO PRODUCT EXPERT',
-    ctaLink: '#',
-    techTags: ['React', 'Node.js', 'Python', 'Java', '.NET Core', 'PostgreSQL', 'MongoDB', 'GraphQL'],
-    outcomes: [
-      { highlight: '2x', text: 'Faster time-to-market with Agile delivery' },
-      { highlight: '100%', text: 'Ownership of IP and custom source code' }
-    ]
+    techTags: ['System design', 'API strategy', 'Cloud planning', 'AI feasibility', 'Data architecture', 'Security review'],
+    outcomes: []
   }
 ];
 
@@ -558,85 +550,61 @@ const techStackData = [
 
 const caseStudiesData = [
   {
-    industry: 'Healthcare',
-    tab: 'Healthcare',
-    title: 'AI-Powered Clinical Decision Support Platform',
-    challenge: 'A leading healthcare provider needed to analyze millions of patient records to improve diagnostic accuracy.',
-    solution: 'Built an AI/ML platform integrating with EHR systems, using NLP for medical records and predictive models for risk assessment.',
+    category: 'healthcare',
+    title: 'Healthcare Project: AI Document Processing System',
+    description: 'Automated clinical document intake and decreased manual review time across high-volume workflows.',
     metrics: [
-      { number: '+61', suffix: '%', label: 'Forecast Accuracy' },
-      { number: '47', suffix: '%', label: 'Lower Cost' },
-      { number: '40', suffix: '%', label: 'Faster Processing' }
-    ]
+      { label: 'Challenge', value: 'Processing thousands of documents per week consumed clinical staff time. Manual data entry introduced transcription errors and delays.' },
+      { label: 'Solution', value: 'Built a document classification and extraction pipeline using NLP. Integrated with the existing patient records system through secure APIs.' }
+    ],
+    tech: ['Python', 'NLP', 'FastAPI', 'AWS', 'PostgreSQL', 'Docker'],
+    image: 'images/work-1.jpg'
   },
   {
-    industry: 'Finance',
-    tab: 'Finance',
-    title: 'Real-Time Fraud Detection System',
-    challenge: 'A multinational bank was facing increasing losses due to sophisticated transaction fraud that traditional rule-based systems missed.',
-    solution: 'Engineered a machine learning pipeline processing 10k+ TPS, with deep neural networks identifying anomalous patterns in real-time.',
+    category: 'fintech',
+    title: 'Fintech Project: Real-Time Fraud Monitoring Platform',
+    description: 'Deployed a transaction monitoring system that flags anomalies in real time and routes alerts to review teams.',
     metrics: [
-      { number: '99.9', suffix: '%', label: 'Uptime' },
-      { number: '85', suffix: '%', label: 'Fraud Prevention' },
-      { number: '60', suffix: 'ms', label: 'Latency' }
-    ]
+      { label: 'Challenge', value: 'Legacy rules engine missed complex fraud patterns. Alert volumes overwhelmed the compliance team with false positives.' },
+      { label: 'Solution', value: 'Designed and trained a custom ML model on historical transaction data. Built an alert dashboard with adjustable risk thresholds and case management.' }
+    ],
+    tech: ['Python', 'TensorFlow', 'Kafka', 'PostgreSQL', 'React', 'AWS'],
+    image: 'images/work-2.jpg'
   },
   {
-    industry: 'Retail',
-    tab: 'Retail',
-    title: 'Omnichannel Personalization Engine',
-    challenge: 'A global retailer struggled with generic customer experiences causing high bounce rates and abandoned carts.',
-    solution: 'Developed a unified customer data platform (CDP) with recommendation algorithms analyzing cross-channel browsing and purchase history.',
+    category: 'logistics',
+    title: 'Logistics Project: Route Optimization and Dispatch System',
+    description: 'Replaced manual dispatch with an automated routing system that reduced planning time and improved delivery accuracy.',
     metrics: [
-      { number: '+34', suffix: '%', label: 'Conversion Rate' },
-      { number: '2.5', suffix: 'x', label: 'Customer LTV' },
-      { number: '15', suffix: '%', label: 'AOV Increase' }
-    ]
-  },
-  {
-    industry: 'Manufacturing',
-    tab: 'Manufacturing',
-    title: 'Predictive Maintenance IoT Ecosystem',
-    challenge: 'Unexpected equipment downtime was causing millions in lost production and reactive repair costs.',
-    solution: 'Deployed edge computing sensors and a cloud-based digital twin platform, utilizing time-series forecasting for maintenance scheduling.',
-    metrics: [
-      { number: '72', suffix: '%', label: 'Less Downtime' },
-      { number: '30', suffix: '%', label: 'Cost Reduction' },
-      { number: '100', suffix: '%', label: 'Asset Visibility' }
-    ]
-  },
-  {
-    industry: 'Education',
-    tab: 'Education',
-    title: 'Adaptive Learning Management System',
-    challenge: 'A prominent university needed to provide personalized learning paths for diverse student cohorts remotely.',
-    solution: 'Built a scalable, microservices-based LMS with generative AI tutors and adaptive quizzes that adjust difficulty based on performance.',
-    metrics: [
-      { number: '+40', suffix: '%', label: 'Engagement' },
-      { number: '95', suffix: '%', label: 'Completion Rate' },
-      { number: '24/7', suffix: '', label: 'AI Support' }
-    ]
-  },
-  {
-    industry: 'Technology',
-    tab: 'Technology',
-    title: 'Scalable Cloud Infrastructure Migration',
-    challenge: 'A fast-growing SaaS company was constrained by legacy monolithic architecture, causing scalability and release bottlenecks.',
-    solution: 'Architected and executed a seamless migration to a cloud-native, containerized architecture managed by Kubernetes and CI/CD pipelines.',
-    metrics: [
-      { number: '10', suffix: 'x', label: 'Deploy Speed' },
-      { number: '99.99', suffix: '%', label: 'Availability' },
-      { number: '50', suffix: '%', label: 'Infra Savings' }
-    ]
+      { label: 'Challenge', value: 'Dispatchers planned routes manually each morning across hundreds of stops. Late deliveries and inefficient routes increased operational costs.' },
+      { label: 'Solution', value: 'Built a route optimization engine with real-time traffic integration. Connected the system to existing warehouse and driver mobile applications.' }
+    ],
+    tech: ['Python', 'React Native', 'Node.js', 'Google Maps API', 'PostgreSQL', 'AWS'],
+    image: 'images/work-3.jpg'
   }
 ];
 
 const testimonialsData = [
-  { quote: "The team delivered an AI-powered analytics platform that transformed how we understand customer behavior. Exceptional technical depth.", name: 'Sarah Mitchell', role: 'CTO', company: 'Meridian FinTech', initials: 'SM' },
-  { quote: "Their cloud migration expertise saved us months. Infrastructure costs dropped 40% while performance improved dramatically.", name: 'James Chen', role: 'VP Engineering', company: 'Atlas Logistics', initials: 'JC' },
-  { quote: "From concept to launch in 12 weeks. They built exactly what we envisioned — and improved on it.", name: 'Emma Rodriguez', role: 'Founder', company: 'Pulse HealthTech', initials: 'ER' },
-  { quote: "Outstanding data engineering. Real-time analytics processing millions of events daily with zero downtime.", name: 'Michael Torres', role: 'Head of Data', company: 'Vertex Retail', initials: 'MT' },
-  { quote: "AI agents automation reduced manual processing by 85%. ROI visible within the first quarter.", name: 'Priya Sharma', role: 'COO', company: 'Shield Insurance', initials: 'PS' }
+  {
+    quote: "A stellar WordPress design experience. Their team combined creativity with functionality to deliver a stunning website that engages visitors and drives results. Highly professional and results-driven.",
+    name: "Jeff"
+  },
+  {
+    quote: "I'm Britney, and I'm the head of conversion optimization for Acadia, a digital marketing agency. I've had the pleasure of working with the Cypherox team for over two, going on three years now. They're fast, hardworking, and really diligent developers. They're really reliable, skilled developers and have been a great partner and a pleasure to work with.",
+    name: "Britney"
+  },
+  {
+    quote: "Hi, my name is Gabrielle, and I'd like to share my experience working with Cypherox Technologies on one of the mobile apps and websites that I worked together with them building. I had an amazing experience. The team members at Cypherox Technologies were attentive, diligent, communicative, and very, very bright. I had an amazing experience working with them, and I highly recommend them.",
+    name: "Gabrielle"
+  },
+  {
+    quote: "Hi, I'm Becke. I've had the pleasure of working with Cypherox Technologies on a recent web development project. It was a custom, heavy CRM, and the experience was seamless from start to finish. The product was delivered on time, and he went the extra mile to ensure everything was done so that we understood the process. It was just, it was brilliant. It was really, really good service. So yeah, absolutely brilliant; I'd recommend it. Thank you so much. Thank you.",
+    name: "Becke"
+  },
+  {
+    quote: "I would highly recommend working with Cypherox Technologies if you need a custom CRM platform. They always exceed their clients' expectations at every stage of the project. Their team designs and builds fully customized ecommerce platforms from the ground up, approaching every project with remarkable skill and dedication.",
+    name: "Lauren"
+  }
 ];
 
 const recognitionData = [
@@ -1267,7 +1235,7 @@ function renderFooter() {
         <div class="footer__brand-logo">
           <img src="images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto; filter: invert(1) brightness(2);">
         </div>
-        <p class="footer__brand-desc">Enterprise technology solutions that drive digital transformation and accelerate growth.</p>
+        <p class="footer__brand-desc">Cypherox Technologies builds and operates AI and software systems for businesses across the US, UK, and Europe. Established in 2015.</p>
         <div class="footer__social">
           <a href="#" class="footer__social-link" aria-label="LinkedIn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
