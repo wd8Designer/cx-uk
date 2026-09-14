@@ -100,9 +100,9 @@
   --container-max: 1280px;
   --container-padding: 24px;
   
-  --section-spacing: 110px;
-  --section-spacing-tablet: 80px;
-  --section-spacing-mobile: 65px;
+  --section-spacing: 60px;
+  --section-spacing-tablet: 45px;
+  --section-spacing-mobile: 30px;
   
   --header-height: 80px;
   --header-height-scrolled: 64px;
@@ -1285,6 +1285,14 @@ img, picture, svg, video {
   overflow: hidden;
 }
 
+.split-section:has(+ .split-section) {
+  padding-bottom: calc(var(--section-spacing) / 2);
+}
+
+.split-section + .split-section {
+  padding-top: 0;
+}
+
 .split-section__container  {
   display: flex;
   flex-wrap: wrap;
@@ -1810,8 +1818,8 @@ img, picture, svg, video {
 }
 
 .timeline-item__icon {
-  width: 48px;
-  height: 48px;
+  width: 90px;
+  height: 90px;
   margin-bottom: 24px;
   color: var(--primary);
 }

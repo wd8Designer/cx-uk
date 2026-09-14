@@ -223,7 +223,7 @@ const navigationData = [
 const disciplinesData = [
   {
     id: 'ai-development',
-    tabName: 'AI Engineering',
+    tabName: 'AI and Machine Learning Engineering',
     title: 'AI and Machine Learning Engineering',
     description: 'We build AI systems around your data, workflows, and business rules, with the evaluation, integration, and controls needed for reliable production use.',
     features: [
@@ -257,7 +257,7 @@ const disciplinesData = [
   },
   {
     id: 'data-engineering',
-    tabName: 'Data & Cloud',
+    tabName: 'Data and Cloud Engineering',
     title: 'Data and Cloud Engineering',
     description: 'Infrastructure, pipelines, and governance underneath your applications. Reliable data. Secure, observable, and cost-controlled cloud.',
     features: [
@@ -274,7 +274,7 @@ const disciplinesData = [
   },
   {
     id: 'consulting',
-    tabName: 'Consulting',
+    tabName: 'Product and Technology Consulting',
     title: 'Product and Technology Consulting',
     description: 'The architecture, scope, and approach decisions made before a line of code is written often determine whether a project delivers or stalls.',
     features: [
@@ -759,7 +759,7 @@ function renderServices() {
     html += `
       <div class="bellows-item${index === 0 ? ' active' : ''}" tabindex="0">
         <div class="bellows-item__header">
-          <h3 class="bellows-item__title-vertical">${disc.tabName}</h3>
+          <div class="bellows-item__title-vertical">${disc.tabName}</div>
         </div>
         <div class="bellows-item__content">
           <div class="bellows-item__inner bellows-content-grid">
