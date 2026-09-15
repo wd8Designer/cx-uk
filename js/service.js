@@ -307,12 +307,12 @@ const industriesData = [
       'Integrated with the existing patient records system through secure APIs',
     ],
     techStacks: [
-      { name: 'Python'},
-      { name: 'NLP'},
-      { name: 'FastAPI'},
-      { name: 'AWS'},
-      { name: 'PostgreSQL'},
-      { name: 'Docker'}
+      { name: 'Python' },
+      { name: 'NLP' },
+      { name: 'FastAPI' },
+      { name: 'AWS' },
+      { name: 'PostgreSQL' },
+      { name: 'Docker' }
     ]
   },
   {
@@ -330,12 +330,12 @@ const industriesData = [
       'Built an alert dashboard with adjustable risk thresholds and case management',
     ],
     techStacks: [
-      { name: 'Python'},
-      { name: 'TensorFlow'},
-      { name: 'Kafka'},
-      { name: 'PostgreSQL'},
-      { name: 'React'},
-      { name: 'AWS'}
+      { name: 'Python' },
+      { name: 'TensorFlow' },
+      { name: 'Kafka' },
+      { name: 'PostgreSQL' },
+      { name: 'React' },
+      { name: 'AWS' }
     ]
   },
   {
@@ -353,13 +353,13 @@ const industriesData = [
       'Connected the system to existing warehouse and driver mobile applications',
     ],
     techStacks: [
-      { name: 'Python'},
-      { name: 'React Native'},
-      { name: 'Node.js'},
-      { name: 'Google Maps'},
-      { name: 'API'},
-      { name: 'PostgreSQL'},
-      { name: 'AWS'}
+      { name: 'Python' },
+      { name: 'React Native' },
+      { name: 'Node.js' },
+      { name: 'Google Maps' },
+      { name: 'API' },
+      { name: 'PostgreSQL' },
+      { name: 'AWS' }
     ]
   },
 ];
@@ -414,33 +414,167 @@ const capabilitiesData = [
 const whyChooseData = [
   {
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
-    title: 'Ship Early',
-    description: 'Working software reaches your environment in weeks. Iterations deliver value before the full build is complete.'
+    title: 'Discovery and Scoping',
+    description: 'We review your data sources, existing systems and the questions the chatbot needs to answer before any design work begins.'
   },
   {
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
-    title: 'Architect for Change',
-    description: 'Every system accommodates new requirements, integrations, and load without a rebuild. Modularity is a default.'
+    title: 'Design and Architecture',
+    description: 'We define the conversation flow, data retrieval approach, escalation logic and access controls the chatbot will operate within.'
   },
   {
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>`,
-    title: 'Test Everything',
-    description: 'Automated testing, code review, and deployment validation are standard. Quality comes from process.'
+    title: 'Development and Testing',
+    description: 'The chatbot is built, connected to required systems and tested against real conversation scenarios before release.'
   },
   {
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3z"/><path d="3 4h8S3 4 3 4z"/></svg>`,
-    title: 'Operate with Visibility',
-    description: 'Every system includes monitoring, logging, and alerting. You see what is running and where attention is needed.'
+    title: 'Deployment and Monitoring',
+    description: 'Once live, we track conversation quality, escalation rates and failure patterns to guide ongoing adjustments.'
   }
 ];
 
+const whyChooseDataByPage = {
+  'ai-chatbot-development.html': whyChooseData,
+  'ai-content-generator.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Scoping',
+      description: 'We review your content types, brand guidelines and existing source material before any design work begins.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Design and Architecture',
+      description: 'We define the generation approach, review workflow and integration points the system will operate within.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'The system is built, connected to required content sources and tested against real content requests before release.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Deployment and Monitoring',
+      description: 'Once live, we track output quality and review outcomes to guide ongoing adjustments.'
+    }
+  ],
+  'ai-language-translator.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Scoping',
+      description: 'We review your content types, target languages and accuracy requirements before any design work begins.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Design and Architecture',
+      description: 'We define the translation approach, terminology handling and integration points the system will operate within.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'The system is built, connected to required content sources and tested against real documents and language pairs.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Deployment and Monitoring',
+      description: 'Once live, we track translation accuracy and review flagged content to guide ongoing adjustments.'
+    }
+  ],
+  'ai-virtual-assistant.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Scoping',
+      description: 'We review the tasks the assistant needs to handle, the systems it must connect to and where human oversight is required.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Design and Architecture',
+      description: 'We define the conversation flow, task logic, permission boundaries and escalation rules the assistant will operate within.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'The assistant is built, connected to required systems and tested against realistic task scenarios before release.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Deployment and Monitoring',
+      description: 'Once live, we track task completion, escalation rates and failure patterns to guide ongoing adjustments.'
+    }
+  ],
+  'hire-ios-developers.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery & Requirement Analysis',
+      description: 'We analyze your app vision, target audience, technical architecture, and skill requirements to select the best developers.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Profile Selection & Fast Interview',
+      description: 'Review pre-vetted senior iOS engineer profiles within 24 hours, conduct 1-on-1 technical interviews, and choose your developer.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Seamless 48-Hour Onboarding',
+      description: 'Your chosen developer integrates directly into your Slack, Jira, GitHub, and CI/CD pipelines under your management.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: '15-Day Risk-Free Trial & Delivery',
+      description: 'Start with a 15-day risk-free trial. If not completely satisfied, pay nothing or switch developers with zero hassle.'
+    }
+  ]
+};
+
+function getWhyChooseData() {
+  const pageName = window.location.pathname.split('/').pop() || 'index.html';
+  return whyChooseDataByPage[pageName] || whyChooseData;
+}
+
 const techStackData = [
-  { category: 'AI', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>', items: ['OpenAI', 'Claude', 'Gemini', 'Llama', 'PyTorch', 'TensorFlow'] },
-  { category: 'Frontend', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>', items: ['React', 'Angular', 'Vue', 'Next.js', 'TypeScript'] },
-  { category: 'Backend', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>', items: ['Node.js', 'Python', 'Java', 'PHP', '.NET'] },
-  { category: 'Cloud', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>', items: ['AWS', 'Azure', 'Google Cloud'] },
-  { category: 'Data', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>', items: ['Snowflake', 'Databricks', 'BigQuery', 'Power BI', 'Tableau'] }
+  { category: 'Languages', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>', items: ['Python', 'TypeScript', 'Node.js'] },
+  { category: 'LLM Providers', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>', items: ['OpenAI', 'Anthropic Claude',] },
+  { category: 'Retrieval and Data', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>', items: ['Vector Databases', 'Embeddings'] },
+  { category: 'Cloud and Infrastructure', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>', items: ['AWS', 'Azure'] },
+  { category: 'Integration', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>', items: ['REST APIs', 'Webhooks'] }
 ];
+
+const techStackDataByPage = {
+  'ai-chatbot-development.html': techStackData,
+  'ai-content-generator.html': [
+    { ...techStackData[0], category: 'Languages', items: ['Python', 'TypeScript', 'Node.js'] },
+    { ...techStackData[1], category: 'LLM Providers', items: ['OpenAI', 'Anthropic Claude'] },
+    { ...techStackData[2], category: 'Data and Retrieval', items: ['Vector Databases', 'Embeddings'] },
+    { ...techStackData[3], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] },
+    { ...techStackData[4], category: 'Integration', items: ['REST APIs', 'Webhooks'] }
+  ],
+  'ai-language-translator.html': [
+    { ...techStackData[0], category: 'Languages', items: ['Python', 'TypeScript', 'Node.js'] },
+    { ...techStackData[1], category: 'AI and ML', items: ['Neural Machine Translation', 'LLM Providers'] },
+    { ...techStackData[2], category: 'Speech Processing', items: ['Speech to Text', 'Text to Speech'] },
+    { ...techStackData[3], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] },
+    { ...techStackData[4], category: 'Integration', items: ['REST APIs', 'Webhooks'] }
+  ],
+  'ai-virtual-assistant.html': [
+    { ...techStackData[0], category: 'Languages', items: ['Python', 'TypeScript', 'Node.js'] },
+    { ...techStackData[1], category: 'LLM Providers', items: ['OpenAI', 'Anthropic Claude'] },
+    { ...techStackData[2], category: 'Retrieval and Data', items: ['Vector Databases', 'Embeddings'] },
+    { ...techStackData[3], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] },
+    { ...techStackData[4], category: 'Integration', items: ['REST APIs', 'Webhooks'] }
+  ],
+  'hire-ios-developers.html': [
+    { category: 'Languages', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>', items: ['Swift', 'SwiftUI', 'Objective-C', 'C++'] },
+    { category: 'Frameworks & UI', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>', items: ['UIKit', 'Combine', 'RxSwift', 'Cocoa Touch', 'ARKit'] },
+    { category: 'Architecture & Patterns', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>', items: ['MVVM', 'VIPER', 'Clean Swift', 'The Composable Architecture (TCA)'] },
+    { category: 'Storage & Cloud', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>', items: ['CoreData', 'Realm', 'SQLite', 'CloudKit', 'Firebase'] },
+    { category: 'Networking & APIs', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>', items: ['RESTful APIs', 'GraphQL', 'URLSession', 'Alamofire', 'WebSockets'] },
+  ]
+};
+
+function getTechStackData() {
+  const pageName = window.location.pathname.split('/').pop() || 'index.html';
+  return techStackDataByPage[pageName] || techStackData;
+}
 
 const caseStudiesData = [
   {
@@ -546,11 +680,11 @@ const footerData = {
 function renderMegaMenus() {
   const navContainer = document.querySelector('.header__nav');
   if (!navContainer) return;
-  
+
   let html = '';
   navigationData.forEach(item => {
     let panelHtml = '';
-    
+
     if (item.type === 'dropdown') {
       let linksHtml = '';
       if (item.megaMenu && item.megaMenu.columns) {
@@ -587,7 +721,7 @@ function renderMegaMenus() {
       `;
     } else if (item.type === 'mega') {
       const cols = item.megaMenu ? item.megaMenu.columns : [];
-      
+
       if (item.label === 'About') {
         // About: simple columns + image side-by-side (no tabs)
         let colsHtml = '';
@@ -627,11 +761,11 @@ function renderMegaMenus() {
             <div class="mega-tab__panel-links">${links}</div>
           </div>`;
         });
-        
-        let ctaHtml = item.megaMenu.cta 
-          ? `<div class="mega-menu__bottom"><span>Need help choosing the right solution?</span> <a href="#consultation" class="btn btn--primary">Schedule a Call</a></div>` 
+
+        let ctaHtml = item.megaMenu.cta
+          ? `<div class="mega-menu__bottom"><span>Need help choosing the right solution?</span> <a href="#consultation" class="btn btn--primary">Schedule a Call</a></div>`
           : '';
-        
+
         panelHtml = `
           <div class="mega-menu mega-menu--tabbed">
             <div class="mega-menu__inner">
@@ -656,11 +790,11 @@ function renderMegaMenus() {
         `;
       }
     }
-    
-    const chevronSvg = (item.type === 'mega' || item.type === 'dropdown') 
-      ? `<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;"><polyline points="6 9 12 15 18 9"></polyline></svg>` 
+
+    const chevronSvg = (item.type === 'mega' || item.type === 'dropdown')
+      ? `<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;"><polyline points="6 9 12 15 18 9"></polyline></svg>`
       : '';
-      
+
     html += `
       <div class="nav-item">
         <a href="${item.href}" class="nav-item__link">${item.label}${chevronSvg}</a>
@@ -668,14 +802,14 @@ function renderMegaMenus() {
       </div>
     `;
   });
-  
+
   navContainer.innerHTML = html;
 }
 
 function renderMobileDrawer() {
   const drawer = document.createElement('div');
   drawer.className = 'mobile-drawer';
-  
+
   let itemsHtml = '';
   navigationData.forEach((item, index) => {
     if (item.type === 'mega' || item.type === 'dropdown') {
@@ -723,11 +857,11 @@ function renderMobileDrawer() {
       <a href="#consultation" class="btn btn--dark" style="width: 100%; text-align: center; justify-content: center;">Book A 15 Min Call</a>
     </div>
   `;
-  
+
   const overlay = document.createElement('div');
   overlay.className = 'mobile-drawer__overlay';
   overlay.style.display = 'none';
-  
+
   document.body.appendChild(overlay);
   document.body.appendChild(drawer);
 }
@@ -735,9 +869,9 @@ function renderMobileDrawer() {
 function renderServices() {
   const container = document.getElementById('services-container');
   if (!container) return;
-  
+
   let html = '<div class="bellows-container fade-up">';
-  
+
   disciplinesData.forEach((disc, index) => {
     let featuresHtml = disc.features.map(f => `
       <li>
@@ -746,9 +880,9 @@ function renderServices() {
         </svg>
         <span>${f}</span>
       </li>`).join('');
-      
+
     let tagsHtml = disc.techTags.map(t => `<span class="discipline-tag">${t}</span>`).join('');
-    
+
     let outcomesHtml = disc.outcomes.map(o => `
       <div class="discipline-outcome">
         <div class="discipline-outcome__highlight">${o.highlight}</div>
@@ -791,7 +925,7 @@ function renderServices() {
       </div>
     `;
   });
-  
+
   html += '</div>';
   container.innerHTML = html;
 }
@@ -799,7 +933,7 @@ function renderServices() {
 function renderIndustries() {
   const container = document.getElementById('industries-container');
   if (!container) return;
-  
+
   let html = `
     <div class="sticky-scroll-container">
       <div class="sticky-scroll-sidebar">
@@ -809,7 +943,7 @@ function renderIndustries() {
       </div>
       <div class="sticky-scroll-content">
   `;
-  
+
   industriesData.forEach((ind, index) => {
     let challengesHtml = ind.challenges.map(c => `
       <li>
@@ -818,7 +952,7 @@ function renderIndustries() {
         </svg>
         <span>${c}</span>
       </li>`).join('');
-      
+
     let outcomesHtml = ind.outcomes.map(o => `
       <li>
         <svg class="industry-check" viewBox="0 0 24 24" fill="var(--primary)" stroke="none">
@@ -826,7 +960,7 @@ function renderIndustries() {
         </svg>
         <span>${o}</span>
       </li>`).join('');
-      
+
     let techHtml = ind.techStacks.map(t => `
       <span class="industry-tech-tag">
          ${t.name}
@@ -862,7 +996,7 @@ function renderIndustries() {
       </div>
     `;
   });
-  
+
   html += `
       </div>
     </div>
@@ -873,21 +1007,21 @@ function renderIndustries() {
 function renderCapabilityTabs() {
   const container = document.getElementById('capabilities-container');
   if (!container) return;
-  
+
   let navHtml = '<div class="capabilities__tabs-nav fade-up">';
   let panelsHtml = '';
-  
+
   capabilitiesData.forEach((cap, index) => {
     const isActive = index === 0 ? 'active' : '';
     navHtml += `<button class="tab-btn ${isActive}" data-target="${cap.id}">${cap.label}</button>`;
-    
+
     let featuresHtml = cap.features.map(f => `
       <div class="tab-panel__feature">
         <svg class="tab-panel__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
         ${f}
       </div>
     `).join('');
-    
+
     let techsHtml = cap.techs.map(t => `<span class="tab-panel__tech">${t}</span>`).join('');
     let metricsHtml = cap.metrics.map(m => `
       <div class="tab-panel__metric">
@@ -895,7 +1029,7 @@ function renderCapabilityTabs() {
         <div class="tab-panel__metric-label">${m.label}</div>
       </div>
     `).join('');
-    
+
     panelsHtml += `
       <div class="tab-panel ${isActive}" id="panel-${cap.id}">
         <div class="tab-panel__content">
@@ -910,16 +1044,16 @@ function renderCapabilityTabs() {
     `;
   });
   navHtml += '</div>';
-  
+
   container.innerHTML = navHtml + panelsHtml;
 }
 
 function renderWhyChoose() {
   const container = document.getElementById('why-container');
   if (!container) return;
-  
+
   let html = '<div class="timeline-container">';
-  whyChooseData.forEach((item, index) => {
+  getWhyChooseData().forEach((item, index) => {
     const num = (index + 1).toString().padStart(2, '0');
     html += `
       <div class="timeline-item fade-up">
@@ -939,9 +1073,9 @@ function renderWhyChoose() {
 function renderTechStack() {
   const container = document.getElementById('tech-stack-container');
   if (!container) return;
-  
+
   let html = '<div class="tech-categories">';
-  techStackData.forEach(tech => {
+  getTechStackData().forEach(tech => {
     let badgesHtml = tech.items.map(item => `<div class="tech-badge">${item}</div>`).join('');
     html += `
       <div class="tech-category fade-up">
@@ -957,13 +1091,13 @@ function renderTechStack() {
 function renderCaseStudy() {
   const container = document.getElementById('case-studies-container');
   if (!container) return;
-  
+
   let tabsHtml = '<div class="case-tabs-nav fade-up">';
   caseStudiesData.forEach((item, i) => {
     tabsHtml += `<button class="case-tab-btn ${i === 0 ? 'active' : ''}" data-index="${i}">${item.tab}</button>`;
   });
   tabsHtml += '</div>';
-  
+
   let cardsHtml = '<div class="case-cards-wrapper">';
   caseStudiesData.forEach((f, i) => {
     let metricsHtml = f.metrics.map(m => `
@@ -972,9 +1106,9 @@ function renderCaseStudy() {
         <div class="case-metric__label">${m.label}</div>
       </div>
     `).join('');
-    
+
     let displayStyle = i === 0 ? '' : 'display: none;';
-    
+
     cardsHtml += `
       <div class="case-card fade-up case-card-panel" data-index="${i}" style="${displayStyle}">
         <div class="case-card__content">
@@ -989,19 +1123,19 @@ function renderCaseStudy() {
     `;
   });
   cardsHtml += '</div>';
-  
+
   container.innerHTML = tabsHtml + cardsHtml;
 }
 
 function renderTestimonials() {
   const container = document.getElementById('testimonials-container');
   if (!container) return;
-  
+
   let trackHtml = '<div class="testimonial-carousel fade-up"><div class="testimonial-track" id="testimonial-track">';
-  
+
   // Clone the first 3 items and append them to the end for seamless infinite loop across 3 visible columns
   const renderData = [...testimonialsData, ...testimonialsData.slice(0, 3)];
-  
+
   renderData.forEach(t => {
     trackHtml += `
       <div class="testimonial-card">
@@ -1017,7 +1151,7 @@ function renderTestimonials() {
     `;
   });
   trackHtml += '</div></div>';
-  
+
   let controlsHtml = `
     <div class="carousel-controls fade-up">
       <button class="carousel-btn carousel-btn--prev" aria-label="Previous">
@@ -1031,18 +1165,18 @@ function renderTestimonials() {
       </button>
     </div>
   `;
-  
+
   container.innerHTML = trackHtml + controlsHtml;
 }
 
 function renderLogoMarquee() {
   const container = document.getElementById('logo-container');
   if (!container) return;
-  
+
   // Duplicate for infinite scroll
   const allLogos = [...clientLogos, ...clientLogos];
   let itemsHtml = allLogos.map(logo => `<div class="logo-marquee__item" style="font-weight:700; font-size:24px;">${logo.name}</div>`).join('');
-  
+
   container.innerHTML = `
     <div class="logo-marquee">
       <div class="logo-marquee__track">
@@ -1055,7 +1189,7 @@ function renderLogoMarquee() {
 function renderRecognition() {
   const container = document.getElementById('recognition-container');
   if (!container) return;
-  
+
   let html = '<div class="editorial-list">';
   recognitionData.forEach(item => {
     html += `
@@ -1073,9 +1207,9 @@ function renderRecognition() {
 function renderAwards() {
   const container = document.getElementById('certifications-container');
   if (!container) return;
-  
+
   const marqueeItems = [...awardsData, ...awardsData, ...awardsData];
-  
+
   let html = '<div class="awards-marquee"><div class="awards-marquee__track">';
   marqueeItems.forEach(award => {
     html += `
@@ -1095,7 +1229,7 @@ function renderAwards() {
 function renderLocations() {
   const container = document.getElementById('locations-container');
   if (!container) return;
-  
+
   let html = '<div class="locations-grid">';
   locationsData.forEach(loc => {
     html += `
@@ -1115,7 +1249,7 @@ function renderLocations() {
 function renderFooter() {
   const container = document.getElementById('footer-container');
   if (!container) return;
-  
+
   let colsHtml = footerData.columns.map(col => `
     <div class="footer__col">
       <h4 class="footer__heading">${col.heading}</h4>
@@ -1124,7 +1258,7 @@ function renderFooter() {
       </ul>
     </div>
   `).join('');
-  
+
   container.innerHTML = `
     <div class="footer__grid">
       <div class="footer__brand">
@@ -1164,7 +1298,7 @@ function renderFooter() {
 function initStickyHeader() {
   const header = document.querySelector('.header');
   if (!header) return;
-  
+
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
@@ -1176,29 +1310,29 @@ function initStickyHeader() {
 
 function initMegaMenus() {
   const navItems = document.querySelectorAll('.nav-item');
-  
+
   navItems.forEach(item => {
     let timeout;
-    
+
     item.addEventListener('mouseenter', () => {
       clearTimeout(timeout);
       navItems.forEach(ni => ni.classList.remove('active'));
       item.classList.add('active');
     });
-    
+
     item.addEventListener('mouseleave', () => {
       timeout = setTimeout(() => {
         item.classList.remove('active');
       }, 200);
     });
   });
-  
+
   // Tab switching for tabbed mega menus
   document.querySelectorAll('.mega-tab__sidebar').forEach(sidebar => {
     const tabItems = sidebar.querySelectorAll('.mega-tab__item');
     const contentArea = sidebar.closest('.mega-tab').querySelector('.mega-tab__content');
     const panels = contentArea.querySelectorAll('.mega-tab__panel');
-    
+
     tabItems.forEach(tab => {
       tab.addEventListener('mouseenter', () => {
         const idx = tab.getAttribute('data-tab-idx');
@@ -1214,7 +1348,7 @@ function initMegaMenus() {
           target.style.display = 'block';
         }
       });
-      
+
       // Keyboard support
       tab.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
@@ -1224,7 +1358,7 @@ function initMegaMenus() {
       });
     });
   });
-  
+
   // Close mega menus when clicking outside
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.nav-item')) {
@@ -1238,25 +1372,25 @@ function initMobileDrawer() {
   const drawer = document.querySelector('.mobile-drawer');
   const overlay = document.querySelector('.mobile-drawer__overlay');
   const closeBtn = document.querySelector('.mobile-drawer__close');
-  
+
   if (!toggle || !drawer || !overlay) return;
-  
+
   const openDrawer = () => {
     drawer.classList.add('open');
     overlay.style.display = 'block';
     document.body.style.overflow = 'hidden';
   };
-  
+
   const closeDrawer = () => {
     drawer.classList.remove('open');
     overlay.style.display = 'none';
     document.body.style.overflow = '';
   };
-  
+
   toggle.addEventListener('click', openDrawer);
   closeBtn?.addEventListener('click', closeDrawer);
   overlay.addEventListener('click', closeDrawer);
-  
+
   // Accordion for drawer subnavs
   const headers = document.querySelectorAll('.mobile-drawer__item-header');
   headers.forEach(header => {
@@ -1264,15 +1398,15 @@ function initMobileDrawer() {
       const idx = header.getAttribute('data-index');
       if (idx === null) return;
       e.preventDefault();
-      
+
       const subnav = document.getElementById(`subnav-${idx}`);
       if (subnav) {
         const isOpen = header.classList.contains('expanded');
-        
+
         // Close all first
         headers.forEach(h => h.classList.remove('expanded'));
         document.querySelectorAll('.mobile-drawer__subnav').forEach(s => s.classList.remove('open'));
-        
+
         if (!isOpen) {
           header.classList.add('expanded');
           subnav.classList.add('open');
@@ -1288,12 +1422,12 @@ function initMobileDrawer() {
 function initScrollAnimations() {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const elements = document.querySelectorAll('.fade-up');
-  
+
   if (prefersReducedMotion) {
     elements.forEach(el => el.classList.add('visible'));
     return;
   }
-  
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -1302,7 +1436,7 @@ function initScrollAnimations() {
       }
     });
   }, { threshold: 0.1 });
-  
+
   elements.forEach(el => observer.observe(el));
 }
 
@@ -1310,9 +1444,9 @@ function initStatsCounter() {
   const section = document.getElementById('stats');
   const counters = document.querySelectorAll('.stat-card__number');
   if (!section || counters.length === 0) return;
-  
+
   let started = false;
-  
+
   const observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting && !started) {
       started = true;
@@ -1320,7 +1454,7 @@ function initStatsCounter() {
         const target = parseInt(counter.getAttribute('data-target') || '0', 10);
         const duration = 2000;
         let start = null;
-        
+
         const step = (timestamp) => {
           if (!start) start = timestamp;
           const progress = Math.min((timestamp - start) / duration, 1);
@@ -1336,19 +1470,19 @@ function initStatsCounter() {
       observer.disconnect();
     }
   }, { threshold: 0.5 });
-  
+
   observer.observe(section);
 }
 
 function initCapabilityTabs() {
   const btns = document.querySelectorAll('.tab-btn');
   const panels = document.querySelectorAll('.tab-panel');
-  
+
   btns.forEach(btn => {
     btn.addEventListener('click', () => {
       btns.forEach(b => b.classList.remove('active'));
       panels.forEach(p => p.classList.remove('active'));
-      
+
       btn.classList.add('active');
       const targetId = btn.getAttribute('data-target');
       document.getElementById(`panel-${targetId}`)?.classList.add('active');
@@ -1364,10 +1498,10 @@ function initBellows() {
       if (window.innerWidth <= 768) {
         const item = header.parentElement;
         const isActive = item.classList.contains('active');
-        
+
         // Remove active from all items
         document.querySelectorAll('.bellows-item').forEach(b => b.classList.remove('active'));
-        
+
         // Toggle the clicked one
         if (!isActive) {
           item.classList.add('active');
@@ -1403,29 +1537,29 @@ function initTestimonialCarousel() {
   const dots = document.querySelectorAll('.carousel-dot');
   const prevBtn = document.querySelector('.carousel-btn--prev');
   const nextBtn = document.querySelector('.carousel-btn--next');
-  
+
   if (!track || !dots.length) return;
-  
+
   let currentIndex = 0;
   let realCount = testimonialsData.length;
   let isAnimating = false;
   let autoAdvance;
-  
+
   const updateCarousel = (animate = true) => {
     const cardWidth = track.children[0].offsetWidth;
     const computedStyle = window.getComputedStyle(track.children[0]);
     const marginRight = parseInt(computedStyle.marginRight, 10) || 0;
     const offset = currentIndex * (cardWidth + marginRight);
-    
+
     track.style.transition = animate ? 'transform 0.5s ease' : 'none';
     track.style.transform = `translateX(-${offset}px)`;
-    
+
     const activeDot = currentIndex % realCount;
     dots.forEach((dot, i) => {
       dot.classList.toggle('active', i === activeDot);
     });
   };
-  
+
   track.addEventListener('transitionend', () => {
     isAnimating = false;
     if (currentIndex >= realCount) {
@@ -1433,14 +1567,14 @@ function initTestimonialCarousel() {
       updateCarousel(false);
     }
   });
-  
+
   const nextSlide = () => {
     if (isAnimating) return;
     isAnimating = true;
     currentIndex++;
     updateCarousel(true);
   };
-  
+
   const prevSlide = () => {
     if (isAnimating) return;
     if (currentIndex <= 0) {
@@ -1453,7 +1587,7 @@ function initTestimonialCarousel() {
     currentIndex--;
     updateCarousel(true);
   };
-  
+
   nextBtn?.addEventListener('click', () => {
     nextSlide();
     startAuto();
@@ -1462,7 +1596,7 @@ function initTestimonialCarousel() {
     prevSlide();
     startAuto();
   });
-  
+
   dots.forEach((dot, i) => {
     dot.addEventListener('click', () => {
       if (isAnimating) return;
@@ -1471,28 +1605,28 @@ function initTestimonialCarousel() {
       startAuto();
     });
   });
-  
+
   const startAuto = () => {
     clearInterval(autoAdvance);
     autoAdvance = setInterval(nextSlide, 5000);
   };
   startAuto();
-  
+
   const carouselContainer = document.querySelector('.testimonial-carousel');
   carouselContainer?.addEventListener('mouseenter', () => clearInterval(autoAdvance));
   carouselContainer?.addEventListener('mouseleave', startAuto);
-  
+
   window.addEventListener('resize', () => updateCarousel(false));
 }
 
 function initContactForm() {
   const form = document.getElementById('consultation-form');
   if (!form) return;
-  
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     let isValid = true;
-    
+
     // Basic validation logic
     const inputs = form.querySelectorAll('.form-input');
     inputs.forEach(input => {
@@ -1506,7 +1640,7 @@ function initContactForm() {
         const errorText = input.parentElement.querySelector('.form-error-text');
         if (errorText) errorText.classList.remove('visible');
       }
-      
+
       if (input.type === 'email' && input.value.trim()) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(input.value)) {
@@ -1520,14 +1654,14 @@ function initContactForm() {
         }
       }
     });
-    
+
     if (isValid) {
       form.style.display = 'none';
       const successMsg = document.getElementById('form-success');
       if (successMsg) successMsg.classList.add('visible');
     }
   });
-  
+
   // Real-time validation
   const inputs = form.querySelectorAll('.form-input');
   inputs.forEach(input => {
@@ -1547,14 +1681,14 @@ function initSmoothScroll() {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
       if (targetId === '#') return;
-      
+
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         e.preventDefault();
         const headerOffset = 80;
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-  
+
         window.scrollTo({
           top: offsetPosition,
           behavior: 'smooth'
