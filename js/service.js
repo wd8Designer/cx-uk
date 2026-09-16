@@ -502,6 +502,77 @@ const whyChooseDataByPage = {
       description: 'Once live, we track task completion, escalation rates and failure patterns to guide ongoing adjustments.'
     }
   ],
+
+  'predictive-maintenance-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Scoping',
+      description: 'We review your equipment, existing sensor data and current maintenance process before any design work begins.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Design and Architecture',
+      description: 'We define the data pipeline, prediction models and alerting logic the solution will operate within.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'The solution is built, connected to sensor and historical data, and validated against real failure patterns.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Deployment and Monitoring',
+      description: 'Once live, we track prediction accuracy and alert quality to guide ongoing model adjustments.'
+    }
+  ],
+
+  'fraud-detection-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Scoping',
+      description: 'We review your transaction data, current fraud losses, and existing detection approach before starting any design work.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Design and Architecture',
+      description: 'We define the scoring models, data pipeline, and review workflow the system will operate within.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'We build the system, connect it to transaction and identity data, and validate it against known fraud cases.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Deployment and Monitoring',
+      description: 'Once live, we track detection accuracy and false positive rates to guide ongoing model adjustments.'
+    }
+  ],
+
+  'automl-development-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Scoping',
+      description: 'We review your data, current model development process, and the use cases you need supported.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Pipeline Design',
+      description: 'We define the preprocessing, algorithm selection, and tuning approach the AutoML pipeline will use.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Validation',
+      description: 'We build and test the pipeline, validating models against held-out data before release.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Deployment and Monitoring',
+      description: 'Once live, we track model performance and retraining needs to guide ongoing adjustments.'
+    }
+  ],
+
+
   'hire-ios-developers.html': [
     {
       icon: whyChooseData[0].icon,
@@ -522,6 +593,29 @@ const whyChooseDataByPage = {
       icon: whyChooseData[3].icon,
       title: '15-Day Risk-Free Trial & Delivery',
       description: 'Start with a 15-day risk-free trial. If not completely satisfied, pay nothing or switch developers with zero hassle.'
+    }
+  ],
+
+  'it-consulting-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Assessment',
+      description: 'We review your current systems, infrastructure, and pain points in detail before forming any recommendation.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Analysis and Strategy',
+      description: 'We identify gaps, risks and opportunities, then define a sequenced roadmap based on impact and feasibility.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Recommendation and Planning',
+      description: 'We present findings and a practical plan, with priorities agreed directly with your team.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Implementation Support',
+      description: 'Where needed, we support execution of the roadmap alongside your internal team or through dedicated delivery.'
     }
   ]
 };
@@ -562,6 +656,37 @@ const techStackDataByPage = {
     { ...techStackData[3], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] },
     { ...techStackData[4], category: 'Integration', items: ['REST APIs', 'Webhooks'] }
   ],
+  'predictive-maintenance-services.html': [
+    { ...techStackData[0], category: 'Languages', items: ['Python', 'SQL'] },
+    { ...techStackData[1], category: 'Machine Learning', items: ['Time Series Models', 'Anomaly Detection'] },
+    { ...techStackData[2], category: 'IoT and Data', items: ['Sensor Integration', 'Data Pipelines'] },
+    { ...techStackData[3], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] },
+    { ...techStackData[4], category: 'Integration', items: ['REST APIs', 'CMMS Integration'] }
+  ],
+  'fraud-detection-services.html': [
+    { ...techStackData[0], category: 'Languages', items: ['Python', 'SQL'] },
+    { ...techStackData[1], category: 'Machine Learning', items: ['Anomaly Detection', 'Classification Models'] },
+    { ...techStackData[2], category: 'Data and Streaming', items: ['Real-Time Data Pipelines', 'Event Streaming'] },
+    { ...techStackData[3], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] },
+    { ...techStackData[4], category: 'Integration', items: ['REST APIs', 'Payment Gateway Integration'] }
+  ],
+  'automl-development-services.html': [
+    { ...techStackData[0], category: 'Languages', items: ['Python', 'SQL'] },
+    { ...techStackData[1], category: 'Machine Learning', items: ['AutoML Frameworks', 'Hyperparameter Optimization'] },
+    { ...techStackData[2], category: 'Data and Pipelines', items: ['Data Preprocessing', 'Feature Engineering'] },
+    { ...techStackData[3], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] },
+    { ...techStackData[4], category: 'Integration', items: ['REST APIs', 'MLOps Tooling'] }
+  ],
+  'it-consulting-services.html': [
+    { ...techStackData[0], category: 'Cloud Platforms', items: ['AWS', 'Azure'] },
+    { ...techStackData[1], category: 'Architecture', items: ['Microservices', 'System Integration'] },
+    { ...techStackData[2], category: 'Data', items: ['Data Migration', 'Data Architecture'] },
+    { ...techStackData[3], category: 'Security', items: ['Access Control', 'Infrastructure Security'] },
+    { ...techStackData[4], category: 'Delivery', items: ['DevOps', 'Agile Delivery'] }
+  ],
+
+
+  
   'hire-ios-developers.html': [
     { category: 'Languages', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>', items: ['Swift', 'SwiftUI', 'Objective-C', 'C++'] },
     { category: 'Frameworks & UI', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>', items: ['UIKit', 'Combine', 'RxSwift', 'Cocoa Touch', 'ARKit'] },
@@ -1250,6 +1375,15 @@ function renderFooter() {
   const container = document.getElementById('footer-container');
   if (!container) return;
 
+  const pageName = window.location.pathname.split('/').pop() || 'index.html';
+  const footerBrandDescriptions = {
+    'predictive-maintenance-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
+    'fraud-detection-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'automl-development-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'it-consulting-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+  };
+  const brandDescription = footerBrandDescriptions[pageName] || 'Cypherox Technologies builds and operates AI and software systems for businesses across the US, UK, and Europe. Established in 2015.';
+
   let colsHtml = footerData.columns.map(col => `
     <div class="footer__col">
       <h4 class="footer__heading">${col.heading}</h4>
@@ -1265,7 +1399,7 @@ function renderFooter() {
         <div class="footer__brand-logo">
           <img src="images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto; filter: invert(1) brightness(2);">
         </div>
-        <p class="footer__brand-desc">Cypherox Technologies builds and operates AI and software systems for businesses across the US, UK, and Europe. Established in 2015.</p>
+        <p class="footer__brand-desc">${brandDescription}</p>
         <div class="footer__social">
           <a href="#" class="footer__social-link" aria-label="LinkedIn">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>

@@ -950,7 +950,7 @@ video {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--primary);
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   animation: pulseEyebrow 3s infinite ease-in-out;
 }
 
@@ -5064,13 +5064,16 @@ textarea.form-input {
   .mid-form-grid {
     grid-template-columns: 1fr;
   }
+
   .mid-form-wrapper {
     padding: 36px 24px;
   }
+
   .pricing-card--featured {
     transform: none;
   }
+
   .pricing-card--featured:hover {
     transform: translateY(-6px);
   }
-}
+}
