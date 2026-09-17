@@ -572,6 +572,277 @@ const whyChooseDataByPage = {
     }
   ],
 
+  'it-consulting-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Assessment',
+      description: 'We review your current systems, infrastructure, and pain points in detail before forming any recommendation.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Analysis and Strategy',
+      description: 'We identify gaps, risks and opportunities, then define a sequenced roadmap based on impact and feasibility.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Recommendation and Planning',
+      description: 'We present findings and a practical plan, with priorities agreed directly with your team.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Implementation Support',
+      description: 'Where needed, we support execution of the roadmap alongside your internal team or through dedicated delivery.'
+    }
+  ],
+
+  'startup-it-consulting-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Context',
+      description: 'We review your product, current systems, and stage-specific priorities before forming any recommendation.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Assessment and Options',
+      description: 'We identify the decisions that matter most now and present practical, stage-appropriate options.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Recommendation and Roadmap',
+      description: 'We agree on a prioritized plan that fits your budget, team size, and growth timeline.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Ongoing or Implementation Support',
+      description: 'Where needed, we support execution directly or provide continued advisory as the business grows.'
+    }
+  ],
+
+  'ai-strategy-consulting-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Assessment',
+      description: 'We review your business priorities, current data and systems before identifying potential AI use cases.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Opportunity Analysis',
+      description: 'We assess feasibility, value, and readiness for each identified use case.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Strategy and Roadmapping',
+      description: 'We define a sequenced roadmap prioritized by impact and feasibility.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Implementation Support',
+      description: 'Where needed, we support execution of the roadmap alongside your internal team or through dedicated delivery.'
+    }
+  ],
+
+  'responsive-web-design-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Content Review',
+      description: 'We review your current site, content structure, and the devices your visitors actually use.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Responsive Design',
+      description: 'We design layouts that adapt cleanly across mobile, tablet, and desktop.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'The site is built and tested across real devices and browsers before launch.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Launch and Support',
+      description: 'Once live, we monitor performance and usability and adjust layouts as needed.'
+    }
+  ],
+
+  'mobile-app-design-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Research',
+      description: 'We review your users, goals, and any existing usability issues before design work begins.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Wireframing and Flow Design',
+      description: 'We map user flows and screen structure to establish how the app should work.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Visual Design and Prototyping',
+      description: 'We design the visual interface and build interactive prototypes for testing.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Handoff and Development Support',
+      description: 'We prepare design files and support development to keep the built app aligned with the design.'
+    }
+  ],
+
+  'business-process-automation-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Process Discovery and Mapping',
+      description: 'We review the current process, systems involved, and where manual effort is concentrated.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Automation Design',
+      description: 'We define the automation logic, exception handling, and required system connections.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'We build and test the automation against real process scenarios before release.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Deployment and Monitoring',
+      description: 'Once live, we track automation performance and exception rates to guide adjustments.'
+    }
+  ],
+
+  'workflow-automation-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Workflow Discovery and Mapping',
+      description: 'We review the current workflow, tools involved, and where manual coordination is concentrated.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Automation Design',
+      description: 'We define the triggers, routing logic, and exception handling the workflow will use.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'The automation is built and tested against real workflow scenarios before release.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Deployment and Monitoring',
+      description: 'Once live, we track workflow performance and exception rates to guide adjustments.'
+    }
+  ],
+  'marketing-and-crm-automation-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Mapping',
+      description: 'We review your current CRM, marketing tools and where manual coordination is concentrated.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Automation Design',
+      description: 'We define the triggers, routing logic and data sync requirements the system will use.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'The automation is built and tested against real lead and campaign scenarios before release.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Deployment and Monitoring',
+      description: 'Once live, we track automation performance and data accuracy to guide adjustments.'
+    }
+  ],
+  'web-development-company-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Requirements',
+      description: 'We review your current site, required functionality, and the systems it needs to connect to.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Design and Architecture',
+      description: 'We define the technical architecture, integrations, and build structure.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'The site or application is built and tested against real usage scenarios before launch.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Launch and Ongoing Support',
+      description: 'Once live, we monitor performance and provide ongoing development support as needs evolve.'
+    }
+  ],
+  'app-development-company-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Requirements',
+      description: 'We review your app idea, required platforms, and the systems it needs to connect to.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Design and Architecture',
+      description: 'We define the technical architecture, integrations, and structure the build will follow.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'We build and test the app across devices and real usage scenarios before launch.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Launch and Ongoing Support',
+      description: 'Once live, we monitor performance and provide ongoing development support as requirements evolve.'
+    }
+  ],
+  'ecommerce-website-development-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Requirements',
+      description: 'We review your current store, catalog structure, and required integrations before design begins.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Design and Architecture',
+      description: 'We define the platform approach, integrations, and checkout logic the build will follow.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'The store is built and tested against real order and traffic scenarios before launch.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Launch and Ongoing Support',
+      description: 'Once live, we monitor performance and provide ongoing development support as the catalog grows.'
+    }
+  ],
+  'cms-development-services.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Platform Assessment',
+      description: 'We review your current CMS, content structure, and editorial workflow before recommending an approach.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Design and Theme Development',
+      description: 'We build custom themes and structure suited to your content and design requirements.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'We configure, customize, and test the CMS against real content and editing workflows before launch.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Launch and Ongoing Maintenance',
+      description: 'Once live, we maintain core, plugin, and security updates on an ongoing basis.'
+    }
+  ],
+
 
   'hire-ios-developers.html': [
     {
@@ -595,29 +866,6 @@ const whyChooseDataByPage = {
       description: 'Start with a 15-day risk-free trial. If not completely satisfied, pay nothing or switch developers with zero hassle.'
     }
   ],
-
-  'it-consulting-services.html': [
-    {
-      icon: whyChooseData[0].icon,
-      title: 'Discovery and Assessment',
-      description: 'We review your current systems, infrastructure, and pain points in detail before forming any recommendation.'
-    },
-    {
-      icon: whyChooseData[1].icon,
-      title: 'Analysis and Strategy',
-      description: 'We identify gaps, risks and opportunities, then define a sequenced roadmap based on impact and feasibility.'
-    },
-    {
-      icon: whyChooseData[2].icon,
-      title: 'Recommendation and Planning',
-      description: 'We present findings and a practical plan, with priorities agreed directly with your team.'
-    },
-    {
-      icon: whyChooseData[3].icon,
-      title: 'Implementation Support',
-      description: 'Where needed, we support execution of the roadmap alongside your internal team or through dedicated delivery.'
-    }
-  ]
 };
 
 function getWhyChooseData() {
@@ -626,11 +874,15 @@ function getWhyChooseData() {
 }
 
 const techStackData = [
-  { category: 'Languages', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>', items: ['Python', 'TypeScript', 'Node.js'] },
-  { category: 'LLM Providers', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>', items: ['OpenAI', 'Anthropic Claude',] },
-  { category: 'Retrieval and Data', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>', items: ['Vector Databases', 'Embeddings'] },
-  { category: 'Cloud and Infrastructure', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>', items: ['AWS', 'Azure'] },
-  { category: 'Integration', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>', items: ['REST APIs', 'Webhooks'] }
+  { category: 'Frontend', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>', items: ['React', 'Angular', 'Vue.js', 'TypeScript'] },
+
+  { category: 'Backend', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>', items: ['Node.js', 'Python','PHP','Laravel','Java'] },
+
+  { category: 'Mobile', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>', items: ['Swift', 'Kotlin','Flutter','React Native'] },
+
+  { category: 'Cloud and DevOps', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>', items: ['AWS', 'Azure','Docker','Kubernetes','CI/CD'] },
+
+  { category: 'Data and AI', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>', items: ['Machine Learning', 'NLP','SQL','Data Pipelines'] }
 ];
 
 const techStackDataByPage = {
@@ -683,6 +935,83 @@ const techStackDataByPage = {
     { ...techStackData[2], category: 'Data', items: ['Data Migration', 'Data Architecture'] },
     { ...techStackData[3], category: 'Security', items: ['Access Control', 'Infrastructure Security'] },
     { ...techStackData[4], category: 'Delivery', items: ['DevOps', 'Agile Delivery'] }
+  ],
+  'startup-it-consulting-services.html': [
+    { ...techStackData[0], category: 'Cloud Platforms', items: ['AWS', 'Azure'] },
+    { ...techStackData[1], category: 'Framework', items: ['Node.js', 'React'] },
+    { ...techStackData[2], category: 'Data', items: ['Databases', 'Data Architecture'] },
+    { ...techStackData[3], category: 'Architecture', items: ['API Design', 'Microservices'] },
+    { ...techStackData[4], category: 'Delivery', items: ['Agile Delivery', 'DevOps'] }
+  ],
+  'ai-strategy-consulting-services.html': [
+    { ...techStackData[0], category: 'AI and ML', items: ['LLM Providers', 'Machine Learning Frameworks'] },
+    { ...techStackData[1], category: 'Cloud Platforms', items: ['AWS', 'Azure'] },
+    { ...techStackData[2], category: 'Data', items: ['Data Architecture', 'Data Pipelines'] },
+    { ...techStackData[3], category: 'Governance', items: ['Evaluation Frameworks', 'Monitoring'] },
+    { ...techStackData[4], category: 'Delivery', items: ['Agile Delivery', 'DevOps'] }
+  ],
+  'responsive-web-design-services.html': [
+    { ...techStackData[0], category: 'Languages', items: ['HTML', 'CSS', 'JavaScript'] },
+    { ...techStackData[1], category: 'Frameworks', items: ['React', 'Next.js'] },
+    { ...techStackData[2], category: 'Performance', items: ['Image Optimization', 'Lazy Loading'] },
+    { ...techStackData[3], category: 'CMS Integration', items: ['WordPress', 'Headless CMS'] },
+    { ...techStackData[4], category: 'Testing', items: ['Cross-browser Testing', 'Device Testing'] }
+  ],
+  'mobile-app-design-services.html': [
+    { ...techStackData[0], category: 'Design Tools', items: ['Figma', 'Adobe XD'] },
+    { ...techStackData[1], category: 'Prototyping', items: ['Interactive Prototypes', 'User Testing'] },
+    { ...techStackData[2], category: 'Design Systems', items: ['Component Libraries', 'Style Guides'] },
+    { ...techStackData[3], category: 'Platforms', items: ['iOS Guidelines', 'Android Guidelines'] },
+    { ...techStackData[4], category: 'Handoff', items: ['Design Specs', 'Developer Handoff'] }
+  ],
+  'business-process-automation-services.html': [
+    { ...techStackData[0], category: 'RPA Tools', items: ['UiPath', 'Power Automate'] },
+    { ...techStackData[1], category: 'Languages', items: ['Python', 'JavaScript'] },
+    { ...techStackData[2], category: 'Integration', items: ['REST APIs', 'Webhooks'] },
+    { ...techStackData[3], category: 'Document Processing', items: ['OCR', 'Data Extraction'] },
+    { ...techStackData[4], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] }
+  ],
+  'workflow-automation-services.html': [
+    { ...techStackData[0], category: 'Automation Tools', items: ['Power Automate', 'Zapier'] },
+    { ...techStackData[1], category: 'Languages', items: ['Python', 'JavaScript'] },
+    { ...techStackData[2], category: 'Integration', items: ['REST APIs', 'Webhooks'] },
+    { ...techStackData[3], category: 'AI and Decisioning', items: ['LLM Providers', 'Rules Engines'] },
+    { ...techStackData[4], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] }
+  ],
+  'marketing-and-crm-automation-services.html': [
+    { ...techStackData[0], category: 'CRM Platforms', items: ['HubSpot', 'Salesforce'] },
+    { ...techStackData[1], category: 'Marketing Automation', items: ['Email Automation', 'Campaign Tools'] },
+    { ...techStackData[2], category: 'Languages', items: ['Python', 'JavaScript'] },
+    { ...techStackData[3], category: 'Integration', items: ['REST APIs', 'Webhooks'] },
+    { ...techStackData[4], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] }
+  ],
+  'web-development-company-services.html': [
+    { ...techStackData[0], category: 'Languages', items: ['JavaScript', 'TypeScript', 'PHP'] },
+    { ...techStackData[1], category: 'Frontend Frameworks', items: ['React', 'Next.js'] },
+    { ...techStackData[2], category: 'Backend Frameworks', items: ['Node.js', 'Laravel'] },
+    { ...techStackData[3], category: 'CMS', items: ['WordPress', 'Headless CMS'] },
+    { ...techStackData[4], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] }
+  ],
+  'app-development-company-services.html': [
+    { ...techStackData[0], category: 'Mobile', items: ['Swift', 'Kotlin', 'React Native'] },
+    { ...techStackData[1], category: 'Backend Languages', items: ['Node.js', 'Python'] },
+    { ...techStackData[2], category: 'Databases', items: ['PostgreSQL', 'MongoDB'] },
+    { ...techStackData[3], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] },
+    { ...techStackData[4], category: 'Integration', items: ['REST APIs', 'Push Notifications'] }
+  ],
+  'ecommerce-website-development-services.html': [
+    { ...techStackData[0], category: 'Platforms', items: ['Shopify', 'Headless Commerce'] },
+    { ...techStackData[1], category: 'Languages', items: ['JavaScript', 'TypeScript', 'PHP'] },
+    { ...techStackData[2], category: 'Frontend Frameworks', items: ['React', 'Next.js'] },
+    { ...techStackData[3], category: 'Payments', items: ['Stripe', 'PayPal Integration'] },
+    { ...techStackData[4], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] }
+  ],
+  'cms-development-services.html': [
+    { ...techStackData[0], category: 'CMS Platforms', items: ['WordPress', 'Drupal'] },
+    { ...techStackData[1], category: 'Languages', items: ['PHP', 'JavaScript'] },
+    { ...techStackData[2], category: 'Custom Development', items: ['Custom Themes', 'Custom Plugins'] },
+    { ...techStackData[3], category: 'Hosting and Infrastructure', items: ['AWS', 'Managed Hosting'] },
+    { ...techStackData[4], category: 'Integration', items: ['REST APIs', 'Third-Party Integrations'] }
   ],
 
 
@@ -1381,6 +1710,17 @@ function renderFooter() {
     'fraud-detection-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
     'automl-development-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
     'it-consulting-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'startup-it-consulting-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'ai-strategy-consulting-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'responsive-web-design-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'mobile-app-design-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'business-process-automation-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'workflow-automation-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'marketing-and-crm-automation-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
+    'web-development-company-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'app-development-company-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'ecommerce-website-development-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'cms-development-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
   };
   const brandDescription = footerBrandDescriptions[pageName] || 'Cypherox Technologies builds and operates AI and software systems for businesses across the US, UK, and Europe. Established in 2015.';
 
