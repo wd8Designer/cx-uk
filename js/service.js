@@ -876,14 +876,25 @@ function getWhyChooseData() {
 const techStackData = [
   { category: 'Frontend', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>', items: ['React', 'Angular', 'Vue.js', 'TypeScript'] },
 
-  { category: 'Backend', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>', items: ['Node.js', 'Python','PHP','Laravel','Java'] },
+  { category: 'Backend', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>', items: ['Node.js', 'Python', 'PHP', 'Laravel', 'Java'] },
 
-  { category: 'Mobile', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>', items: ['Swift', 'Kotlin','Flutter','React Native'] },
+  { category: 'Mobile', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>', items: ['Swift', 'Kotlin', 'Flutter', 'React Native'] },
 
-  { category: 'Cloud and DevOps', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>', items: ['AWS', 'Azure','Docker','Kubernetes','CI/CD'] },
+  { category: 'Cloud and DevOps', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>', items: ['AWS', 'Azure', 'Docker', 'Kubernetes', 'CI/CD'] },
 
-  { category: 'Data and AI', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>', items: ['Machine Learning', 'NLP','SQL','Data Pipelines'] }
+  { category: 'Data and AI', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>', items: ['Machine Learning', 'NLP', 'SQL', 'Data Pipelines'] }
 ];
+
+const techIcons = {
+  frontend: techStackData[0].icon,
+  backend: techStackData[1].icon,
+  mobile: techStackData[2].icon,
+  cloud: techStackData[3].icon,
+  data: techStackData[4].icon,
+  architecture: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>',
+  api: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg>',
+  default: techStackData[0].icon
+};
 
 const techStackDataByPage = {
   'ai-chatbot-development.html': techStackData,
@@ -1015,19 +1026,99 @@ const techStackDataByPage = {
   ],
 
 
-  
+
   'hire-ios-developers.html': [
     { category: 'Languages', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>', items: ['Swift', 'SwiftUI', 'Objective-C', 'C++'] },
     { category: 'Frameworks & UI', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>', items: ['UIKit', 'Combine', 'RxSwift', 'Cocoa Touch', 'ARKit'] },
     { category: 'Architecture & Patterns', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>', items: ['MVVM', 'VIPER', 'Clean Swift', 'The Composable Architecture (TCA)'] },
     { category: 'Storage & Cloud', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>', items: ['CoreData', 'Realm', 'SQLite', 'CloudKit', 'Firebase'] },
     { category: 'Networking & APIs', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>', items: ['RESTful APIs', 'GraphQL', 'URLSession', 'Alamofire', 'WebSockets'] },
-  ]
+  ],
+
+  'hire-developers.html': [
+    { category: 'Frontend', icon: techIcons.frontend, items: ['React', 'Angular', 'Vue.js', 'TypeScript', 'Next.js'] },
+    { category: 'Backend', icon: techIcons.backend, items: ['Node.js', 'Python', 'PHP', 'Laravel', 'Java', '.NET'] },
+    { category: 'Mobile', icon: techIcons.mobile, items: ['Swift', 'Kotlin', 'Flutter', 'React Native'] },
+    { category: 'Cloud and DevOps', icon: techIcons.cloud, items: ['AWS', 'Azure', 'Docker', 'Kubernetes', 'CI/CD'] },
+    { category: 'Data and Architecture', icon: techIcons.data, items: ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Microservices'] }
+  ],
+
+  'mobile-app-developers.html': [
+    { category: 'iOS', icon: techIcons.mobile, items: ['Swift', 'SwiftUI', 'UIKit'] },
+    { category: 'Android', icon: techIcons.mobile, items: ['Kotlin', 'Java', 'Jetpack Compose'] },
+    { category: 'Cross Platform', icon: techIcons.frontend, items: ['Flutter', 'React Native', 'Dart'] },
+    { category: 'Backend and APIs', icon: techIcons.backend, items: ['Node.js', 'REST APIs', 'Firebase'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'Azure', 'CI/CD'] }
+  ],
+
+  'ios-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['Swift', 'Objective-C'] },
+    { category: 'UI Frameworks', icon: techIcons.mobile, items: ['SwiftUI', 'UIKit'] },
+    { category: 'Data and Storage', icon: techIcons.frontend, items: ['Core Data', 'iOS SDK'] },
+    { category: 'Backend and APIs', icon: techIcons.backend, items: ['REST APIs', 'Firebase'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'CI/CD'] }
+  ],
+
+  'android-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['Kotlin', 'Java'] },
+    { category: 'UI Frameworks', icon: techIcons.mobile, items: ['Jetpack Compose', 'Android SDK'] },
+    { category: 'Data and Storage', icon: techIcons.frontend, items: ['Room', 'Firebase'] },
+    { category: 'Backend and APIs', icon: techIcons.backend, items: ['REST APIs', 'Firebase'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'CI/CD'] }
+  ],
+
+  'swift-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['Swift', 'Objective-C'] },
+    { category: 'UI Frameworks', icon: techIcons.mobile, items: ['SwiftUI', 'UIKit'] },
+    { category: 'Data and Storage', icon: techIcons.frontend, items: ['Core Data', 'iOS SDK'] },
+    { category: 'Backend and APIs', icon: techIcons.backend, items: ['REST APIs', 'Firebase'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'CI/CD'] }
+  ],
+
+  'flutter-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['Dart'] },
+    { category: 'Frameworks', icon: techIcons.mobile, items: ['Flutter', 'Flutter SDK'] },
+    { category: 'State Management', icon: techIcons.frontend, items: ['Provider', 'Riverpod'] },
+    { category: 'Backend and APIs', icon: techIcons.backend, items: ['REST APIs', 'Firebase'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'CI/CD'] }
+  ],
+
+  'react-native-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['JavaScript', 'TypeScript'] },
+    { category: 'Frameworks', icon: techIcons.mobile, items: ['React Native', 'React'] },
+    { category: 'Native Modules', icon: techIcons.frontend, items: ['Native Modules', 'Expo'] },
+    { category: 'Backend and APIs', icon: techIcons.backend, items: ['REST APIs', 'Firebase'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'CI/CD'] }
+  ],
+
+  'kotlin-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['Kotlin', 'Java'] },
+    { category: 'UI Frameworks', icon: techIcons.mobile, items: ['Jetpack Compose', 'Android SDK'] },
+    { category: 'Concurrency', icon: techIcons.frontend, items: ['Coroutines', 'Flow'] },
+    { category: 'Backend and APIs', icon: techIcons.backend, items: ['REST APIs', 'Firebase'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'CI/CD'] }
+  ],
+
+  'front-end-web-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['JavaScript', 'TypeScript'] },
+    { category: 'Frameworks', icon: techIcons.mobile, items: ['React', 'Angular','Vue.js'] },
+    { category: 'Styling', icon: techIcons.frontend, items: ['CSS3', 'Tailwind CSS'] },
+    { category: 'Performance', icon: techIcons.backend, items: ['Lazy Loading', 'Code Splitting'] },
+    { category: 'Testing', icon: techIcons.cloud, items: ['Jest', 'Cypress'] }
+  ],
 };
 
 function getTechStackData() {
-  const pageName = window.location.pathname.split('/').pop() || 'index.html';
-  return techStackDataByPage[pageName] || techStackData;
+  let pageName = window.location.pathname.split('/').pop() || 'index.html';
+  pageName = pageName.split('?')[0].split('#')[0];
+  if (!pageName) pageName = 'index.html';
+
+  if (techStackDataByPage[pageName]) return techStackDataByPage[pageName];
+  if (!pageName.includes('.') && techStackDataByPage[pageName + '.html']) return techStackDataByPage[pageName + '.html'];
+  const baseName = pageName.replace(/\.html$/, '');
+  if (techStackDataByPage[baseName]) return techStackDataByPage[baseName];
+
+  return techStackData;
 }
 
 const caseStudiesData = [
@@ -1296,9 +1387,9 @@ function renderMobileDrawer() {
 
   drawer.innerHTML = `
     <div class="mobile-drawer__header">
-      <div class="header__logo">
-        <img src="images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto;">
-      </div>
+      <a href="/index.html" class="header__logo">
+        <img src="/images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto;">
+      </a>
       <button class="mobile-drawer__close" aria-label="Close menu" style="background: none; border: none; cursor: pointer;">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
@@ -1524,16 +1615,30 @@ function renderWhyChoose() {
   container.innerHTML = html;
 }
 
+function getCategoryIcon(tech, index) {
+  if (tech.icon) return tech.icon;
+  const name = (tech.category || '').toLowerCase();
+  if (name.includes('mobile') || name.includes('ios') || name.includes('android')) return techIcons.mobile;
+  if (name.includes('front') || name.includes('ui') || name.includes('framework') || name.includes('cross')) return techIcons.frontend;
+  if (name.includes('back') || name.includes('language')) return techIcons.backend;
+  if (name.includes('cloud') || name.includes('devops') || name.includes('tool') || name.includes('infra')) return techIcons.cloud;
+  if (name.includes('data') || name.includes('ai') || name.includes('ml') || name.includes('database') || name.includes('storage')) return techIcons.data;
+  if (name.includes('api') || name.includes('network') || name.includes('integration')) return techIcons.api;
+  if (name.includes('arch')) return techIcons.architecture;
+  return (techStackData[index] && techStackData[index].icon) || techIcons.default;
+}
+
 function renderTechStack() {
   const container = document.getElementById('tech-stack-container');
   if (!container) return;
 
   let html = '<div class="tech-categories">';
-  getTechStackData().forEach(tech => {
+  getTechStackData().forEach((tech, index) => {
     let badgesHtml = tech.items.map(item => `<div class="tech-badge">${item}</div>`).join('');
+    const icon = getCategoryIcon(tech, index);
     html += `
       <div class="tech-category fade-up">
-        <h3 class="tech-category__title"><span>${tech.icon}</span> ${tech.category}</h3>
+        <h3 class="tech-category__title"><span>${icon}</span> ${tech.category}</h3>
         <div class="tech-badges">${badgesHtml}</div>
       </div>
     `;
@@ -1737,7 +1842,7 @@ function renderFooter() {
     <div class="footer__grid">
       <div class="footer__brand">
         <div class="footer__brand-logo">
-          <img src="images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto; filter: invert(1) brightness(2);">
+          <img src="/images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto; filter: invert(1) brightness(2);">
         </div>
         <p class="footer__brand-desc">${brandDescription}</p>
         <div class="footer__social">

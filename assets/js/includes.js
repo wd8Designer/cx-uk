@@ -20,8 +20,8 @@ async function loadInclude(selector, file) {
 document.addEventListener("DOMContentLoaded", async () => {
     // Load includes concurrently
     await Promise.all([
-        loadInclude("#site-header", "header.html"),
-        loadInclude("#site-footer", "footer.html")
+        loadInclude("#site-header", "/header.html"),
+        loadInclude("#site-footer", "/footer.html")
     ]);
     
     // Dispatch a custom event so script.js knows the DOM is fully ready

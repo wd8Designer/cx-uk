@@ -708,9 +708,9 @@ function renderMobileDrawer() {
 
   drawer.innerHTML = `
     <div class="mobile-drawer__header">
-      <div class="header__logo">
-        <img src="images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto;">
-      </div>
+      <a href="/index.html" class="header__logo">
+        <img src="/images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto;">
+      </a>
       <button class="mobile-drawer__close" aria-label="Close menu" style="background: none; border: none; cursor: pointer;">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
@@ -1128,9 +1128,9 @@ function renderFooter() {
   container.innerHTML = `
     <div class="footer__grid">
       <div class="footer__brand">
-        <div class="footer__brand-logo">
-          <img src="images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto; filter: invert(1) brightness(2);">
-        </div>
+        <a href="/index.html" class="footer__brand-logo">
+          <img src="/images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto; filter: invert(1) brightness(2);">
+        </a>
         <p class="footer__brand-desc">Cypherox Technologies builds and operates AI and software systems for businesses across the US, UK, and Europe. Established in 2015.</p>
         <div class="footer__social">
           <a href="#" class="footer__social-link" aria-label="LinkedIn">
