@@ -1106,6 +1106,54 @@ const techStackDataByPage = {
     { category: 'Performance', icon: techIcons.backend, items: ['Lazy Loading', 'Code Splitting'] },
     { category: 'Testing', icon: techIcons.cloud, items: ['Jest', 'Cypress'] }
   ],
+
+  'angularjs-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['JavaScript', 'TypeScript'] },
+    { category: 'Frameworks', icon: techIcons.mobile, items: ['Angular','AngularJS'] },
+    { category: 'Reactive Programming', icon: techIcons.frontend, items: ['RxJS', 'NgRx'] },
+    { category: 'Backend and APIs', icon: techIcons.backend, items: ['REST APIs', 'GraphQL'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'CI/CD'] }
+  ],
+
+  'reactjs-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['JavaScript', 'TypeScript'] },
+    { category: 'Frameworks', icon: techIcons.mobile, items: ['React','Next.js'] },
+    { category: 'State Management', icon: techIcons.frontend, items: ['Redux', 'React Query'] },
+    { category: 'Backend and APIs', icon: techIcons.backend, items: ['REST APIs', 'GraphQL'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'CI/CD'] }
+  ],
+
+  'vuejs-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['JavaScript', 'TypeScript'] },
+    { category: 'Frameworks', icon: techIcons.mobile, items: ['Vue 3','Nuxt.js'] },
+    { category: 'State Management', icon: techIcons.frontend, items: ['Pinia', 'Vue Router'] },
+    { category: 'Backend and APIs', icon: techIcons.backend, items: ['REST APIs', 'GraphQL'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'CI/CD'] }
+  ],
+
+  'back-end-web-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['Node.js', 'Python', 'PHP'] },
+    { category: 'Frameworks', icon: techIcons.mobile, items: ['Express','Django', 'Laravel'] },
+    { category: 'Databases', icon: techIcons.frontend, items: ['PostgreSQL', 'MongoDB', 'MySQL'] },
+    { category: 'APIs', icon: techIcons.backend, items: ['REST APIs', 'GraphQL'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'Docker', 'CI/CD'] }
+  ],
+
+  'nodejs-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['JavaScript', 'TypeScript'] },
+    { category: 'Frameworks', icon: techIcons.mobile, items: ['Express','NestJS'] },
+    { category: 'Databases', icon: techIcons.frontend, items: ['MongoDB', 'PostgreSQL'] },
+    { category: 'APIs', icon: techIcons.backend, items: ['REST APIs', 'GraphQL'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'Docker', 'CI/CD'] }
+  ],
+
+  'laravel-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['PHP'] },
+    { category: 'Frameworks', icon: techIcons.mobile, items: ['Laravel','Symfony'] },
+    { category: 'Databases', icon: techIcons.frontend, items: ['MySQL', 'PostgreSQL'] },
+    { category: 'APIs', icon: techIcons.backend, items: ['REST APIs', 'GraphQL'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'Docker', 'CI/CD'] }
+  ]
 };
 
 function getTechStackData() {
