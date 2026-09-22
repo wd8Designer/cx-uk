@@ -205,8 +205,8 @@ const navigationData = [
         {
           heading: '',
           links: [
-            { label: 'About Us', href: '#' },
-            { label: 'Contact Us', href: '#' },
+            { label: 'About Us', href: '/about-us.html' },
+            { label: 'Contact Us', href: '/contact-us.html' },
             { label: 'Case Studies', href: '#' },
             { label: 'Blog', href: '#' }
           ]
@@ -1261,7 +1261,7 @@ const footerData = {
   columns: [
     { heading: 'Services', links: [{ label: 'AI & Automation', href: '#' }, { label: 'Software Dev', href: '#' }, { label: 'Data & Analytics', href: '#' }, { label: 'Cloud & DevOps', href: '#' }, { label: 'Product Engineering', href: '#' }] },
     { heading: 'Industries', links: [{ label: 'Healthcare', href: '#' }, { label: 'Finance', href: '#' }, { label: 'Retail', href: '#' }, { label: 'Manufacturing', href: '#' }, { label: 'Education', href: '#' }] },
-    { heading: 'Company', links: [{ label: 'About Us', href: '#' }, { label: 'Careers', href: '#' }, { label: 'News', href: '#' }, { label: 'Contact', href: '#' }] },
+    { heading: 'Company', links: [{ label: 'About Us', href: '/about-us.html' }, { label: 'Careers', href: '#' }, { label: 'News', href: '#' }, { label: 'Contact', href: '/contact-us.html' }] },
     { heading: 'Resources', links: [{ label: 'Blog', href: '#' }, { label: 'Case Studies', href: '#' }, { label: 'Whitepapers', href: '#' }, { label: 'Webinars', href: '#' }] }
   ]
 };

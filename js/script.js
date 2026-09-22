@@ -205,8 +205,8 @@ const navigationData = [
         {
           heading: '',
           links: [
-            { label: 'About Us', href: '#' },
-            { label: 'Contact Us', href: '#' },
+            { label: 'About Us', href: '/about-us.html' },
+            { label: 'Contact Us', href: '/contact-us.html' },
             { label: 'Case Studies', href: '#' },
             { label: 'Blog', href: '#' }
           ]
@@ -534,7 +534,7 @@ const footerData = {
   columns: [
     { heading: 'Services', links: [{ label: 'AI & Automation', href: '#' }, { label: 'Software Dev', href: '#' }, { label: 'Data & Analytics', href: '#' }, { label: 'Cloud & DevOps', href: '#' }, { label: 'Product Engineering', href: '#' }] },
     { heading: 'Industries', links: [{ label: 'Healthcare', href: '#' }, { label: 'Finance', href: '#' }, { label: 'Retail', href: '#' }, { label: 'Manufacturing', href: '#' }, { label: 'Education', href: '#' }] },
-    { heading: 'Company', links: [{ label: 'About Us', href: '#' }, { label: 'Careers', href: '#' }, { label: 'News', href: '#' }, { label: 'Contact', href: '#' }] },
+    { heading: 'Company', links: [{ label: 'About Us', href: '/about-us.html' }, { label: 'Careers', href: '#' }, { label: 'News', href: '#' }, { label: 'Contact', href: '/contact-us.html' }] },
     { heading: 'Resources', links: [{ label: 'Blog', href: '#' }, { label: 'Case Studies', href: '#' }, { label: 'Whitepapers', href: '#' }, { label: 'Webinars', href: '#' }] }
   ]
 };
@@ -1340,6 +1340,66 @@ function initStatsCounter() {
   observer.observe(section);
 }
 
+function initGeneralCounters() {
+  const counters = document.querySelectorAll('.counter');
+  if (!counters.length) return;
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function animate(el) {
+    const rawTarget = el.getAttribute('data-target') || '0';
+    const target = parseFloat(rawTarget);
+    const decimals = parseInt(el.getAttribute('data-decimals') || '0', 10);
+    const useComma = el.getAttribute('data-format') === 'comma';
+    const duration = 1800;
+
+    if (prefersReducedMotion || isNaN(target)) {
+      el.textContent = useComma ? target.toLocaleString('en-US') : (decimals > 0 ? target.toFixed(decimals) : target.toString());
+      return;
+    }
+
+    let startTimestamp = null;
+    const easeOutCubic = function (t) { return 1 - Math.pow(1 - t, 3); };
+
+    function step(timestamp) {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const elapsed = timestamp - startTimestamp;
+      const progress = Math.min(elapsed / duration, 1);
+      const current = easeOutCubic(progress) * target;
+
+      if (decimals > 0) {
+        el.textContent = current.toFixed(decimals);
+      } else {
+        const intVal = Math.floor(current);
+        el.textContent = useComma ? intVal.toLocaleString('en-US') : intVal.toString();
+      }
+
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      } else {
+        el.textContent = useComma ? target.toLocaleString('en-US') : (decimals > 0 ? target.toFixed(decimals) : target.toString());
+      }
+    }
+
+    window.requestAnimationFrame(step);
+  }
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          animate(entry.target);
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    counters.forEach(function (counter) { observer.observe(counter); });
+  } else {
+    counters.forEach(function (counter) { animate(counter); });
+  }
+}
+
 function initCapabilityTabs() {
   const btns = document.querySelectorAll('.tab-btn');
   const panels = document.querySelectorAll('.tab-panel');
@@ -1488,6 +1548,8 @@ function initTestimonialCarousel() {
 function initContactForm() {
   const form = document.getElementById('consultation-form');
   if (!form) return;
+  if (form.dataset.formInit === 'true') return;
+  form.dataset.formInit = 'true';
   
   form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -1537,6 +1599,77 @@ function initContactForm() {
         input.classList.add('success');
         const errorText = input.parentElement.querySelector('.form-error-text');
         if (errorText) errorText.classList.remove('visible');
+      }
+    });
+  });
+
+  // Reset handler if present
+  const resetBtn = document.getElementById('btn-submit-another');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      form.reset();
+      form.style.display = 'block';
+      const successMsg = document.getElementById('form-success');
+      if (successMsg) successMsg.classList.remove('visible');
+    });
+  }
+}
+
+function initOfficeClocks() {
+  const clockElements = document.querySelectorAll('.office-card__clock');
+  if (!clockElements.length) return;
+
+  function updateClocks() {
+    clockElements.forEach(el => {
+      const tz = el.getAttribute('data-tz');
+      if (!tz) return;
+      try {
+        const timeSpan = el.querySelector('.office-card__clock-time');
+        if (!timeSpan) return;
+        const now = new Date();
+        const formatter = new Intl.DateTimeFormat('en-US', {
+          timeZone: tz,
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: true
+        });
+        timeSpan.textContent = formatter.format(now);
+      } catch (e) {
+        console.error('Error formatting time for tz:', tz, e);
+      }
+    });
+  }
+
+  updateClocks();
+  setInterval(updateClocks, 10000);
+}
+
+function initFaqAccordion() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (!faqItems.length) return;
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    if (!question || !answer) return;
+
+    if (question.dataset.faqInit === 'true') return;
+    question.dataset.faqInit = 'true';
+
+    question.style.cursor = 'pointer';
+    question.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isActive = item.classList.contains('active');
+
+      faqItems.forEach(otherItem => {
+        otherItem.classList.remove('active');
+        const otherAns = otherItem.querySelector('.faq-answer');
+        if (otherAns) otherAns.style.maxHeight = null;
+      });
+
+      if (!isActive) {
+        item.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
       }
     });
   });
@@ -1591,10 +1724,28 @@ document.addEventListener('includesLoaded', () => {
   initMobileDrawer();
   initScrollAnimations();
   initStatsCounter();
+  initGeneralCounters();
   initCapabilityTabs();
   initBellows();
   initCaseStudyTabs();
   initTestimonialCarousel();
   initContactForm();
+  initOfficeClocks();
+  initFaqAccordion();
   initSmoothScroll();
 });
+
+// Fallback initialization in case includesLoaded already fired or on pages without includes
+function runGlobalInits() {
+  initScrollAnimations();
+  initGeneralCounters();
+  initContactForm();
+  initOfficeClocks();
+  initFaqAccordion();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', runGlobalInits);
+} else {
+  runGlobalInits();
+}
