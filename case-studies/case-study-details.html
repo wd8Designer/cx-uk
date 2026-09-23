@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- [EDIT: Page Title & Meta Description] -->
+  <title>Scaling Real-Time Core Banking with Sub-30ms AI Fraud Scoring | Case Study | Cypherox</title>
+  <meta name="description"
+    content="Read how Cypherox architected an event-driven AI fraud scoring engine on AWS and Kubernetes for a Tier-1 digital bank, cutting false positives by 85% with sub-30ms latency.">
+  <meta property="og:title" content="Scaling Real-Time Core Banking with Sub-30ms AI Fraud Scoring | Cypherox">
+  <meta property="og:description"
+    content="High-throughput transaction architecture processing 14,000+ financial events per second with in-line anomaly detection and zero downtime.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://cypherox.com/case-studies/case-study-details.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/css/styles.css?v=46">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231a1a1a'/%3E%3Ctext x='50%25' y='70%25' font-family='sans-serif' font-weight='bold' font-size='65' fill='%23FAF9F6' text-anchor='middle'%3EC%3C/text%3E%3Ccircle cx='75' cy='25' r='12' fill='%23f26e65'/%3E%3C/svg%3E">
+  <script src="/assets/js/includes.js?v=21" defer></script>
+  <script src="/js/script.js?v=5" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER PLACEHOLDER (Injected dynamically via includes.js) -->
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- =========================================================================
+         SECTION 1: CASE STUDY HERO & QUICK FACTS
+         [EDIT: Replace project title, client overview, and metadata]
+         ========================================================================= -->
+    <section class="cs-detail-hero" id="hero">
+      <div class="container">
+        
+        <div class="cs-detail-hero__split-grid">
+          <div class="cs-detail-hero__content">
+
+            <!-- Breadcrumb Navigation -->
+            <div class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/index.html">Home</a>
+              <svg class="breadcrumb__separator" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+              <a href="/case-studies/index.html">Case Studies</a>
+              <svg class="breadcrumb__separator" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+              <!-- [EDIT: Current Study Short Title] -->
+              <span aria-current="page">AI Fraud Scoring Engine</span>
+            </div>
+
+            <!-- Badges & Status -->
+            <div class="cs-detail-hero__badges fade-up">
+              <span class="cs-pill-badge cs-pill-badge--primary">FinTech &amp; Core Banking</span>
+              <span class="cs-pill-badge cs-pill-badge--dark">Production Scale</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="cs-detail-hero__title fade-up">
+              Scaling Real-Time Core Banking with <br><span class="text-gradient">Sub-30ms AI Fraud Scoring</span>
+            </h1>
+
+            <!-- Executive Summary Lead -->
+            <p class="cs-detail-hero__lead fade-up">
+              A fast-scaling European digital banking institution faced throughput bottlenecks, rising payment fraud attempts, and unacceptably high false-positive alert rates during high-velocity peak hours. Cypherox re-architected their transactional backbone with event-driven microservices on AWS and deployed an in-line ML anomaly engine scoring 14,000+ payments/second.
+            </p>
+
+            <div class="hero__actions fade-up" style="justify-content: flex-start; margin-bottom: 24px;">
+              <a href="#solution" class="btn btn--primary btn--large">Explore Architecture &rarr;</a>
+              <a href="#consultation" class="btn btn--secondary btn--large">Discuss Your Project</a>
+            </div>
+
+          </div>
+
+          <!-- Banner Image on Case Study Details Hero -->
+          <!-- [EDIT: Replace banner image path, alt tag, and live badge text] -->
+          <div class="cs-detail-hero__media fade-left">
+            <div class="cs-detail-banner-card">
+              <img src="/images/fraud-detection-banner-img.webp" alt="AI Fraud Scoring Architecture in Production" class="cs-detail-banner-img">
+              <div class="cs-detail-banner-badge">
+                <span class="cs-pulse-dot"></span>
+                <span>Active Production &bull; 14,000+ msgs/sec</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Facts / Project Metadata Bar -->
+        <div class="cs-meta-bar fade-up" style="margin-top: 48px;">
+          <div class="cs-meta-box">
+            <span class="cs-meta-box__label">Client Profile</span>
+            <span class="cs-meta-box__value">Confidential Tier-1 Digital Bank (UK)</span>
+          </div>
+          <div class="cs-meta-box">
+            <span class="cs-meta-box__label">Engagement Duration</span>
+            <span class="cs-meta-box__value">6 Months (MVP) &rarr; Ongoing Production</span>
+          </div>
+          <div class="cs-meta-box">
+            <span class="cs-meta-box__label">Core Capabilities</span>
+            <span class="cs-meta-box__value">AI Engineering, Distributed Systems, Cloud Architecture</span>
+          </div>
+          <div class="cs-meta-box">
+            <span class="cs-meta-box__label">Tech Stack</span>
+            <div class="cs-meta-box__tags">
+              <span class="cs-tech-tag">Kafka</span>
+              <span class="cs-tech-tag">Go</span>
+              <span class="cs-tech-tag">PyTorch</span>
+              <span class="cs-tech-tag">ONNX</span>
+              <span class="cs-tech-tag">AWS EKS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 2: HIGHLIGHTED KEY METRICS DASHBOARD
+         [EDIT: Replace numbers and outcome labels for your project]
+         ========================================================================= -->
+    <section class="cs-detail-metrics" id="metrics">
+      <div class="container">
+        <div class="cs-metrics-grid">
+
+          <div class="cs-metric-card fade-up">
+            <div class="cs-metric-card__num">-85%</div>
+            <h3 class="cs-metric-card__title">False Positive Alerts</h3>
+            <p class="cs-metric-card__desc">Reduced friction for genuine user transfers while maintaining 99.8% true fraud capture.</p>
+          </div>
+
+          <div class="cs-metric-card fade-up" style="transition-delay: 100ms;">
+            <div class="cs-metric-card__num">24ms</div>
+            <h3 class="cs-metric-card__title">P99 Transaction Latency</h3>
+            <p class="cs-metric-card__desc">Full end-to-end payload feature extraction, model inference, and bank authorization.</p>
+          </div>
+
+          <div class="cs-metric-card fade-up" style="transition-delay: 200ms;">
+            <div class="cs-metric-card__num">99.999%</div>
+            <h3 class="cs-metric-card__title">Production SLA Uptime</h3>
+            <p class="cs-metric-card__desc">Active-active multi-region AWS topology with automated failover in under 5 seconds.</p>
+          </div>
+
+          <div class="cs-metric-card fade-up" style="transition-delay: 300ms;">
+            <div class="cs-metric-card__num">&pound;1.8M</div>
+            <h3 class="cs-metric-card__title">Annual Fraud Loss Averted</h3>
+            <p class="cs-metric-card__desc">Immediate financial recovery and elimination of manual compliance review penalties.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 3: THE CHALLENGE
+         [EDIT: Outline client's initial pain points and operational hurdles]
+         ========================================================================= -->
+    <section class="cs-narrative cs-narrative--alt" id="challenge">
+      <div class="container">
+        <div class="cs-section-header text-center fade-up">
+          <span class="eyebrow">The Problem</span>
+          <h2 class="section-title">Scaling Payment Velocity Without <br><span class="text-gradient">Compromising Security</span></h2>
+          <p class="section-desc">
+            As the client's retail and commercial user base tripled, their legacy rules-based fraud engine began creating critical operational bottlenecks across transactional settlement channels.
+          </p>
+        </div>
+
+        <div class="cs-challenge-grid">
+          <div class="cs-challenge-card fade-up">
+            <div class="cs-challenge-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="cs-challenge-card__title">High Latency on Peak Days</h3>
+            <p class="cs-challenge-card__desc">
+              During payday rushes and sales events, database write locks caused payment validation queues to backlog by up to 14 seconds, breaching internal core banking SLAs and triggering user retries.
+            </p>
+          </div>
+
+          <div class="cs-challenge-card fade-up" style="transition-delay: 100ms;">
+            <div class="cs-challenge-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <h3 class="cs-challenge-card__title">Excessive False Positive Rate</h3>
+            <p class="cs-challenge-card__desc">
+              Rigid legacy heuristics flagged over 6% of legitimate commercial transactions for manual human review, driving customer support escalations and slowing business payroll executions.
+            </p>
+          </div>
+
+          <div class="cs-challenge-card fade-up" style="transition-delay: 200ms;">
+            <div class="cs-challenge-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3 class="cs-challenge-card__title">Strict FCA &amp; PCI Compliance</h3>
+            <p class="cs-challenge-card__desc">
+              Any replacement architecture required absolute end-to-end data auditability, deterministic explainability for flagged wires, and zero transmission of plaintext cardholder data outside isolated VPCs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 4: THE SOLUTION & TECHNICAL ARCHITECTURE
+         [EDIT: Describe technical approach, architectural layers, and specs]
+         ========================================================================= -->
+    <section class="cs-narrative" id="solution">
+      <div class="container">
+        <div class="cs-section-header fade-up" style="max-width: 760px;">
+          <span class="eyebrow">The Solution</span>
+          <h2 class="section-title">An Event-Driven, Stream-First <br><span class="text-gradient">ML Inference Pipeline</span></h2>
+          <p class="section-desc">
+            Cypherox embedded a dedicated squad of distributed systems engineers and ML practitioners to build a decoupled, zero-downtime transactional pipeline.
+          </p>
+        </div>
+
+        <div class="cs-arch-wrapper">
+          <div class="cs-arch-text fade-up">
+            <div class="cs-solution-pillar">
+              <div class="cs-pillar-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4 class="cs-pillar-title">1. Distributed Kafka Message Bus</h4>
+                <p class="cs-pillar-desc">
+                  Replaced synchronous RPC calls with a distributed Apache Kafka cluster partitioned by customer hash, processing 14,000+ financial events per second with persistent replayability.
+                </p>
+              </div>
+            </div>
+
+            <div class="cs-solution-pillar">
+              <div class="cs-pillar-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="cs-pillar-title">2. Sub-30ms ONNX Inference Runtime</h4>
+                <p class="cs-pillar-desc">
+                  Quantized multi-layer anomaly detection models compiled to ONNX runtime, evaluating 84 behavioral vectors (device fingerprint, geolocation delta, velocity) in just 14ms.
+                </p>
+              </div>
+            </div>
+
+            <div class="cs-solution-pillar">
+              <div class="cs-pillar-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <h4 class="cs-pillar-title">3. Active-Active Kubernetes (AWS EKS)</h4>
+                <p class="cs-pillar-desc">
+                  Microservices written in Go deployed across multi-region Kubernetes clusters with automated horizontal pod autoscaling and blue-green canary deployments.
+                </p>
+              </div>
+            </div>
+
+            <div class="cs-solution-pillar">
+              <div class="cs-pillar-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="cs-pillar-title">4. Zero-Trust Security &amp; Explainability</h4>
+                <p class="cs-pillar-desc">
+                  SHAP feature contribution values logged alongside every flagged decision into an immutable audit trail, ensuring 100% regulatory compliance with FCA reporting requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Solution Architecture Visual -->
+          <!-- [EDIT: Replace with architecture diagram or implementation visual] -->
+          <div class="cs-arch-visual fade-left">
+            <div class="cs-detail-banner-card">
+              <img src="/images/fraud-detection-impact.webp" alt="Solution Architecture in Production" class="cs-detail-banner-img" style="max-height: 480px; object-fit: cover;">
+              <div class="cs-detail-banner-badge">
+                <span class="cs-pulse-dot"></span>
+                <span>Production Architecture &bull; 99.999% SLA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 5: IMPLEMENTATION PHASES & ROADMAP
+         [EDIT: Replace timeline phases, duration, and key deliverables]
+         ========================================================================= -->
+    <section class="cs-narrative cs-narrative--alt" id="roadmap">
+      <div class="container">
+        <div class="cs-section-header text-center fade-up">
+          <span class="eyebrow">Agile Delivery Lifecycle</span>
+          <h2 class="section-title">From Architecture Audit to <br><span class="text-gradient">Production Cutover</span></h2>
+          <p class="section-desc">Delivered on an accelerated 6-month timeline with zero disruption to active banking operations.</p>
+        </div>
+
+        <div class="cs-timeline-grid">
+          <div class="cs-timeline-card fade-up">
+            <span class="cs-timeline-badge">Weeks 1 &ndash; 4</span>
+            <h4>Phase 1: Architecture Audit &amp; POC</h4>
+            <p>Comprehensive profiling of transactional bottlenecks, legacy codebase review, and development of a containerized proof-of-concept pipeline.</p>
+          </div>
+
+          <div class="cs-timeline-card fade-up" style="transition-delay: 100ms;">
+            <span class="cs-timeline-badge">Weeks 5 &ndash; 14</span>
+            <h4>Phase 2: Stream Backbone &amp; AI Engine</h4>
+            <p>Engineering of Apache Kafka clusters, Go microservices, ONNX model quantization, and integration with the bank's Redis feature store.</p>
+          </div>
+
+          <div class="cs-timeline-card fade-up" style="transition-delay: 200ms;">
+            <span class="cs-timeline-badge">Weeks 15 &ndash; 20</span>
+            <h4>Phase 3: Shadow Traffic &amp; Chaos Tests</h4>
+            <p>Replaying 100% of live transaction volume in parallel shadow mode without settlement impact, followed by chaos engineering failover tests.</p>
+          </div>
+
+          <div class="cs-timeline-card fade-up" style="transition-delay: 300ms;">
+            <span class="cs-timeline-badge">Weeks 21+</span>
+            <h4>Phase 4: Live Cutover &amp; Observability</h4>
+            <p>Canary cutover reaching 100% live traffic with automated Prometheus alerts, Datadog tracing, and ongoing SLA maintenance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 6: CLIENT TESTIMONIAL SPOTLIGHT
+         [EDIT: Replace quote, author name, title, and organization]
+         ========================================================================= -->
+    <section class="container fade-up" id="testimonial">
+      <div class="cs-quote-box">
+        <p class="cs-quote-text">
+          &ldquo;Cypherox did not just write code for us; they fundamentally transformed our transactional architecture. Their senior engineers operated as a seamless extension of our core team, solving latency and compliance challenges that our previous vendors deemed impossible. The results speak for themselves: false positives dropped by 85% on day one.&rdquo;
+        </p>
+        <div class="cs-quote-author">
+          <div class="cs-quote-avatar">M</div>
+          <div>
+            <div class="cs-quote-name">Marcus Vance</div>
+            <div class="cs-quote-role">Chief Technology Officer &bull; Tier-1 Digital Banking Platform</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 7: RELATED CASE STUDIES
+         [EDIT: Update links, images, metrics, and titles for related case studies]
+         ========================================================================= -->
+    <section class="cs-narrative" id="related-studies">
+      <div class="container">
+        <div class="cs-section-header fade-up" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <span class="eyebrow">Explore More Work</span>
+            <h2 class="section-title">Related Success Stories</h2>
+          </div>
+          <a href="/case-studies/index.html" class="btn btn--secondary">View All Case Studies &rarr;</a>
+        </div>
+
+        <div class="cs-related-grid">
+          <!-- Related Card 1: Healthcare & MedTech -->
+          <article class="cs-card fade-up">
+            <div class="cs-card__thumb">
+              <img src="/images/app-development-company-impact.webp" alt="HIPAA-Compliant Telehealth & Remote Patient Platform" loading="lazy">
+              <div class="cs-card__thumb-overlay">
+                <div class="cs-card__thumb-top">
+                  <span class="cs-card__thumb-badge">Healthcare &amp; MedTech</span>
+                  <span class="cs-card__thumb-client">HealthTech Scaleup</span>
+                </div>
+              </div>
+            </div>
+            <div class="cs-card__body">
+              <h3 class="cs-card__title">
+                <a href="/case-studies/case-study-details.html">HIPAA-Compliant Telehealth &amp; Remote Patient Monitoring Platform</a>
+              </h3>
+              <p class="cs-card__summary">
+                Engineered a peer-to-peer encrypted WebRTC video consultation suite connected directly to Apple HealthKit and IoT vitals trackers, with zero-knowledge encrypted database storage.
+              </p>
+              <div class="cs-card__metric-highlight">
+                <div class="cs-card__metric-num">99.99%</div>
+                <div class="cs-card__metric-text">Platform Uptime &bull; 1.2M+ Patient Consultations</div>
+              </div>
+              <div class="cs-card__tags">
+                <span class="cs-tech-tag">WebRTC</span>
+                <span class="cs-tech-tag">Swift</span>
+                <span class="cs-tech-tag">Apple HealthKit</span>
+                <span class="cs-tech-tag">FastAPI</span>
+              </div>
+              <div class="cs-card__footer">
+                <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Dedicated iOS &amp; Cloud Team</span>
+                <a href="/case-studies/case-study-details.html" class="cs-card__link">
+                  Read Case Study
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Related Card 2: AI & Machine Learning -->
+          <article class="cs-card fade-up">
+            <div class="cs-card__thumb">
+              <img src="/images/ai-strategy-consulting-impact.webp" alt="Enterprise Multi-Agent GenAI Platform for Regulatory Analysis" loading="lazy">
+              <div class="cs-card__thumb-overlay">
+                <div class="cs-card__thumb-top">
+                  <span class="cs-card__thumb-badge">AI &amp; Machine Learning</span>
+                  <span class="cs-card__thumb-client">LegalTech Enterprise</span>
+                </div>
+              </div>
+            </div>
+            <div class="cs-card__body">
+              <h3 class="cs-card__title">
+                <a href="/case-studies/case-study-details.html">Enterprise Multi-Agent GenAI for Automated Compliance Audits</a>
+              </h3>
+              <p class="cs-card__summary">
+                Architected a private, sovereign retrieval-augmented generation (RAG) platform processing 10,000+ complex legal contracts and regulatory filings with deterministic audit traces.
+              </p>
+              <div class="cs-card__metric-highlight">
+                <div class="cs-card__metric-num">92%</div>
+                <div class="cs-card__metric-text">Faster Audit Velocity &bull; 99.4% Extraction Precision</div>
+              </div>
+              <div class="cs-card__tags">
+                <span class="cs-tech-tag">Llama 3</span>
+                <span class="cs-tech-tag">LangGraph</span>
+                <span class="cs-tech-tag">Qdrant VectorDB</span>
+                <span class="cs-tech-tag">Docker</span>
+              </div>
+              <div class="cs-card__footer">
+                <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">AI Engineering Sprint</span>
+                <a href="/case-studies/case-study-details.html" class="cs-card__link">
+                  Read Case Study
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         SECTION 8: CONSULTATION & PROJECT BRIEFING
+         ========================================================================= -->
+    <section class="section consultation" id="consultation">
+      <div class="container consultation__container">
+        <div class="consultation__info fade-up">
+          <span class="eyebrow">Ready to Scale Your Platform?</span>
+          <h2 class="consultation__title">Let's Build Your Next <br><span class="text-gradient">Production System</span></h2>
+          <p class="consultation__desc">
+            Speak directly with our technical directors and solutions architects. We evaluate feasibility, recommend high-throughput architectures, and assemble dedicated engineering squads.
+          </p>
+
+          <div class="consultation__person">
+            <div class="consultation__avatar">
+              <img src="/images/cypherox-logo.png" alt="Cypherox Team" style="filter: invert(1); width: 24px; height: auto;">
+            </div>
+            <div>
+              <div class="consultation__person-name">Technical Advisory Team</div>
+              <div class="consultation__person-role">Cypherox UK &amp; International</div>
+            </div>
+          </div>
+
+          <div class="consultation__details">
+            <div class="consultation__detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span>hello@cypherox.com</span>
+            </div>
+            <div class="consultation__detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              <span>+44 20 1234 5678</span>
+            </div>
+            <div class="consultation__detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>London, United Kingdom</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="consultation__form-wrapper fade-up">
+          <form class="consultation__form" id="consultation-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="full-name">Full Name *</label>
+                <input class="form-input" type="text" id="full-name" name="fullName" placeholder="David Clark" required>
+                <span class="form-error-text">Please enter your full name</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="work-email">Work Email *</label>
+                <input class="form-input" type="email" id="work-email" name="workEmail" placeholder="david@enterprise.com" required>
+                <span class="form-error-text">Please enter a valid work email</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone</label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="+44 20 1234 5678">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="company">Company Name *</label>
+                <input class="form-input" type="text" id="company" name="company" placeholder="Company Ltd." required>
+                <span class="form-error-text">Please enter your company name</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service">What can we help with? *</label>
+              <select class="form-input form-select" id="service" name="service" required>
+                <option value="" disabled selected>Select a primary interest</option>
+                <option value="ai">AI &amp; Machine Learning Engineering</option>
+                <option value="software">Custom Software &amp; Platform Architecture</option>
+                <option value="cloud">Cloud Modernization &amp; DevOps</option>
+                <option value="team">Dedicated Engineering Team</option>
+                <option value="other">Other Inquiry</option>
+              </select>
+              <span class="form-error-text">Please select a service</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Tell Us About Your Project *</label>
+              <textarea class="form-input" id="message" name="message" rows="4"
+                placeholder="Describe your current system challenges, goals, or upcoming engineering milestones..." required></textarea>
+              <span class="form-error-text">Please describe your project</span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--large form-submit">Book Technical Consultation</button>
+            <p class="form-privacy">Signed NDAs standard on all initial discussions.</p>
+          </form>
+
+          <div class="form-success" id="form-success">
+            <div style="font-size:48px; margin-bottom:16px;">✅</div>
+            <h3 style="font-size:24px; font-weight:700; margin-bottom:8px;">Inquiry Received!</h3>
+            <p style="color:var(--text-secondary);">Thank you. A senior systems engineer will review your project requirements and be in touch within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER PLACEHOLDER (Injected dynamically via includes.js) -->
+  <div id="site-footer"></div>
+
+</body>
+
+</html>
