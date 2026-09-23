@@ -843,6 +843,29 @@ const whyChooseDataByPage = {
     }
   ],
 
+  'virtual-research-assistant.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Scoping',
+      description: 'We review your sources, research workflow and the output format your team currently relies on.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Design and Architecture',
+      description: 'We define the retrieval approach, synthesis logic and access boundaries the assistant will operate within.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'The assistant is built, connected to required sources and tested against real research requests before release.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Deployment and Monitoring',
+      description: 'Once live, we track output accuracy and usage patterns to guide ongoing adjustments.'
+    }
+  ],
+
 
   'hire-ios-developers.html': [
     {
@@ -1153,7 +1176,119 @@ const techStackDataByPage = {
     { category: 'Databases', icon: techIcons.frontend, items: ['MySQL', 'PostgreSQL'] },
     { category: 'APIs', icon: techIcons.backend, items: ['REST APIs', 'GraphQL'] },
     { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'Docker', 'CI/CD'] }
-  ]
+  ],
+
+  'python-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['Python'] },
+    { category: 'Frameworks', icon: techIcons.mobile, items: ['Django','FastAPI','Flask'] },
+    { category: 'Databases', icon: techIcons.frontend, items: ['PostgreSQL', 'MongoDB'] },
+    { category: 'APIs', icon: techIcons.backend, items: ['REST APIs', 'GraphQL'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'Docker', 'CI/CD'] }
+  ],
+
+  'php-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['PHP'] },
+    { category: 'Frameworks', icon: techIcons.mobile, items: ['Laravel','Symfony','CodeIgniter'] },
+    { category: 'Databases', icon: techIcons.frontend, items: ['MySQL', 'PostgreSQL'] },
+    { category: 'APIs', icon: techIcons.backend, items: ['REST APIs', 'GraphQL'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS', 'Docker', 'CI/CD'] }
+  ],
+
+  'ecommerce-developers.html': [
+    { category: 'Platforms', icon: techIcons.mobile, items: ['Shopify','Magento','WooCommerce'] },
+    { category: 'Languages', icon: techIcons.mobile, items: ['PHP','JavaScript','TypeScript'] },
+    { category: 'Frameworks', icon: techIcons.frontend, items: ['Laravel', 'Next.js'] },
+    { category: 'Payments', icon: techIcons.backend, items: ['Stripe', 'PayPal Integration'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS','CI/CD'] }
+  ],
+
+  'wordpress-developers.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['PHP','JavaScript'] },
+    { category: 'CMS', icon: techIcons.mobile, items: ['WordPress','Gutenberg'] },
+    { category: 'Ecommerce', icon: techIcons.frontend, items: ['WooCommerce'] },
+    { category: 'Databases', icon: techIcons.backend, items: ['MySQL'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS','Managed Hosting'] }
+  ],
+
+  'shopify-developers.html': [
+    { category: 'Platforms', icon: techIcons.mobile, items: ['Shopify','Shopify Plus'] },
+    { category: 'Templating', icon: techIcons.mobile, items: ['Liquid'] },
+    { category: 'APIs', icon: techIcons.frontend, items: ['Storefront API','Admin API'] },
+    { category: 'Languages', icon: techIcons.backend, items: ['JavaScript','TypeScript'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS','CI/CD'] }
+  ],
+
+  'magento-developers.html': [
+    { category: 'Platforms', icon: techIcons.mobile, items: ['Magento 2','Adobe Commerce'] },
+    { category: 'Languages', icon: techIcons.mobile, items: ['PHP'] },
+    { category: 'APIs', icon: techIcons.frontend, items: ['REST APIs','GraphQL'] },
+    { category: 'Databases', icon: techIcons.backend, items: ['MySQL','Elasticsearch'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS','Adobe Commerce Cloud'] }
+  ],
+
+  'bigcommerce-developers.html': [
+    { category: 'Platforms', icon: techIcons.mobile, items: ['BigCommerce'] },
+    { category: 'Templating', icon: techIcons.mobile, items: ['Stencil','Handlebars'] },
+    { category: 'APIs', icon: techIcons.frontend, items: ['BigCommerce API','Storefront API'] },
+    { category: 'Languages', icon: techIcons.backend, items: ['JavaScript','TypeScript'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS','CI/CD'] }
+  ],
+
+  'woocommerce-developers.html': [
+    { category: 'Platforms', icon: techIcons.mobile, items: ['WooCommerce','WordPress'] },
+    { category: 'Languages', icon: techIcons.mobile, items: ['PHP','JavaScript'] },
+    { category: 'Databases', icon: techIcons.frontend, items: ['MySQL'] },
+    { category: 'Payments', icon: techIcons.backend, items: ['Stripe','PayPal Integration'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS','Managed Hosting'] }
+  ],
+
+  'chatbot-developers.html': [
+    { category: 'LLM Providers', icon: techIcons.mobile, items: ['OpenAI','Anthropic','Claude'] },
+    { category: 'Retrieval', icon: techIcons.mobile, items: ['RAG','Vector Databases'] },
+    { category: 'NLP', icon: techIcons.frontend, items: ['Intent Handling','Entity Recognition'] },
+    { category: 'Languages', icon: techIcons.backend, items: ['Python','TypeScript'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.cloud, items: ['AWS','Azure'] }
+  ],
+
+  'graphic-designers.html': [
+    { category: 'Design Tools', icon: techIcons.mobile, items: ['Adobe Photoshop','Adobe Illustrator'] },
+    { category: 'Layout', icon: techIcons.mobile, items: ['Adobe InDesign'] },
+    { category: 'Prototyping', icon: techIcons.frontend, items: ['Figma'] },
+    { category: 'Motion and Video', icon: techIcons.backend, items: ['After Effects'] },
+    { category: 'File Handling', icon: techIcons.cloud, items: ['Print-Ready Formats','Asset Libraries'] }
+  ],
+
+  'ui-ux-designers.html': [
+    { category: 'Design Tools', icon: techIcons.mobile, items: ['Figma','Sketch'] },
+    { category: 'Prototyping', icon: techIcons.mobile, items: ['Adobe XD','Interactive Prototypes'] },
+    { category: 'Design Systems', icon: techIcons.frontend, items: ['Component Libraries','Style Guides'] },
+    { category: 'Research', icon: techIcons.backend, items: ['User Testing','Wireframing'] },
+    { category: 'Handoff', icon: techIcons.cloud, items: ['Design Specs','Developer Handoff'] }
+  ],
+
+  'virtual-research-assistant.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['Python','TypeScript','Node.js'] },
+    { category: 'LLM Providers', icon: techIcons.mobile, items: ['OpenAI','Anthropic Claude'] },
+    { category: 'Retrieval and Data', icon: techIcons.frontend, items: ['Vector Databases','Embeddings'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.backend, items: ['AWS','Azure'] },
+    { category: 'Integration', icon: techIcons.cloud, items: ['REST APIs','Webhooks'] }
+  ],
+
+  'digital-marketers.html': [
+    { category: 'Advertising', icon: techIcons.mobile, items: ['Google Ads','Meta Ads'] },
+    { category: 'SEO', icon: techIcons.mobile, items: ['Semrush','Ahrefs'] },
+    { category: 'Analytics', icon: techIcons.frontend, items: ['Google Search Console','Google Analytics'] },
+    { category: 'Automation', icon: techIcons.backend, items: ['Email Marketing Platforms'] },
+    { category: 'Reporting', icon: techIcons.cloud, items: ['Data Studio','Dashboards'] }
+  ],
+
+  'devops-developers.html': [
+    { category: 'Container Orchestration', icon: techIcons.mobile, items: ['Docker','Kubernetes'] },
+    { category: 'Infrastructure as Code', icon: techIcons.mobile, items: ['Terraform','Ansible'] },
+    { category: 'CI/CD Platforms', icon: techIcons.frontend, items: ['GitHub Actions','GitLab CI','Jenkins'] },
+    { category: 'Cloud Providers', icon: techIcons.backend, items: ['AWS','Google Cloud','Microsoft Azure'] },
+    { category: 'Monitoring and Logging', icon: techIcons.cloud, items: ['Prometheus','ELK Stack','Datadog'] }
+  ],
 };
 
 function getTechStackData() {
