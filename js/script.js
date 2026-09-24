@@ -112,57 +112,57 @@ const navigationData = [
         {
           heading: 'Mobile App Developers',
           links: [
-            { label: 'Hire iOS Developers', href: '#' },
-            { label: 'Hire Android Developers', href: '#' },
-            { label: 'Hire Swift Developers', href: '#' },
-            { label: 'Hire Kotlin Developers', href: '#' },
-            { label: 'Hire Flutter Developers', href: '#' },
-            { label: 'Hire React Native Developers', href: '#' }
+            { label: 'Hire iOS Developers', href: '/hire-developers/ios-developers' },
+            { label: 'Hire Android Developers', href: '/hire-developers/android-developers' },
+            { label: 'Hire Swift Developers', href: '/hire-developers/swift-developers' },
+            { label: 'Hire Kotlin Developers', href: '/hire-developers/kotlin-developers' },
+            { label: 'Hire Flutter Developers', href: '/hire-developers/flutter-developers' },
+            { label: 'Hire React Native Developers', href: '/hire-developers/react-native-developers' }
           ]
         },
         {
           heading: 'Front-End Web Developers',
           links: [
-            { label: 'Hire AngularJS Developers', href: '#' },
-            { label: 'Hire ReactJS Developers', href: '#' },
-            { label: 'Hire VueJS Developers', href: '#' }
+            { label: 'Hire AngularJS Developers', href: '/hire-developers/angularjs-developers' },
+            { label: 'Hire ReactJS Developers', href: '/hire-developers/reactjs-developers' },
+            { label: 'Hire VueJS Developers', href: '/hire-developers/vuejs-developers' }
           ]
         },
         {
           heading: 'Back-End Web Developers',
           links: [
-            { label: 'Hire NodeJS Developers', href: '#' },
-            { label: 'Hire Laravel Developers', href: '#' },
-            { label: 'Hire Python Developers', href: '#' },
-            { label: 'Hire PHP Developers', href: '#' }
+            { label: 'Hire NodeJS Developers', href: '/hire-developers/nodejs-developers' },
+            { label: 'Hire Laravel Developers', href: '/hire-developers/laravel-developers' },
+            { label: 'Hire Python Developers', href: '/hire-developers/python-developers' },
+            { label: 'Hire PHP Developers', href: '/hire-developers/php-developers' }
           ]
         },
         {
           heading: 'E-Commerce Developers',
           links: [
-            { label: 'Hire WordPress Developers', href: '#' },
-            { label: 'Hire Shopify Developers', href: '#' },
-            { label: 'Hire Magento Developers', href: '#' },
-            { label: 'Hire BigCommerce Developers', href: '#' },
-            { label: 'Hire WooCommerce Developers', href: '#' },
-            { label: 'Hire Chatbot Developers', href: '#' },
-            { label: 'Hire Graphic Designers', href: '#' },
-            { label: 'Hire UI/UX Designers', href: '#' },
-            { label: 'Hire Digital Marketers', href: '#' }
+            { label: 'Hire WordPress Developers', href: '/hire-developers/wordpress-developers' },
+            { label: 'Hire Shopify Developers', href: '/hire-developers/shopify-developers' },
+            { label: 'Hire Magento Developers', href: '/hire-developers/magento-developers' },
+            { label: 'Hire BigCommerce Developers', href: '/hire-developers/bigcommerce-developers' },
+            { label: 'Hire WooCommerce Developers', href: '/hire-developers/woocommerce-developers' },
+            { label: 'Hire Chatbot Developers', href: '/hire-developers/chatbot-developers' },
+            { label: 'Hire Graphic Designers', href: '/hire-developers/graphic-designers' },
+            { label: 'Hire UI/UX Designers', href: '/hire-developers/ui-ux-designers' },
+            { label: 'Hire Digital Marketers', href: '/hire-developers/digital-marketers' }
           ]
         },
         {
           heading: 'Trending Developers',
           links: [
-            { label: 'Hire DevOps Developers', href: '#' },
-            { label: 'Hire AWS Developers', href: '#' },
-            { label: 'Hire AI Developers', href: '#' },
-            { label: 'Hire ML Developers', href: '#' },
-            { label: 'Hire Blockchain Developers', href: '#' },
-            { label: 'Hire AR Developers', href: '#' },
-            { label: 'Hire VR Developers', href: '#' },
-            { label: 'Hire Data Analytics Experts', href: '#' },
-            { label: 'Hire Full Stack Developers', href: '#' }
+            { label: 'Hire DevOps Developers', href: '/hire-developers/devops-developers' },
+            { label: 'Hire AWS Developers', href: '/hire-developers/aws-developers' },
+            { label: 'Hire AI Developers', href: '/hire-developers/ai-developers' },
+            { label: 'Hire ML Developers', href: '/hire-developers/ml-developers' },
+            { label: 'Hire Blockchain Developers', href: '/hire-developers/blockchain-developers' },
+            { label: 'Hire AR Developers', href: '/hire-developers/ar-developers' },
+            { label: 'Hire VR Developers', href: '/hire-developers/vr-developers' },
+            { label: 'Hire Data Analytics Experts', href: '/hire-developers/data-analytics-experts' },
+            { label: 'Hire Full Stack Developers', href: '/hire-developers/full-stack-developers' }
           ]
         }
       ]
@@ -205,10 +205,10 @@ const navigationData = [
         {
           heading: '',
           links: [
-            { label: 'About Us', href: '/about-us.html' },
-            { label: 'Contact Us', href: '/contact-us.html' },
-            { label: 'Case Studies', href: '/case-studies/index.html' },
-            { label: 'Blog', href: '/blogs/index.html' }
+            { label: 'About Us', href: '/about-us' },
+            { label: 'Contact Us', href: '/contact-us' },
+            { label: 'Case Studies', href: '/case-studies/index' },
+            { label: 'Blog', href: '/blogs/index' }
           ]
         }
       ]
@@ -307,12 +307,12 @@ const industriesData = [
       'Integrated with the existing patient records system through secure APIs',
     ],
     techStacks: [
-      { name: 'Python'},
-      { name: 'NLP'},
-      { name: 'FastAPI'},
-      { name: 'AWS'},
-      { name: 'PostgreSQL'},
-      { name: 'Docker'}
+      { name: 'Python' },
+      { name: 'NLP' },
+      { name: 'FastAPI' },
+      { name: 'AWS' },
+      { name: 'PostgreSQL' },
+      { name: 'Docker' }
     ]
   },
   {
@@ -330,12 +330,12 @@ const industriesData = [
       'Built an alert dashboard with adjustable risk thresholds and case management',
     ],
     techStacks: [
-      { name: 'Python'},
-      { name: 'TensorFlow'},
-      { name: 'Kafka'},
-      { name: 'PostgreSQL'},
-      { name: 'React'},
-      { name: 'AWS'}
+      { name: 'Python' },
+      { name: 'TensorFlow' },
+      { name: 'Kafka' },
+      { name: 'PostgreSQL' },
+      { name: 'React' },
+      { name: 'AWS' }
     ]
   },
   {
@@ -353,13 +353,13 @@ const industriesData = [
       'Connected the system to existing warehouse and driver mobile applications',
     ],
     techStacks: [
-      { name: 'Python'},
-      { name: 'React Native'},
-      { name: 'Node.js'},
-      { name: 'Google Maps'},
-      { name: 'API'},
-      { name: 'PostgreSQL'},
-      { name: 'AWS'}
+      { name: 'Python' },
+      { name: 'React Native' },
+      { name: 'Node.js' },
+      { name: 'Google Maps' },
+      { name: 'API' },
+      { name: 'PostgreSQL' },
+      { name: 'AWS' }
     ]
   },
 ];
@@ -534,8 +534,8 @@ const footerData = {
   columns: [
     { heading: 'Services', links: [{ label: 'AI & Automation', href: '#' }, { label: 'Software Dev', href: '#' }, { label: 'Data & Analytics', href: '#' }, { label: 'Cloud & DevOps', href: '#' }, { label: 'Product Engineering', href: '#' }] },
     { heading: 'Industries', links: [{ label: 'Healthcare', href: '#' }, { label: 'Finance', href: '#' }, { label: 'Retail', href: '#' }, { label: 'Manufacturing', href: '#' }, { label: 'Education', href: '#' }] },
-    { heading: 'Company', links: [{ label: 'About Us', href: '/about-us.html' }, { label: 'Careers', href: '#' }, { label: 'News', href: '#' }, { label: 'Contact', href: '/contact-us.html' }] },
-    { heading: 'Resources', links: [{ label: 'Blog', href: '/blogs/index.html' }, { label: 'Case Studies', href: '/case-studies/index.html' }, { label: 'Whitepapers', href: '#' }, { label: 'Webinars', href: '#' }] }
+    { heading: 'Company', links: [{ label: 'About Us', href: '/about-us' }, { label: 'Careers', href: '#' }, { label: 'News', href: '#' }, { label: 'Contact', href: '/contact-us' }] },
+    { heading: 'Resources', links: [{ label: 'Blog', href: '/blogs' }, { label: 'Case Studies', href: '/case-studies' }, { label: 'Whitepapers', href: '#' }, { label: 'Webinars', href: '#' }] }
   ]
 };
 
@@ -546,11 +546,11 @@ const footerData = {
 function renderMegaMenus() {
   const navContainer = document.querySelector('.header__nav');
   if (!navContainer) return;
-  
+
   let html = '';
   navigationData.forEach(item => {
     let panelHtml = '';
-    
+
     if (item.type === 'dropdown') {
       let linksHtml = '';
       if (item.megaMenu && item.megaMenu.columns) {
@@ -587,7 +587,7 @@ function renderMegaMenus() {
       `;
     } else if (item.type === 'mega') {
       const cols = item.megaMenu ? item.megaMenu.columns : [];
-      
+
       if (item.label === 'About') {
         // About: simple columns + image side-by-side (no tabs)
         let colsHtml = '';
@@ -627,11 +627,11 @@ function renderMegaMenus() {
             <div class="mega-tab__panel-links">${links}</div>
           </div>`;
         });
-        
-        let ctaHtml = item.megaMenu.cta 
-          ? `<div class="mega-menu__bottom"><span>Need help choosing the right solution?</span> <a href="#consultation" class="btn btn--primary">Schedule a Call</a></div>` 
+
+        let ctaHtml = item.megaMenu.cta
+          ? `<div class="mega-menu__bottom"><span>Need help choosing the right solution?</span> <a href="#consultation" class="btn btn--primary">Schedule a Call</a></div>`
           : '';
-        
+
         panelHtml = `
           <div class="mega-menu mega-menu--tabbed">
             <div class="mega-menu__inner">
@@ -656,11 +656,11 @@ function renderMegaMenus() {
         `;
       }
     }
-    
-    const chevronSvg = (item.type === 'mega' || item.type === 'dropdown') 
-      ? `<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;"><polyline points="6 9 12 15 18 9"></polyline></svg>` 
+
+    const chevronSvg = (item.type === 'mega' || item.type === 'dropdown')
+      ? `<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;"><polyline points="6 9 12 15 18 9"></polyline></svg>`
       : '';
-      
+
     html += `
       <div class="nav-item">
         <a href="${item.href}" class="nav-item__link">${item.label}${chevronSvg}</a>
@@ -668,14 +668,14 @@ function renderMegaMenus() {
       </div>
     `;
   });
-  
+
   navContainer.innerHTML = html;
 }
 
 function renderMobileDrawer() {
   const drawer = document.createElement('div');
   drawer.className = 'mobile-drawer';
-  
+
   let itemsHtml = '';
   navigationData.forEach((item, index) => {
     if (item.type === 'mega' || item.type === 'dropdown') {
@@ -708,7 +708,7 @@ function renderMobileDrawer() {
 
   drawer.innerHTML = `
     <div class="mobile-drawer__header">
-      <a href="/index.html" class="header__logo">
+      <a href="/" class="header__logo">
         <img src="/images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto;">
       </a>
       <button class="mobile-drawer__close" aria-label="Close menu" style="background: none; border: none; cursor: pointer;">
@@ -723,11 +723,11 @@ function renderMobileDrawer() {
       <a href="#consultation" class="btn btn--dark" style="width: 100%; text-align: center; justify-content: center;">Book A 15 Min Call</a>
     </div>
   `;
-  
+
   const overlay = document.createElement('div');
   overlay.className = 'mobile-drawer__overlay';
   overlay.style.display = 'none';
-  
+
   document.body.appendChild(overlay);
   document.body.appendChild(drawer);
 }
@@ -735,9 +735,9 @@ function renderMobileDrawer() {
 function renderServices() {
   const container = document.getElementById('services-container');
   if (!container) return;
-  
+
   let html = '<div class="bellows-container fade-up">';
-  
+
   disciplinesData.forEach((disc, index) => {
     let featuresHtml = disc.features.map(f => `
       <li>
@@ -746,9 +746,9 @@ function renderServices() {
         </svg>
         <span>${f}</span>
       </li>`).join('');
-      
+
     let tagsHtml = disc.techTags.map(t => `<span class="discipline-tag">${t}</span>`).join('');
-    
+
     let outcomesHtml = disc.outcomes.map(o => `
       <div class="discipline-outcome">
         <div class="discipline-outcome__highlight">${o.highlight}</div>
@@ -791,7 +791,7 @@ function renderServices() {
       </div>
     `;
   });
-  
+
   html += '</div>';
   container.innerHTML = html;
 }
@@ -799,7 +799,7 @@ function renderServices() {
 function renderIndustries() {
   const container = document.getElementById('industries-container');
   if (!container) return;
-  
+
   let html = `
     <div class="sticky-scroll-container">
       <div class="sticky-scroll-sidebar">
@@ -809,7 +809,7 @@ function renderIndustries() {
       </div>
       <div class="sticky-scroll-content">
   `;
-  
+
   industriesData.forEach((ind, index) => {
     let challengesHtml = ind.challenges.map(c => `
       <li>
@@ -818,7 +818,7 @@ function renderIndustries() {
         </svg>
         <span>${c}</span>
       </li>`).join('');
-      
+
     let outcomesHtml = ind.outcomes.map(o => `
       <li>
         <svg class="industry-check" viewBox="0 0 24 24" fill="var(--primary)" stroke="none">
@@ -826,7 +826,7 @@ function renderIndustries() {
         </svg>
         <span>${o}</span>
       </li>`).join('');
-      
+
     let techHtml = ind.techStacks.map(t => `
       <span class="industry-tech-tag">
          ${t.name}
@@ -862,7 +862,7 @@ function renderIndustries() {
       </div>
     `;
   });
-  
+
   html += `
       </div>
     </div>
@@ -873,21 +873,21 @@ function renderIndustries() {
 function renderCapabilityTabs() {
   const container = document.getElementById('capabilities-container');
   if (!container) return;
-  
+
   let navHtml = '<div class="capabilities__tabs-nav fade-up">';
   let panelsHtml = '';
-  
+
   capabilitiesData.forEach((cap, index) => {
     const isActive = index === 0 ? 'active' : '';
     navHtml += `<button class="tab-btn ${isActive}" data-target="${cap.id}">${cap.label}</button>`;
-    
+
     let featuresHtml = cap.features.map(f => `
       <div class="tab-panel__feature">
         <svg class="tab-panel__feature-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
         ${f}
       </div>
     `).join('');
-    
+
     let techsHtml = cap.techs.map(t => `<span class="tab-panel__tech">${t}</span>`).join('');
     let metricsHtml = cap.metrics.map(m => `
       <div class="tab-panel__metric">
@@ -895,7 +895,7 @@ function renderCapabilityTabs() {
         <div class="tab-panel__metric-label">${m.label}</div>
       </div>
     `).join('');
-    
+
     panelsHtml += `
       <div class="tab-panel ${isActive}" id="panel-${cap.id}">
         <div class="tab-panel__content">
@@ -910,14 +910,14 @@ function renderCapabilityTabs() {
     `;
   });
   navHtml += '</div>';
-  
+
   container.innerHTML = navHtml + panelsHtml;
 }
 
 function renderWhyChoose() {
   const container = document.getElementById('why-container');
   if (!container) return;
-  
+
   let html = '<div class="timeline-container">';
   whyChooseData.forEach((item, index) => {
     const num = (index + 1).toString().padStart(2, '0');
@@ -939,7 +939,7 @@ function renderWhyChoose() {
 function renderTechStack() {
   const container = document.getElementById('tech-stack-container');
   if (!container) return;
-  
+
   let html = '<div class="tech-categories">';
   techStackData.forEach(tech => {
     let badgesHtml = tech.items.map(item => `<div class="tech-badge">${item}</div>`).join('');
@@ -957,13 +957,13 @@ function renderTechStack() {
 function renderCaseStudy() {
   const container = document.getElementById('case-studies-container');
   if (!container) return;
-  
+
   let tabsHtml = '<div class="case-tabs-nav fade-up">';
   caseStudiesData.forEach((item, i) => {
     tabsHtml += `<button class="case-tab-btn ${i === 0 ? 'active' : ''}" data-index="${i}">${item.tab}</button>`;
   });
   tabsHtml += '</div>';
-  
+
   let cardsHtml = '<div class="case-cards-wrapper">';
   caseStudiesData.forEach((f, i) => {
     let metricsHtml = f.metrics.map(m => `
@@ -972,9 +972,9 @@ function renderCaseStudy() {
         <div class="case-metric__label">${m.label}</div>
       </div>
     `).join('');
-    
+
     let displayStyle = i === 0 ? '' : 'display: none;';
-    
+
     cardsHtml += `
       <div class="case-card fade-up case-card-panel" data-index="${i}" style="${displayStyle}">
         <div class="case-card__content">
@@ -989,19 +989,19 @@ function renderCaseStudy() {
     `;
   });
   cardsHtml += '</div>';
-  
+
   container.innerHTML = tabsHtml + cardsHtml;
 }
 
 function renderTestimonials() {
   const container = document.getElementById('testimonials-container');
   if (!container) return;
-  
+
   let trackHtml = '<div class="testimonial-carousel fade-up"><div class="testimonial-track" id="testimonial-track">';
-  
+
   // Clone the first 3 items and append them to the end for seamless infinite loop across 3 visible columns
   const renderData = [...testimonialsData, ...testimonialsData.slice(0, 3)];
-  
+
   renderData.forEach(t => {
     trackHtml += `
       <div class="testimonial-card">
@@ -1017,7 +1017,7 @@ function renderTestimonials() {
     `;
   });
   trackHtml += '</div></div>';
-  
+
   let controlsHtml = `
     <div class="carousel-controls fade-up">
       <button class="carousel-btn carousel-btn--prev" aria-label="Previous">
@@ -1031,18 +1031,18 @@ function renderTestimonials() {
       </button>
     </div>
   `;
-  
+
   container.innerHTML = trackHtml + controlsHtml;
 }
 
 function renderLogoMarquee() {
   const container = document.getElementById('logo-container');
   if (!container) return;
-  
+
   // Duplicate for infinite scroll
   const allLogos = [...clientLogos, ...clientLogos];
   let itemsHtml = allLogos.map(logo => `<div class="logo-marquee__item" style="font-weight:700; font-size:24px;">${logo.name}</div>`).join('');
-  
+
   container.innerHTML = `
     <div class="logo-marquee">
       <div class="logo-marquee__track">
@@ -1055,7 +1055,7 @@ function renderLogoMarquee() {
 function renderRecognition() {
   const container = document.getElementById('recognition-container');
   if (!container) return;
-  
+
   let html = '<div class="editorial-list">';
   recognitionData.forEach(item => {
     html += `
@@ -1073,9 +1073,9 @@ function renderRecognition() {
 function renderAwards() {
   const container = document.getElementById('certifications-container');
   if (!container) return;
-  
+
   const marqueeItems = [...awardsData, ...awardsData, ...awardsData];
-  
+
   let html = '<div class="awards-marquee"><div class="awards-marquee__track">';
   marqueeItems.forEach(award => {
     html += `
@@ -1095,7 +1095,7 @@ function renderAwards() {
 function renderLocations() {
   const container = document.getElementById('locations-container');
   if (!container) return;
-  
+
   let html = '<div class="locations-grid">';
   locationsData.forEach(loc => {
     html += `
@@ -1115,7 +1115,7 @@ function renderLocations() {
 function renderFooter() {
   const container = document.getElementById('footer-container');
   if (!container) return;
-  
+
   let colsHtml = footerData.columns.map(col => `
     <div class="footer__col">
       <h4 class="footer__heading">${col.heading}</h4>
@@ -1124,11 +1124,11 @@ function renderFooter() {
       </ul>
     </div>
   `).join('');
-  
+
   container.innerHTML = `
     <div class="footer__grid">
       <div class="footer__brand">
-        <a href="/index.html" class="footer__brand-logo">
+        <a href="/" class="footer__brand-logo">
           <img src="/images/cypherox-logo.png" alt="Cypherox Logo" style="height: 20px; width: auto; filter: invert(1) brightness(2);">
         </a>
         <p class="footer__brand-desc">Cypherox Technologies builds and operates AI and software systems for businesses across the US, UK, and Europe. Established in 2015.</p>
@@ -1164,7 +1164,7 @@ function renderFooter() {
 function initStickyHeader() {
   const header = document.querySelector('.header');
   if (!header) return;
-  
+
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
@@ -1176,29 +1176,29 @@ function initStickyHeader() {
 
 function initMegaMenus() {
   const navItems = document.querySelectorAll('.nav-item');
-  
+
   navItems.forEach(item => {
     let timeout;
-    
+
     item.addEventListener('mouseenter', () => {
       clearTimeout(timeout);
       navItems.forEach(ni => ni.classList.remove('active'));
       item.classList.add('active');
     });
-    
+
     item.addEventListener('mouseleave', () => {
       timeout = setTimeout(() => {
         item.classList.remove('active');
       }, 200);
     });
   });
-  
+
   // Tab switching for tabbed mega menus
   document.querySelectorAll('.mega-tab__sidebar').forEach(sidebar => {
     const tabItems = sidebar.querySelectorAll('.mega-tab__item');
     const contentArea = sidebar.closest('.mega-tab').querySelector('.mega-tab__content');
     const panels = contentArea.querySelectorAll('.mega-tab__panel');
-    
+
     tabItems.forEach(tab => {
       tab.addEventListener('mouseenter', () => {
         const idx = tab.getAttribute('data-tab-idx');
@@ -1214,7 +1214,7 @@ function initMegaMenus() {
           target.style.display = 'block';
         }
       });
-      
+
       // Keyboard support
       tab.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
@@ -1224,7 +1224,7 @@ function initMegaMenus() {
       });
     });
   });
-  
+
   // Close mega menus when clicking outside
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.nav-item')) {
@@ -1238,25 +1238,25 @@ function initMobileDrawer() {
   const drawer = document.querySelector('.mobile-drawer');
   const overlay = document.querySelector('.mobile-drawer__overlay');
   const closeBtn = document.querySelector('.mobile-drawer__close');
-  
+
   if (!toggle || !drawer || !overlay) return;
-  
+
   const openDrawer = () => {
     drawer.classList.add('open');
     overlay.style.display = 'block';
     document.body.style.overflow = 'hidden';
   };
-  
+
   const closeDrawer = () => {
     drawer.classList.remove('open');
     overlay.style.display = 'none';
     document.body.style.overflow = '';
   };
-  
+
   toggle.addEventListener('click', openDrawer);
   closeBtn?.addEventListener('click', closeDrawer);
   overlay.addEventListener('click', closeDrawer);
-  
+
   // Accordion for drawer subnavs
   const headers = document.querySelectorAll('.mobile-drawer__item-header');
   headers.forEach(header => {
@@ -1264,15 +1264,15 @@ function initMobileDrawer() {
       const idx = header.getAttribute('data-index');
       if (idx === null) return;
       e.preventDefault();
-      
+
       const subnav = document.getElementById(`subnav-${idx}`);
       if (subnav) {
         const isOpen = header.classList.contains('expanded');
-        
+
         // Close all first
         headers.forEach(h => h.classList.remove('expanded'));
         document.querySelectorAll('.mobile-drawer__subnav').forEach(s => s.classList.remove('open'));
-        
+
         if (!isOpen) {
           header.classList.add('expanded');
           subnav.classList.add('open');
@@ -1288,12 +1288,12 @@ function initMobileDrawer() {
 function initScrollAnimations() {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const elements = document.querySelectorAll('.fade-up');
-  
+
   if (prefersReducedMotion) {
     elements.forEach(el => el.classList.add('visible'));
     return;
   }
-  
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -1302,7 +1302,7 @@ function initScrollAnimations() {
       }
     });
   }, { threshold: 0.1 });
-  
+
   elements.forEach(el => observer.observe(el));
 }
 
@@ -1310,9 +1310,9 @@ function initStatsCounter() {
   const section = document.getElementById('stats');
   const counters = document.querySelectorAll('.stat-card__number');
   if (!section || counters.length === 0) return;
-  
+
   let started = false;
-  
+
   const observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting && !started) {
       started = true;
@@ -1320,7 +1320,7 @@ function initStatsCounter() {
         const target = parseInt(counter.getAttribute('data-target') || '0', 10);
         const duration = 2000;
         let start = null;
-        
+
         const step = (timestamp) => {
           if (!start) start = timestamp;
           const progress = Math.min((timestamp - start) / duration, 1);
@@ -1336,7 +1336,7 @@ function initStatsCounter() {
       observer.disconnect();
     }
   }, { threshold: 0.5 });
-  
+
   observer.observe(section);
 }
 
@@ -1403,12 +1403,12 @@ function initGeneralCounters() {
 function initCapabilityTabs() {
   const btns = document.querySelectorAll('.tab-btn');
   const panels = document.querySelectorAll('.tab-panel');
-  
+
   btns.forEach(btn => {
     btn.addEventListener('click', () => {
       btns.forEach(b => b.classList.remove('active'));
       panels.forEach(p => p.classList.remove('active'));
-      
+
       btn.classList.add('active');
       const targetId = btn.getAttribute('data-target');
       document.getElementById(`panel-${targetId}`)?.classList.add('active');
@@ -1424,10 +1424,10 @@ function initBellows() {
       if (window.innerWidth <= 768) {
         const item = header.parentElement;
         const isActive = item.classList.contains('active');
-        
+
         // Remove active from all items
         document.querySelectorAll('.bellows-item').forEach(b => b.classList.remove('active'));
-        
+
         // Toggle the clicked one
         if (!isActive) {
           item.classList.add('active');
@@ -1463,29 +1463,29 @@ function initTestimonialCarousel() {
   const dots = document.querySelectorAll('.carousel-dot');
   const prevBtn = document.querySelector('.carousel-btn--prev');
   const nextBtn = document.querySelector('.carousel-btn--next');
-  
+
   if (!track || !dots.length) return;
-  
+
   let currentIndex = 0;
   let realCount = testimonialsData.length;
   let isAnimating = false;
   let autoAdvance;
-  
+
   const updateCarousel = (animate = true) => {
     const cardWidth = track.children[0].offsetWidth;
     const computedStyle = window.getComputedStyle(track.children[0]);
     const marginRight = parseInt(computedStyle.marginRight, 10) || 0;
     const offset = currentIndex * (cardWidth + marginRight);
-    
+
     track.style.transition = animate ? 'transform 0.5s ease' : 'none';
     track.style.transform = `translateX(-${offset}px)`;
-    
+
     const activeDot = currentIndex % realCount;
     dots.forEach((dot, i) => {
       dot.classList.toggle('active', i === activeDot);
     });
   };
-  
+
   track.addEventListener('transitionend', () => {
     isAnimating = false;
     if (currentIndex >= realCount) {
@@ -1493,14 +1493,14 @@ function initTestimonialCarousel() {
       updateCarousel(false);
     }
   });
-  
+
   const nextSlide = () => {
     if (isAnimating) return;
     isAnimating = true;
     currentIndex++;
     updateCarousel(true);
   };
-  
+
   const prevSlide = () => {
     if (isAnimating) return;
     if (currentIndex <= 0) {
@@ -1513,7 +1513,7 @@ function initTestimonialCarousel() {
     currentIndex--;
     updateCarousel(true);
   };
-  
+
   nextBtn?.addEventListener('click', () => {
     nextSlide();
     startAuto();
@@ -1522,7 +1522,7 @@ function initTestimonialCarousel() {
     prevSlide();
     startAuto();
   });
-  
+
   dots.forEach((dot, i) => {
     dot.addEventListener('click', () => {
       if (isAnimating) return;
@@ -1531,17 +1531,17 @@ function initTestimonialCarousel() {
       startAuto();
     });
   });
-  
+
   const startAuto = () => {
     clearInterval(autoAdvance);
     autoAdvance = setInterval(nextSlide, 5000);
   };
   startAuto();
-  
+
   const carouselContainer = document.querySelector('.testimonial-carousel');
   carouselContainer?.addEventListener('mouseenter', () => clearInterval(autoAdvance));
   carouselContainer?.addEventListener('mouseleave', startAuto);
-  
+
   window.addEventListener('resize', () => updateCarousel(false));
 }
 
@@ -1550,11 +1550,11 @@ function initContactForm() {
   if (!form) return;
   if (form.dataset.formInit === 'true') return;
   form.dataset.formInit = 'true';
-  
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     let isValid = true;
-    
+
     // Basic validation logic
     const inputs = form.querySelectorAll('.form-input');
     inputs.forEach(input => {
@@ -1568,7 +1568,7 @@ function initContactForm() {
         const errorText = input.parentElement.querySelector('.form-error-text');
         if (errorText) errorText.classList.remove('visible');
       }
-      
+
       if (input.type === 'email' && input.value.trim()) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(input.value)) {
@@ -1582,14 +1582,14 @@ function initContactForm() {
         }
       }
     });
-    
+
     if (isValid) {
       form.style.display = 'none';
       const successMsg = document.getElementById('form-success');
       if (successMsg) successMsg.classList.add('visible');
     }
   });
-  
+
   // Real-time validation
   const inputs = form.querySelectorAll('.form-input');
   inputs.forEach(input => {
@@ -1680,14 +1680,14 @@ function initSmoothScroll() {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
       if (targetId === '#') return;
-      
+
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         e.preventDefault();
         const headerOffset = 80;
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-  
+
         window.scrollTo({
           top: offsetPosition,
           behavior: 'smooth'
