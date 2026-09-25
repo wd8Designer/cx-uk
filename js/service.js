@@ -935,6 +935,98 @@ const whyChooseDataByPage = {
     }
   ],
 
+  'manufacturing.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Production Workflow and Data Architecture',
+      description: 'Map production processes, machine data requirements, and business integrations so the system captures what matters and data flows accurately to business systems.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Machine Integration and Data Collection',
+      description: 'Connect legacy and modern machines using standard protocols, ensure secure data transmission, and validate data quality so production visibility is accurate and trustworthy.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'MES and Analytics Build',
+      description: 'Develop production dashboards, OEE tracking, predictive models, and quality workflows so operators and managers see the factory floor in real time.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'SAP Integration and Continuous Improvement',
+      description: 'Integrate with SAP and other business systems so production data flows bidirectionally. Monitor operational metrics and identify improvement opportunities so production efficiency compounds over time.'
+    }
+  ],
+
+  'real-estate.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Property Data and Workflow Architecture',
+      description: 'Map property portfolios, lease structures and business workflows so the system captures what matters and data flows accurately across operations.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Platform Build and Integrations',
+      description: 'Develop property platforms, tenant portals and management dashboards. Integrate with accounting, CRM, and market data systems so information stays synchronized.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Launch and Adoption',
+      description: 'Deploy with training and support so property teams adopt the platform quickly. Monitor operational metrics and tenant engagement so you understand impact.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Continuous Optimization and Scaling',
+      description: 'Add new properties and features as the business grows. Measure operational improvements and identify opportunities so property operations become increasingly efficient.'
+    }
+  ],
+
+  'logistics-transportation.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Operations Workflow and Data Architecture',
+      description: 'Map logistics workflows, vehicle and shipment data requirements, and warehouse integration needs so the system captures real-time operations accurately.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Platform Build and Integrations',
+      description: 'Develop logistics platforms with real-time tracking, route optimization, and warehouse coordination. Integrate with ERP, CRM, and customer systems to keep operations and customer information synchronized.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Launch and Driver Training',
+      description: 'Deploy with logistics-team training so drivers and warehouse staff adopt the platform quickly. Monitor real-time operations and identify workflow issues so you can optimize.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Continuous Optimization and Scaling',
+      description: 'Expand to new routes, warehouses, or delivery partners as the business grows. Measure operational metrics and identify improvement opportunities so logistics efficiency compounds.'
+    }
+  ],
+
+  'ai-agent-development.html': [
+    {
+      icon: whyChooseData[0].icon,
+      title: 'Discovery and Scoping',
+      description: 'We review the tasks the agent needs to complete, the systems it must connect to, and where human oversight is required.'
+    },
+    {
+      icon: whyChooseData[1].icon,
+      title: 'Architecture and Permissions',
+      description: 'We define the planning logic, tool access, and permission boundaries the agent will operate within.'
+    },
+    {
+      icon: whyChooseData[2].icon,
+      title: 'Development and Testing',
+      description: 'We build the agent, connect it to required systems, and test it against realistic task scenarios before release.'
+    },
+    {
+      icon: whyChooseData[3].icon,
+      title: 'Deployment and Monitoring',
+      description: 'Once live, we track task completion, escalation rates, and failure patterns to guide ongoing adjustments.'
+    }
+  ],
+
 
   'hire-ios-developers.html': [
     {
@@ -1424,27 +1516,59 @@ const techStackDataByPage = {
   ],
 
   'retail-ecommerce.html': [
-    { category: 'Storefront and Commerce Frameworks', icon: techIcons.mobile, items: ['Shopify', 'Magento', 'WooCommerce','BigCommerce','custom headless frameworks','PWA and mobile commerce'] },
-    { category: 'Payment and Checkout', icon: techIcons.mobile, items: ['Payment gateways (Stripe, Adyen, Square)', 'SCA integration', 'multi-currency processing','fraud protection'] },
-    { category: 'Product and Inventory Management', icon: techIcons.frontend, items: ['Product information management', 'inventory synchronization', 'real-time stock visibility','demand forecasting'] },
-    { category: 'Customer Data and Personalization', icon: techIcons.backend, items: ['Customer data platforms', 'recommendation engines', 'AI personalization','dynamic pricing','customer analytics'] },
+    { category: 'Storefront and Commerce Frameworks', icon: techIcons.mobile, items: ['Shopify', 'Magento', 'WooCommerce', 'BigCommerce', 'custom headless frameworks', 'PWA and mobile commerce'] },
+    { category: 'Payment and Checkout', icon: techIcons.mobile, items: ['Payment gateways (Stripe, Adyen, Square)', 'SCA integration', 'multi-currency processing', 'fraud protection'] },
+    { category: 'Product and Inventory Management', icon: techIcons.frontend, items: ['Product information management', 'inventory synchronization', 'real-time stock visibility', 'demand forecasting'] },
+    { category: 'Customer Data and Personalization', icon: techIcons.backend, items: ['Customer data platforms', 'recommendation engines', 'AI personalization', 'dynamic pricing', 'customer analytics'] },
     { category: 'Integrations and Backend Systems', icon: techIcons.cloud, items: ['ERP integration (SAP, NetSuite)', 'CRM systems (Salesforce)', 'accounting and business intelligence tools'] }
   ],
 
   'finance-and-banking.html': [
     { category: 'APIs and Integration', icon: techIcons.mobile, items: ['REST and GraphQL APIs', 'banking network integrations (Open Banking / PSD2)', 'payment gateways (Stripe, Adyen, Currencycloud)'] },
-    { category: 'Payment and Transaction Processing', icon: techIcons.mobile, items: ['Payment processing', 'transaction settlement', 'real-time gross settlement (RTGS)','SEPA instant payments'] },
-    { category: 'Fraud Detection and Financial Crime', icon: techIcons.frontend, items: ['ML-driven transaction monitoring', 'behavior scoring', 'anomaly detection','sanctions screening'] },
+    { category: 'Payment and Transaction Processing', icon: techIcons.mobile, items: ['Payment processing', 'transaction settlement', 'real-time gross settlement (RTGS)', 'SEPA instant payments'] },
+    { category: 'Fraud Detection and Financial Crime', icon: techIcons.frontend, items: ['ML-driven transaction monitoring', 'behavior scoring', 'anomaly detection', 'sanctions screening'] },
     { category: 'Data and Reporting', icon: techIcons.backend, items: ['Data warehouses (Snowflake, BigQuery)', 'business intelligence tools (Tableau, Looker)', 'regulatory reporting automation'] },
-    { category: 'Security and Compliance', icon: techIcons.cloud, items: ['Encryption (TLS, AES)', 'PCI-DSS compliance', 'audit logging','secure API design','identity and access management'] }
+    { category: 'Security and Compliance', icon: techIcons.cloud, items: ['Encryption (TLS, AES)', 'PCI-DSS compliance', 'audit logging', 'secure API design', 'identity and access management'] }
   ],
 
   'healthcare.html': [
-    { category: 'Clinical Integration and Data Exchange', icon: techIcons.mobile, items: ['HL7/FHIR APIs', 'NHS Login', 'clinical system connectors','secure data exchange','electronic health record integration'] },
-    { category: 'Patient Engagement and Telemedicine', icon: techIcons.mobile, items: ['Patient portals', 'video consultation platforms', 'appointment scheduling','wearable integration','remote monitoring systems'] },
-    { category: 'Clinical Workflow and Decision Support', icon: techIcons.frontend, items: ['Workflow automation', 'clinical documentation assistance', 'decision support algorithms','care pathway management'] },
-    { category: 'Data and Analytics', icon: techIcons.backend, items: ['Healthcare data warehouses', 'clinical analytics dashboards', 'outcome measurement','population health tools'] },
-    { category: 'Security and Compliance', icon: techIcons.cloud, items: ['Encryption', 'GDPR compliance', 'access controls','audit logging','incident reporting','NHS data-security standards'] }
+    { category: 'Clinical Integration and Data Exchange', icon: techIcons.mobile, items: ['HL7/FHIR APIs', 'NHS Login', 'clinical system connectors', 'secure data exchange', 'electronic health record integration'] },
+    { category: 'Patient Engagement and Telemedicine', icon: techIcons.mobile, items: ['Patient portals', 'video consultation platforms', 'appointment scheduling', 'wearable integration', 'remote monitoring systems'] },
+    { category: 'Clinical Workflow and Decision Support', icon: techIcons.frontend, items: ['Workflow automation', 'clinical documentation assistance', 'decision support algorithms', 'care pathway management'] },
+    { category: 'Data and Analytics', icon: techIcons.backend, items: ['Healthcare data warehouses', 'clinical analytics dashboards', 'outcome measurement', 'population health tools'] },
+    { category: 'Security and Compliance', icon: techIcons.cloud, items: ['Encryption', 'GDPR compliance', 'access controls', 'audit logging', 'incident reporting', 'NHS data-security standards'] }
+  ],
+
+  'manufacturing.html': [
+    { category: 'Machine and IoT Integration', icon: techIcons.mobile, items: ['MQTT and OPC UA protocols', 'edge computing', 'industrial gateways', 'secure machine connectivity', 'sensor data aggregation'] },
+    { category: 'Manufacturing Execution Systems', icon: techIcons.mobile, items: ['Production scheduling', 'work-order management', 'real-time production tracking', 'quality management', 'batch traceability'] },
+    { category: 'Predictive Analytics and AI', icon: techIcons.frontend, items: ['Machine-learning models for predictive maintenance', 'anomaly detection', 'quality prediction', 'and process optimization'] },
+    { category: 'Data and Dashboards', icon: techIcons.backend, items: ['Time-series databases', 'real-time analytics', 'OEE dashboards', 'production visualization','business intelligence'] },
+    { category: 'Integration and Business Systems', icon: techIcons.cloud, items: ['SAP integration', 'ERP connectors', 'EDI for supply chain', 'secure API design', 'data synchronization'] }
+  ],
+
+  'real-estate.html': [
+    { category: 'Property and Lease Management', icon: techIcons.mobile, items: ['Property information systems', 'lease management', 'tenant databases', 'occupancy tracking', 'financial reconciliation'] },
+    { category: 'Valuation and Investment Analytics', icon: techIcons.mobile, items: ['Automated valuation models', 'investment analysis tools', 'cash-flow modeling', 'portfolio analytics'] },
+    { category: 'Tenant and Customer Experience', icon: techIcons.frontend, items: ['Tenant portals', 'maintenance request systems', 'payment processing', 'communication platforms'] },
+    { category: 'ESG and Sustainability', icon: techIcons.backend, items: ['Energy monitoring', 'emissions tracking', 'sustainability reporting', 'environmental compliance'] },
+    { category: 'Integrations and Data Systems', icon: techIcons.cloud, items: ['Accounting system integration (SAP, NetSuite)', 'market data feeds', 'transaction management'] }
+  ],
+
+  'logistics-transportation.html': [
+    { category: 'Fleet and Vehicle Tracking', icon: techIcons.mobile, items: ['GPS tracking', 'telematics', 'driver monitoring', 'fuel management', 'vehicle maintenance'] },
+    { category: 'Route Optimization and Planning', icon: techIcons.mobile, items: ['AI route planning', 'real-time rerouting', 'traffic integration', 'delivery-window management'] },
+    { category: 'Warehouse and Inventory', icon: techIcons.frontend, items: ['Warehouse execution systems', 'inventory management', 'automated picking and packing', 'real-time stock tracking'] },
+    { category: 'Supply Chain and Customs', icon: techIcons.backend, items: ['Shipment tracking', 'customs documentation', 'multi-modal visibility', 'exception management'] },
+    { category: 'Integrations and Data Systems', icon: techIcons.cloud, items: ['ERP integration (SAP, NetSuite)', 'CRM connectors', 'customer notification','telematics data aggregation'] }
+  ],
+
+  'ai-agent-development.html': [
+    { category: 'Languages', icon: techIcons.mobile, items: ['Python', 'TypeScript', 'Node.js'] },
+    { category: 'LLM Providers', icon: techIcons.mobile, items: ['OpenAI', 'Anthropic Claude'] },
+    { category: 'Orchestration', icon: techIcons.frontend, items: ['Agent Frameworks', 'Tool Calling'] },
+    { category: 'Cloud and Infrastructure', icon: techIcons.backend, items: ['AWS', 'Azure'] },
+    { category: 'Integration', icon: techIcons.cloud, items: ['REST APIs', 'Webhooks'] }
   ],
 };
 
