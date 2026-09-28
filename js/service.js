@@ -1675,10 +1675,9 @@ const clientLogos = [
 
 const footerData = {
   columns: [
-    { heading: 'Services', links: [{ label: 'AI & Automation', href: '#' }, { label: 'Software Dev', href: '#' }, { label: 'Data & Analytics', href: '#' }, { label: 'Cloud & DevOps', href: '#' }, { label: 'Product Engineering', href: '#' }] },
-    { heading: 'Industries', links: [{ label: 'Healthcare', href: '#' }, { label: 'Finance', href: '#' }, { label: 'Retail', href: '#' }, { label: 'Manufacturing', href: '#' }, { label: 'Education', href: '#' }] },
-    { heading: 'Company', links: [{ label: 'About Us', href: '/about-us.html' }, { label: 'Careers', href: '#' }, { label: 'News', href: '#' }, { label: 'Contact', href: '/contact-us.html' }] },
-    { heading: 'Resources', links: [{ label: 'Blog', href: '/blogs/index.html' }, { label: 'Case Studies', href: '/case-studies/index.html' }, { label: 'Whitepapers', href: '#' }, { label: 'Webinars', href: '#' }] }
+    { heading: 'Services', links: [{ label: 'AI Chatbot Development', href: '/ai-chatbot-development' }, { label: 'Virtual Research Assistant', href: '/virtual-research-assistant' }, { label: 'IT Consulting', href: '/it-consulting' }, { label: 'Responsive Web Design', href: '/responsive-web-design' }] },
+    { heading: 'Industries', links: [{ label: 'Finance & Banking', href: '/finance-banking' }, { label: 'Healthcare', href: '/healthcare' }, { label: 'Retail & Ecommerce', href: '/retail-ecommerce' }, { label: 'Manufacturing', href: '/manufacturing' }, { label: 'Real Estate', href: '/real-estate' }] },
+    { heading: 'Company', links: [{ label: 'About Us', href: '/about-us' }, { label: 'Contact Us', href: '/contact-us' }, { label: 'Case Studies', href: '/case-studies' }, { label: 'Blog', href: '/blogs' }] },
   ]
 };
 
@@ -2328,7 +2327,6 @@ function renderFooter() {
       <div class="footer__legal">
         <a href="/privacy-policy" class="footer__legal-link">Privacy Policy</a>
         <a href="/terms-and-conditions" class="footer__legal-link">Terms &amp; Conditions</a>
-        <a href="#" class="footer__legal-link">Cookie Policy</a>
       </div>
     </div>
   `;
