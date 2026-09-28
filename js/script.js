@@ -16,45 +16,45 @@
 const navigationData = [
   {
     label: 'AI Agent',
-    href: '#'
+    href: '/ai-agent'
   },
   {
     label: 'Services',
-    href: '#',
+    href: 'javascript:;',
     type: 'mega',
     megaMenu: {
       columns: [
         {
           heading: 'Generative AI Solutions',
           links: [
-            { label: 'AI Chatbot Development', href: '#' },
-            { label: 'Virtual Assistant Services', href: '#' },
-            { label: 'AI Language Translator', href: '#' },
-            { label: 'AI Content Generator', href: '#' },
-            { label: 'Virtual Research Assistant', href: '#' }
+            { label: 'AI Chatbot Development', href: '/ai-chatbot-development' },
+            { label: 'Virtual Assistant Services', href: '/virtual-assistant' },
+            { label: 'AI Language Translator', href: '/ai-language-translator' },
+            { label: 'AI Content Generator', href: '/ai-content-generator' },
+            { label: 'Virtual Research Assistant', href: '/virtual-research-assistant' }
           ]
         },
         {
           heading: 'AI & ML Development',
           links: [
-            { label: 'Predictive Maintenance', href: '#' },
-            { label: 'Fraud Detection', href: '#' },
-            { label: 'AutoML', href: '#' }
+            { label: 'Predictive Maintenance', href: '/predictive-maintenance' },
+            { label: 'Fraud Detection', href: '/fraud-detection' },
+            { label: 'AutoML', href: '/auto-ml-development' }
           ]
         },
         {
           heading: 'Consulting Services',
           links: [
-            { label: 'IT Consulting', href: '#' },
-            { label: 'Startup IT Consulting', href: '#' },
-            { label: 'AI Strategy Consulting', href: '#' }
+            { label: 'IT Consulting', href: '/it-consulting' },
+            { label: 'Startup IT Consulting', href: '/startup-it-consulting' },
+            { label: 'AI Strategy Consulting', href: '/ai-strategy-consulting' }
           ]
         },
         {
           heading: 'UI/UX Design Services',
           links: [
-            { label: 'Responsive Web Design', href: '#' },
-            { label: 'Mobile App Design', href: '#' }
+            { label: 'Responsive Web Design', href: '/responsive-web-design' },
+            { label: 'Mobile App Design', href: '/mobile-app-design' }
           ]
         }
       ]
@@ -62,7 +62,7 @@ const navigationData = [
   },
   {
     label: 'Automation',
-    href: '#',
+    href: 'javascript:;',
     type: 'dropdown',
     graphicNum: '85%',
     graphicText: 'FASTER<br>PROCESSES',
@@ -73,9 +73,9 @@ const navigationData = [
         {
           heading: '',
           links: [
-            { label: 'Business Process Automation (RPA)', href: '#' },
-            { label: 'Workflow Automation', href: '#' },
-            { label: 'Marketing & CRM Automation', href: '#' }
+            { label: 'Business Process Automation (RPA)', href: '/business-process-automation' },
+            { label: 'Workflow Automation', href: '/workflow-automation' },
+            { label: 'Marketing & CRM Automation', href: '/marketing-crm-automation' }
           ]
         }
       ]
@@ -83,7 +83,7 @@ const navigationData = [
   },
   {
     label: 'Technology',
-    href: '#',
+    href: 'javascript:;',
     type: 'dropdown',
     graphicNum: '50+',
     graphicText: 'TECH<br>EXPERTS',
@@ -94,10 +94,10 @@ const navigationData = [
         {
           heading: '',
           links: [
-            { label: 'Web Development', href: '#' },
-            { label: 'App Development', href: '#' },
-            { label: 'E-Commerce', href: '#' },
-            { label: 'CMS (WordPress, Drupal)', href: '#' }
+            { label: 'Web Development', href: '/web-development' },
+            { label: 'App Development', href: '/app-development' },
+            { label: 'E-Commerce', href: '/ecommerce-development' },
+            { label: 'CMS (WordPress, Drupal)', href: '/cms-development' }
           ]
         }
       ]
@@ -105,7 +105,7 @@ const navigationData = [
   },
   {
     label: 'Hire Developers',
-    href: '#',
+    href: '/hire-developers',
     type: 'mega',
     megaMenu: {
       columns: [
@@ -170,7 +170,7 @@ const navigationData = [
   },
   {
     label: 'Industries',
-    href: '#',
+    href: 'javascript:;',
     type: 'dropdown',
     graphicNum: '12+',
     graphicText: 'SECTORS<br>SERVED',
@@ -181,12 +181,12 @@ const navigationData = [
         {
           heading: '',
           links: [
-            { label: 'Finance & Banking', href: '#' },
-            { label: 'Healthcare', href: '#' },
-            { label: 'Retail & Ecommerce', href: '#' },
-            { label: 'Manufacturing', href: '#' },
-            { label: 'Real Estate', href: '#' },
-            { label: 'Logistics & Transportation', href: '#' }
+            { label: 'Finance & Banking', href: '/finance-banking' },
+            { label: 'Healthcare', href: '/healthcare' },
+            { label: 'Retail & Ecommerce', href: '/retail-ecommerce' },
+            { label: 'Manufacturing', href: '/manufacturing' },
+            { label: 'Real Estate', href: '/real-estate' },
+            { label: 'Logistics & Transportation', href: '/logistics-transportation' }
           ]
         }
       ]
@@ -194,7 +194,7 @@ const navigationData = [
   },
   {
     label: 'Company',
-    href: '#',
+    href: 'javascript:;',
     type: 'dropdown',
     graphicNum: '100%',
     graphicText: 'CLIENT<br>FOCUS',
@@ -207,8 +207,8 @@ const navigationData = [
           links: [
             { label: 'About Us', href: '/about-us' },
             { label: 'Contact Us', href: '/contact-us' },
-            { label: 'Case Studies', href: '/case-studies/index' },
-            { label: 'Blog', href: '/blogs/index' }
+            { label: 'Case Studies', href: '/case-studies' },
+            { label: 'Blog', href: '/blogs' }
           ]
         }
       ]
@@ -1149,8 +1149,8 @@ function renderFooter() {
     <div class="footer__bottom">
       <div class="footer__copyright">&copy; ${new Date().getFullYear()} Cypherox. All rights reserved.</div>
       <div class="footer__legal">
-        <a href="#" class="footer__legal-link">Privacy Policy</a>
-        <a href="#" class="footer__legal-link">Terms of Service</a>
+        <a href="/privacy-policy" class="footer__legal-link">Privacy Policy</a>
+        <a href="/terms-and-conditions" class="footer__legal-link">Terms &amp; Conditions</a>
         <a href="#" class="footer__legal-link">Cookie Policy</a>
       </div>
     </div>
