@@ -534,7 +534,7 @@ const footerData = {
   columns: [
     { heading: 'Services', links: [{ label: 'AI Agent Development', href: '/ai-agent' }, { label: 'AI Chatbot Development', href: '/ai-chatbot-development' }, { label: 'AutoML Development', href: '/auto-ml-development' }, { label: 'Hire Dedicated Developers', href: '/hire-developers' }] },
     { heading: 'Industries', links: [{ label: 'Finance & Banking', href: '/finance-banking' }, { label: 'Healthcare', href: '/healthcare' }, { label: 'Retail & Ecommerce', href: '/retail-ecommerce' }, { label: 'Manufacturing', href: '/manufacturing' }, { label: 'Real Estate', href: '/real-estate' }] },
-    { heading: 'Company', links: [{ label: 'About Us', href: '/about-us' }, { label: 'Hiring Models', href: '/hiring-models' }, { label: 'Contact Us', href: '/contact-us' }, { label: 'Case Studies', href: '/case-studies' }, { label: 'Blog', href: '/blogs' }] },
+    { heading: 'Company', links: [{ label: 'About Us', href: '/about-us' }, { label: 'Contact Us', href: '/contact-us' }, { label: 'Case Studies', href: '/case-studies' }, { label: 'Blog', href: '/blogs' }] },
   ]
 };
 
