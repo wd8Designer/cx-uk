@@ -710,63 +710,8 @@
           </div>
         </div>
 
-        <div class="consultation__form-wrapper fade-up">
-          <form class="consultation__form" id="consultation-form" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="full-name">Full Name *</label>
-                <input class="form-input" type="text" id="full-name" name="fullName" placeholder="e.g. David Wilson"
-                  required>
-                <span class="form-error-text">Please enter your full name</span>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="work-email">Work Email *</label>
-                <input class="form-input" type="email" id="work-email" name="workEmail"
-                  placeholder="david@company.co.uk" required>
-                <span class="form-error-text">Please enter a valid work email</span>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="phone">Phone Number</label>
-                <input class="form-input" type="tel" id="phone" name="phone" placeholder="+44 20 7946 0912">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="company">Company Name *</label>
-                <input class="form-input" type="text" id="company" name="company" placeholder="e.g. Acme Tech UK"
-                  required>
-                <span class="form-error-text">Please enter your company name</span>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="hiring-model-select">Preferred Hiring Model *</label>
-              <select class="form-input form-select" id="hiring-model-select" name="service" required>
-                <option value="" disabled selected>Select an engagement model</option>
-                <option value="dedicated-team">Dedicated Engineering Team (ODC)</option>
-                <option value="time-material">Time & Material Model (Hourly / Flexible)</option>
-                <option value="fixed-cost">Fixed Cost Model (Turnkey & Milestone)</option>
-                <option value="hybrid-model">Hybrid Engagement Model (UK PM + Offshore)</option>
-                <option value="not-sure">Not Sure (Need Expert Advice)</option>
-              </select>
-              <span class="form-error-text">Please select an engagement model</span>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="message">Tell us about your project & requirements *</label>
-              <textarea class="form-input" id="message" name="message" rows="4"
-                placeholder="Briefly describe your project scope, tech stack, team size needed, or timeline..."
-                required></textarea>
-              <span class="form-error-text">Please tell us a bit about your project</span>
-            </div>
-
-            <button class="btn btn--primary btn--large btn--full" type="submit" id="submit-btn">
-              <span>Book Your Consultation &rarr;</span>
-            </button>
-            <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite"></div>
-          </form>
-        </div>
+        <!-- CONSULTATION FORM PLACEHOLDER (Loaded dynamically by includes.js - Do NOT edit) -->
+        <div class="consultation__form-wrapper fade-up" id="consultation-form-wrapper" data-service="dedicated-team"></div>
       </div>
     </section>
 

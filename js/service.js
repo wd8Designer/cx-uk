@@ -2663,6 +2663,8 @@ function initTestimonialCarousel() {
 function initContactForm() {
   const form = document.getElementById('consultation-form');
   if (!form) return;
+  if (form.dataset.formInit === 'true') return;
+  form.dataset.formInit = 'true';
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -2715,6 +2717,17 @@ function initContactForm() {
       }
     });
   });
+
+  // Reset handler if present
+  const resetBtn = document.getElementById('btn-submit-another');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      form.reset();
+      form.style.display = 'block';
+      const successMsg = document.getElementById('form-success');
+      if (successMsg) successMsg.classList.remove('visible');
+    });
+  }
 }
 
 function initSmoothScroll() {
