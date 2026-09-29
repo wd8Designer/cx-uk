@@ -4443,7 +4443,8 @@ textarea.form-input {
   transition: all 0.3s ease;
 }
 
-.faq-item:hover {
+.faq-item:hover,
+.faq-item.active {
   border-color: var(--primary);
 }
 
@@ -6409,18 +6410,18 @@ textarea.form-input {
   font-size: 3.25rem;
   font-weight: 800;
   letter-spacing: -0.03em;
-  box-shadow: 0 16px 36px -6px rgba(0, 0, 0, 0.28), 
-              0 0 0 1px rgba(255, 255, 255, 0.1),
-              0 0 0 4px rgba(242, 110, 101, 0.25);
+  box-shadow: 0 16px 36px -6px rgba(0, 0, 0, 0.28),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 0 0 4px rgba(242, 110, 101, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   user-select: none;
 }
 
 .team-showcase:hover .team-showcase__avatar {
   transform: scale(1.03);
-  box-shadow: 0 20px 42px -6px rgba(0, 0, 0, 0.35), 
-              0 0 0 1px rgba(255, 255, 255, 0.15),
-              0 0 0 5px rgba(242, 110, 101, 0.35);
+  box-shadow: 0 20px 42px -6px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.15),
+    0 0 0 5px rgba(242, 110, 101, 0.35);
 }
 
 .team-showcase__avatar-badge {
@@ -8986,8 +8987,8 @@ textarea.form-input {
 .blog-hero {
   padding: 130px 0 50px;
   background: radial-gradient(circle at 80% 10%, rgba(242, 110, 101, 0.08) 0%, transparent 60%),
-              radial-gradient(circle at 10% 90%, rgba(242, 110, 101, 0.04) 0%, transparent 50%),
-              var(--bg-white);
+    radial-gradient(circle at 10% 90%, rgba(242, 110, 101, 0.04) 0%, transparent 50%),
+    var(--bg-white);
   position: relative;
   border-bottom: 1px solid var(--border-light);
 }
@@ -9637,7 +9638,7 @@ textarea.form-input {
 .blog-detail-hero {
   padding: 130px 0 50px;
   background: radial-gradient(circle at 75% 15%, rgba(242, 110, 101, 0.08) 0%, transparent 60%),
-              var(--bg-white);
+    var(--bg-white);
   border-bottom: 1px solid var(--border-light);
 }
 
@@ -10563,16 +10564,18 @@ textarea.form-input {
   .model-detailed-card {
     grid-template-columns: 1fr;
   }
+
   .model-detailed-card__sidebar {
     border-left: none;
     border-top: 1px solid var(--border);
     padding: 32px 24px;
   }
+
   .model-detailed-card__main {
     padding: 32px 24px;
   }
+
   .model-detailed-card__list {
     grid-template-columns: 1fr;
   }
 }
-
