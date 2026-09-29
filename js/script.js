@@ -771,9 +771,6 @@ function renderServices() {
                 <div class="discipline-panel__tags">${tagsHtml}</div>
               </div>
               
-              <div style="margin-top: 16px;">
-                <a href="${disc.ctaLink}" class="btn btn--primary">${disc.ctaText}</a>
-              </div>
             </div>
             
             <div class="bellows-col-right">
@@ -1674,10 +1671,33 @@ function initFaqAccordion() {
 }
 
 function initSmoothScroll() {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const targetId = this.getAttribute('href');
-      if (targetId === '#') return;
+  document.addEventListener('click', function (e) {
+    const devBtn = e.target.closest('.dev-card__btn');
+    if (devBtn) {
+      const target = document.querySelector('#consultation') || document.querySelector('#form');
+      if (target) {
+        e.preventDefault();
+        const headerOffset = 80;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+
+        const firstInput = target.querySelector('input:not([type="hidden"]), select, textarea');
+        if (firstInput) {
+          setTimeout(() => firstInput.focus({ preventScroll: true }), 650);
+        }
+        return;
+      }
+    }
+
+    const anchor = e.target.closest('a[href^="#"]');
+    if (anchor) {
+      const targetId = anchor.getAttribute('href');
+      if (!targetId || targetId === '#') return;
 
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
@@ -1691,7 +1711,7 @@ function initSmoothScroll() {
           behavior: 'smooth'
         });
       }
-    });
+    }
   });
 }
 
