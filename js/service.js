@@ -1,6 +1,6 @@
 /**
  * Cypherox Enterprise Landing Page - Main JavaScript
- * This file contains all structured data, rendering logic, and interactive behavior.
+ * This file contains all structured data, rendering logic and interactive behavior.
  * 
  * STRUCTURE:
  * 1. Data Definitions
@@ -225,7 +225,7 @@ const disciplinesData = [
     id: 'ai-development',
     tabName: 'AI and Machine Learning Engineering',
     title: 'AI and Machine Learning Engineering',
-    description: 'We build AI systems around your data, workflows, and business rules, with the evaluation, integration, and controls needed for reliable production use.',
+    description: 'We build AI systems around your data, workflows and business rules, with the evaluation, integration and controls needed for reliable production use.',
     features: [
       'AI agent design and orchestration',
       'Large language model development and fine-tuning',
@@ -242,7 +242,7 @@ const disciplinesData = [
     id: 'software-engineering',
     tabName: 'Software Engineering',
     title: 'Software Engineering',
-    description: 'Web, mobile, APIs, and backend systems built for scale, maintained for the long term, and designed to fit the platform you already run.',
+    description: 'Web, mobile, APIs and backend systems built for scale, maintained for the long term and designed to fit the platform you already run.',
     features: [
       'Custom web and mobile applications',
       'API design and development',
@@ -259,7 +259,7 @@ const disciplinesData = [
     id: 'data-engineering',
     tabName: 'Data and Cloud Engineering',
     title: 'Data and Cloud Engineering',
-    description: 'Infrastructure, pipelines, and governance underneath your applications. Reliable data. Secure, observable, and cost-controlled cloud.',
+    description: 'Infrastructure, pipelines and governance underneath your applications. Reliable data. Secure, observable and cost-controlled cloud.',
     features: [
       'Cloud architecture and migration',
       'Data pipeline design and integration',
@@ -276,7 +276,7 @@ const disciplinesData = [
     id: 'consulting',
     tabName: 'Product and Technology Consulting',
     title: 'Product and Technology Consulting',
-    description: 'The architecture, scope, and approach decisions made before a line of code is written often determine whether a project delivers or stalls.',
+    description: 'The architecture, scope and approach decisions made before a line of code is written often determine whether a project delivers or stalls.',
     features: [
       'Technical architecture review',
       'AI readiness assessment',
@@ -391,7 +391,7 @@ const capabilitiesData = [
     id: 'cloud-devops',
     label: 'Cloud & DevOps',
     title: 'Cloud Infrastructure & DevOps',
-    description: 'Build resilient, scalable, and secure cloud infrastructures.',
+    description: 'Build resilient, scalable and secure cloud infrastructures.',
     features: ['Cloud Migration', 'Architecture', 'CI/CD', 'Containers', 'IaC', 'Security'],
     techs: ['AWS', 'Azure', 'Google Cloud', 'Kubernetes', 'Docker', 'Terraform'],
     metrics: [{ number: '99.99', suffix: '%', label: 'Uptime' }, { number: '5', suffix: 'x', label: 'Faster Deploy' }, { number: '50', suffix: '%', label: 'Cost Savings' }],
@@ -517,7 +517,7 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[2].icon,
       title: 'Development and Testing',
-      description: 'The solution is built, connected to sensor and historical data, and validated against real failure patterns.'
+      description: 'The solution is built, connected to sensor and historical data and validated against real failure patterns.'
     },
     {
       icon: whyChooseData[3].icon,
@@ -530,17 +530,17 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Discovery and Scoping',
-      description: 'We review your transaction data, current fraud losses, and existing detection approach before starting any design work.'
+      description: 'We review your transaction data, current fraud losses and existing detection approach before starting any design work.'
     },
     {
       icon: whyChooseData[1].icon,
       title: 'Design and Architecture',
-      description: 'We define the scoring models, data pipeline, and review workflow the system will operate within.'
+      description: 'We define the scoring models, data pipeline and review workflow the system will operate within.'
     },
     {
       icon: whyChooseData[2].icon,
       title: 'Development and Testing',
-      description: 'We build the system, connect it to transaction and identity data, and validate it against known fraud cases.'
+      description: 'We build the system, connect it to transaction and identity data and validate it against known fraud cases.'
     },
     {
       icon: whyChooseData[3].icon,
@@ -553,12 +553,12 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Discovery and Scoping',
-      description: 'We review your data, current model development process, and the use cases you need supported.'
+      description: 'We review your data, current model development process and the use cases you need supported.'
     },
     {
       icon: whyChooseData[1].icon,
       title: 'Pipeline Design',
-      description: 'We define the preprocessing, algorithm selection, and tuning approach the AutoML pipeline will use.'
+      description: 'We define the preprocessing, algorithm selection and tuning approach the AutoML pipeline will use.'
     },
     {
       icon: whyChooseData[2].icon,
@@ -576,7 +576,7 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Discovery and Assessment',
-      description: 'We review your current systems, infrastructure, and pain points in detail before forming any recommendation.'
+      description: 'We review your current systems, infrastructure and pain points in detail before forming any recommendation.'
     },
     {
       icon: whyChooseData[1].icon,
@@ -599,7 +599,7 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Discovery and Context',
-      description: 'We review your product, current systems, and stage-specific priorities before forming any recommendation.'
+      description: 'We review your product, current systems and stage-specific priorities before forming any recommendation.'
     },
     {
       icon: whyChooseData[1].icon,
@@ -609,7 +609,7 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[2].icon,
       title: 'Recommendation and Roadmap',
-      description: 'We agree on a prioritized plan that fits your budget, team size, and growth timeline.'
+      description: 'We agree on a prioritized plan that fits your budget, team size and growth timeline.'
     },
     {
       icon: whyChooseData[3].icon,
@@ -627,7 +627,7 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[1].icon,
       title: 'Opportunity Analysis',
-      description: 'We assess feasibility, value, and readiness for each identified use case.'
+      description: 'We assess feasibility, value and readiness for each identified use case.'
     },
     {
       icon: whyChooseData[2].icon,
@@ -645,12 +645,12 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Discovery and Content Review',
-      description: 'We review your current site, content structure, and the devices your visitors actually use.'
+      description: 'We review your current site, content structure and the devices your visitors actually use.'
     },
     {
       icon: whyChooseData[1].icon,
       title: 'Responsive Design',
-      description: 'We design layouts that adapt cleanly across mobile, tablet, and desktop.'
+      description: 'We design layouts that adapt cleanly across mobile, tablet and desktop.'
     },
     {
       icon: whyChooseData[2].icon,
@@ -668,7 +668,7 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Discovery and Research',
-      description: 'We review your users, goals, and any existing usability issues before design work begins.'
+      description: 'We review your users, goals and any existing usability issues before design work begins.'
     },
     {
       icon: whyChooseData[1].icon,
@@ -691,12 +691,12 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Process Discovery and Mapping',
-      description: 'We review the current process, systems involved, and where manual effort is concentrated.'
+      description: 'We review the current process, systems involved and where manual effort is concentrated.'
     },
     {
       icon: whyChooseData[1].icon,
       title: 'Automation Design',
-      description: 'We define the automation logic, exception handling, and required system connections.'
+      description: 'We define the automation logic, exception handling and required system connections.'
     },
     {
       icon: whyChooseData[2].icon,
@@ -714,12 +714,12 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Workflow Discovery and Mapping',
-      description: 'We review the current workflow, tools involved, and where manual coordination is concentrated.'
+      description: 'We review the current workflow, tools involved and where manual coordination is concentrated.'
     },
     {
       icon: whyChooseData[1].icon,
       title: 'Automation Design',
-      description: 'We define the triggers, routing logic, and exception handling the workflow will use.'
+      description: 'We define the triggers, routing logic and exception handling the workflow will use.'
     },
     {
       icon: whyChooseData[2].icon,
@@ -758,12 +758,12 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Discovery and Requirements',
-      description: 'We review your current site, required functionality, and the systems it needs to connect to.'
+      description: 'We review your current site, required functionality and the systems it needs to connect to.'
     },
     {
       icon: whyChooseData[1].icon,
       title: 'Design and Architecture',
-      description: 'We define the technical architecture, integrations, and build structure.'
+      description: 'We define the technical architecture, integrations and build structure.'
     },
     {
       icon: whyChooseData[2].icon,
@@ -780,12 +780,12 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Discovery and Requirements',
-      description: 'We review your app idea, required platforms, and the systems it needs to connect to.'
+      description: 'We review your app idea, required platforms and the systems it needs to connect to.'
     },
     {
       icon: whyChooseData[1].icon,
       title: 'Design and Architecture',
-      description: 'We define the technical architecture, integrations, and structure the build will follow.'
+      description: 'We define the technical architecture, integrations and structure the build will follow.'
     },
     {
       icon: whyChooseData[2].icon,
@@ -802,12 +802,12 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Discovery and Requirements',
-      description: 'We review your current store, catalog structure, and required integrations before design begins.'
+      description: 'We review your current store, catalog structure and required integrations before design begins.'
     },
     {
       icon: whyChooseData[1].icon,
       title: 'Design and Architecture',
-      description: 'We define the platform approach, integrations, and checkout logic the build will follow.'
+      description: 'We define the platform approach, integrations and checkout logic the build will follow.'
     },
     {
       icon: whyChooseData[2].icon,
@@ -824,7 +824,7 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Discovery and Platform Assessment',
-      description: 'We review your current CMS, content structure, and editorial workflow before recommending an approach.'
+      description: 'We review your current CMS, content structure and editorial workflow before recommending an approach.'
     },
     {
       icon: whyChooseData[1].icon,
@@ -834,12 +834,12 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[2].icon,
       title: 'Development and Testing',
-      description: 'We configure, customize, and test the CMS against real content and editing workflows before launch.'
+      description: 'We configure, customize and test the CMS against real content and editing workflows before launch.'
     },
     {
       icon: whyChooseData[3].icon,
       title: 'Launch and Ongoing Maintenance',
-      description: 'Once live, we maintain core, plugin, and security updates on an ongoing basis.'
+      description: 'Once live, we maintain core, plugin and security updates on an ongoing basis.'
     }
   ],
 
@@ -870,22 +870,22 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Architecture and Checkout Design',
-      description: 'Design headless commerce architecture, payment flows, and checkout optimization so customers convert quickly and payment compliance is built in. This includes SCA integration, guest checkout and mobile-first design.'
+      description: 'Design headless commerce architecture, payment flows and checkout optimization so customers convert quickly and payment compliance is built in. This includes SCA integration, guest checkout and mobile-first design.'
     },
     {
       icon: whyChooseData[1].icon,
       title: 'Build and Platform Integration',
-      description: 'Develop custom storefronts, product search, and personalization. Integrate with payment gateways, ERP, CRM and inventory systems so product data and fulfillment are synchronized and accurate.'
+      description: 'Develop custom storefronts, product search and personalization. Integrate with payment gateways, ERP, CRM and inventory systems so product data and fulfillment are synchronized and accurate.'
     },
     {
       icon: whyChooseData[2].icon,
       title: 'Load Testing and Conversion Optimization',
-      description: 'Test checkout performance under peak traffic. Optimize conversion through A/B testing, customer feedback, and analytics to keep checkout abandonment low during seasonal demand.'
+      description: 'Test checkout performance under peak traffic. Optimize conversion through A/B testing, customer feedback and analytics to keep checkout abandonment low during seasonal demand.'
     },
     {
       icon: whyChooseData[3].icon,
       title: 'Launch and Continuous Optimization',
-      description: 'Deploy with redundancy and real-time monitoring. Measure conversion metrics, customer behavior, and system performance to identify improvements and respond to issues immediately.'
+      description: 'Deploy with redundancy and real-time monitoring. Measure conversion metrics, customer behavior and system performance to identify improvements and respond to issues immediately.'
     }
   ],
 
@@ -898,7 +898,7 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[1].icon,
       title: 'Secure Build and Integration',
-      description: 'Develop with PCI-DSS, encryption, and API-security standards embedded. Integrate with banking networks, payment gateways and regulatory reporting systems using established protocols and secure credential management.'
+      description: 'Develop with PCI-DSS, encryption and API-security standards embedded. Integrate with banking networks, payment gateways and regulatory reporting systems using established protocols and secure credential management.'
     },
     {
       icon: whyChooseData[2].icon,
@@ -931,7 +931,7 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[3].icon,
       title: 'Production Deployment and Clinical Support',
-      description: 'Deploy with redundancy, automated failover, and on-call clinical support. Monitor clinical workflows and outcomes to identify improvements and respond to safety signals immediately.'
+      description: 'Deploy with redundancy, automated failover and on-call clinical support. Monitor clinical workflows and outcomes to identify improvements and respond to safety signals immediately.'
     }
   ],
 
@@ -939,17 +939,17 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Production Workflow and Data Architecture',
-      description: 'Map production processes, machine data requirements, and business integrations so the system captures what matters and data flows accurately to business systems.'
+      description: 'Map production processes, machine data requirements and business integrations so the system captures what matters and data flows accurately to business systems.'
     },
     {
       icon: whyChooseData[1].icon,
       title: 'Machine Integration and Data Collection',
-      description: 'Connect legacy and modern machines using standard protocols, ensure secure data transmission, and validate data quality so production visibility is accurate and trustworthy.'
+      description: 'Connect legacy and modern machines using standard protocols, ensure secure data transmission and validate data quality so production visibility is accurate and trustworthy.'
     },
     {
       icon: whyChooseData[2].icon,
       title: 'MES and Analytics Build',
-      description: 'Develop production dashboards, OEE tracking, predictive models, and quality workflows so operators and managers see the factory floor in real time.'
+      description: 'Develop production dashboards, OEE tracking, predictive models and quality workflows so operators and managers see the factory floor in real time.'
     },
     {
       icon: whyChooseData[3].icon,
@@ -967,7 +967,7 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[1].icon,
       title: 'Platform Build and Integrations',
-      description: 'Develop property platforms, tenant portals and management dashboards. Integrate with accounting, CRM, and market data systems so information stays synchronized.'
+      description: 'Develop property platforms, tenant portals and management dashboards. Integrate with accounting, CRM and market data systems so information stays synchronized.'
     },
     {
       icon: whyChooseData[2].icon,
@@ -985,12 +985,12 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Operations Workflow and Data Architecture',
-      description: 'Map logistics workflows, vehicle and shipment data requirements, and warehouse integration needs so the system captures real-time operations accurately.'
+      description: 'Map logistics workflows, vehicle and shipment data requirements and warehouse integration needs so the system captures real-time operations accurately.'
     },
     {
       icon: whyChooseData[1].icon,
       title: 'Platform Build and Integrations',
-      description: 'Develop logistics platforms with real-time tracking, route optimization, and warehouse coordination. Integrate with ERP, CRM, and customer systems to keep operations and customer information synchronized.'
+      description: 'Develop logistics platforms with real-time tracking, route optimization and warehouse coordination. Integrate with ERP, CRM and customer systems to keep operations and customer information synchronized.'
     },
     {
       icon: whyChooseData[2].icon,
@@ -1008,22 +1008,22 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Discovery and Scoping',
-      description: 'We review the tasks the agent needs to complete, the systems it must connect to, and where human oversight is required.'
+      description: 'We review the tasks the agent needs to complete, the systems it must connect to and where human oversight is required.'
     },
     {
       icon: whyChooseData[1].icon,
       title: 'Architecture and Permissions',
-      description: 'We define the planning logic, tool access, and permission boundaries the agent will operate within.'
+      description: 'We define the planning logic, tool access and permission boundaries the agent will operate within.'
     },
     {
       icon: whyChooseData[2].icon,
       title: 'Development and Testing',
-      description: 'We build the agent, connect it to required systems, and test it against realistic task scenarios before release.'
+      description: 'We build the agent, connect it to required systems and test it against realistic task scenarios before release.'
     },
     {
       icon: whyChooseData[3].icon,
       title: 'Deployment and Monitoring',
-      description: 'Once live, we track task completion, escalation rates, and failure patterns to guide ongoing adjustments.'
+      description: 'Once live, we track task completion, escalation rates and failure patterns to guide ongoing adjustments.'
     }
   ],
 
@@ -1032,17 +1032,17 @@ const whyChooseDataByPage = {
     {
       icon: whyChooseData[0].icon,
       title: 'Discovery & Requirement Analysis',
-      description: 'We analyze your app vision, target audience, technical architecture, and skill requirements to select the best developers.'
+      description: 'We analyze your app vision, target audience, technical architecture and skill requirements to select the best developers.'
     },
     {
       icon: whyChooseData[1].icon,
       title: 'Profile Selection & Fast Interview',
-      description: 'Review pre-vetted senior iOS engineer profiles within 24 hours, conduct 1-on-1 technical interviews, and choose your developer.'
+      description: 'Review pre-vetted senior iOS engineer profiles within 24 hours, conduct 1-on-1 technical interviews and choose your developer.'
     },
     {
       icon: whyChooseData[2].icon,
       title: 'Seamless 48-Hour Onboarding',
-      description: 'Your chosen developer integrates directly into your Slack, Jira, GitHub, and CI/CD pipelines under your management.'
+      description: 'Your chosen developer integrates directly into your Slack, Jira, GitHub and CI/CD pipelines under your management.'
     },
     {
       icon: whyChooseData[3].icon,
@@ -1627,15 +1627,15 @@ const testimonialsData = [
     name: "Jeff"
   },
   {
-    quote: "I'm Britney, and I'm the head of conversion optimization for Acadia, a digital marketing agency. I've had the pleasure of working with the Cypherox team for over two, going on three years now. They're fast, hardworking, and really diligent developers. They're really reliable, skilled developers and have been a great partner and a pleasure to work with.",
+    quote: "I'm Britney and I'm the head of conversion optimization for Acadia, a digital marketing agency. I've had the pleasure of working with the Cypherox team for over two, going on three years now. They're fast, hardworking and really diligent developers. They're really reliable, skilled developers and have been a great partner and a pleasure to work with.",
     name: "Britney"
   },
   {
-    quote: "Hi, my name is Gabrielle, and I'd like to share my experience working with Cypherox Technologies on one of the mobile apps and websites that I worked together with them building. I had an amazing experience. The team members at Cypherox Technologies were attentive, diligent, communicative, and very, very bright. I had an amazing experience working with them, and I highly recommend them.",
+    quote: "Hi, my name is Gabrielle and I'd like to share my experience working with Cypherox Technologies on one of the mobile apps and websites that I worked together with them building. I had an amazing experience. The team members at Cypherox Technologies were attentive, diligent, communicative and very, very bright. I had an amazing experience working with them and I highly recommend them.",
     name: "Gabrielle"
   },
   {
-    quote: "Hi, I'm Becke. I've had the pleasure of working with Cypherox Technologies on a recent web development project. It was a custom, heavy CRM, and the experience was seamless from start to finish. The product was delivered on time, and he went the extra mile to ensure everything was done so that we understood the process. It was just, it was brilliant. It was really, really good service. So yeah, absolutely brilliant; I'd recommend it. Thank you so much. Thank you.",
+    quote: "Hi, I'm Becke. I've had the pleasure of working with Cypherox Technologies on a recent web development project. It was a custom, heavy CRM and the experience was seamless from start to finish. The product was delivered on time and he went the extra mile to ensure everything was done so that we understood the process. It was just, it was brilliant. It was really, really good service. So yeah, absolutely brilliant; I'd recommend it. Thank you so much. Thank you.",
     name: "Becke"
   },
   {
@@ -1947,7 +1947,7 @@ function renderIndustries() {
       <div class="sticky-scroll-sidebar">
         <span class="eyebrow">Proven Delivery</span>
         <h2 class="section-title fade-up">Real Results<br>Across Industries.</h2>
-        <p class="section-subtitle fade-up" style="margin-top: 16px;">These are production systems, not demos. Each project went from requirements through architecture, development, testing, and deployment into an environment where real users and real data depend on it daily.</p>
+        <p class="section-subtitle fade-up" style="margin-top: 16px;">These are production systems, not demos. Each project went from requirements through architecture, development, testing and deployment into an environment where real users and real data depend on it daily.</p>
       </div>
       <div class="sticky-scroll-content">
   `;
@@ -2275,22 +2275,22 @@ function renderFooter() {
   const pageName = window.location.pathname.split('/').pop() || 'index.html';
   const footerBrandDescriptions = {
     'predictive-maintenance-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
-    'fraud-detection-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
-    'automl-development-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
-    'it-consulting-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
-    'startup-it-consulting-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
-    'ai-strategy-consulting-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
-    'responsive-web-design-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
-    'mobile-app-design-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
-    'business-process-automation-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
-    'workflow-automation-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'fraud-detection-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
+    'automl-development-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
+    'it-consulting-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
+    'startup-it-consulting-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
+    'ai-strategy-consulting-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
+    'responsive-web-design-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
+    'mobile-app-design-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
+    'business-process-automation-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
+    'workflow-automation-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
     'marketing-and-crm-automation-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
-    'web-development-company-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
-    'app-development-company-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
-    'ecommerce-website-development-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
-    'cms-development-services.html': 'Cypherox is a production AI engineering firm that designs, builds, and maintains AI systems, applications, and integrations for businesses moving from pilots to dependable, working software.',
+    'web-development-company-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
+    'app-development-company-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
+    'ecommerce-website-development-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
+    'cms-development-services.html': 'Cypherox is a production AI engineering firm that designs, builds and maintains AI systems, applications and integrations for businesses moving from pilots to dependable, working software.',
   };
-  const brandDescription = footerBrandDescriptions[pageName] || 'Cypherox Technologies builds and operates AI and software systems for businesses across the US, UK, and Europe. Established in 2015.';
+  const brandDescription = footerBrandDescriptions[pageName] || 'Cypherox Technologies builds and operates AI and software systems for businesses across the US, UK and Europe. Established in 2015.';
 
   let colsHtml = footerData.columns.map(col => `
     <div class="footer__col">
