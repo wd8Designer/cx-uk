@@ -1624,23 +1624,28 @@ const caseStudiesData = [
 const testimonialsData = [
   {
     quote: "A stellar WordPress design experience. Their team combined creativity with functionality to deliver a stunning website that engages visitors and drives results. Highly professional and results-driven.",
-    name: "Jeff"
+    name: "Jeff",
+    clientImg: ""
   },
   {
     quote: "I'm Britney and I'm the head of conversion optimization for Acadia, a digital marketing agency. I've had the pleasure of working with the Cypherox team for over two, going on three years now. They're fast, hardworking and really diligent developers. They're really reliable, skilled developers and have been a great partner and a pleasure to work with.",
-    name: "Britney"
+    name: "Britney",
+    clientImg: "/images/britney.png"
   },
   {
     quote: "Hi, my name is Gabrielle and I'd like to share my experience working with Cypherox Technologies on one of the mobile apps and websites that I worked together with them building. I had an amazing experience. The team members at Cypherox Technologies were attentive, diligent, communicative and very, very bright. I had an amazing experience working with them and I highly recommend them.",
-    name: "Gabrielle"
+    name: "Gabrielle",
+    clientImg: "/images/gabrielle.png"
   },
   {
     quote: "Hi, I'm Becke. I've had the pleasure of working with Cypherox Technologies on a recent web development project. It was a custom, heavy CRM and the experience was seamless from start to finish. The product was delivered on time and he went the extra mile to ensure everything was done so that we understood the process. It was just, it was brilliant. It was really, really good service. So yeah, absolutely brilliant; I'd recommend it. Thank you so much. Thank you.",
-    name: "Becke"
+    name: "Becke",
+    clientImg: "/images/becke.png"
   },
   {
     quote: "I would highly recommend working with Cypherox Technologies if you need a custom CRM platform. They always exceed their clients' expectations at every stage of the project. Their team designs and builds fully customized ecommerce platforms from the ground up, approaching every project with remarkable skill and dedication.",
-    name: "Lauren"
+    name: "Lauren",
+    clientImg: ""
   }
 ];
 
@@ -2164,7 +2169,9 @@ function renderTestimonials() {
         <div class="testimonial-card__stars">★★★★★</div>
         <div class="testimonial-card__quote">"${t.quote}"</div>
         <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar"></div>
+          <div class="testimonial-card__avatar">
+            <img src="${t.clientImg}" alt="${t.name}" style="display: ${t.clientImg ? 'block' : 'none'};">
+          </div>
           <div>
             <div class="testimonial-card__name">${t.name}</div>
           </div>
