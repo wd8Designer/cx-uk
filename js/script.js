@@ -482,7 +482,7 @@ const testimonialsData = [
   {
     quote: "A stellar WordPress design experience. Their team combined creativity with functionality to deliver a stunning website that engages visitors and drives results. Highly professional and results-driven.",
     name: "Jeff",
-    clientImg: ""
+    clientImg: "https://placehold.net/avatar.svg"
   },
   {
     quote: "I'm Britney and I'm the head of conversion optimization for Acadia, a digital marketing agency. I've had the pleasure of working with the Cypherox team for over two, going on three years now. They're fast, hardworking and really diligent developers. They're really reliable, skilled developers and have been a great partner and a pleasure to work with.",
@@ -502,7 +502,7 @@ const testimonialsData = [
   {
     quote: "I would highly recommend working with Cypherox Technologies if you need a custom CRM platform. They always exceed their clients' expectations at every stage of the project. Their team designs and builds fully customized ecommerce platforms from the ground up, approaching every project with remarkable skill and dedication.",
     name: "Lauren",
-    clientImg: ""
+    clientImg: "https://placehold.net/avatar.svg"
   }
 ];
 
