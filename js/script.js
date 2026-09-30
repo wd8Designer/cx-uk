@@ -297,7 +297,7 @@ const industriesData = [
     tabName: 'Healthcare',
     highlightText: 'AI Document Processing System',
     subTitleText: 'Automated clinical document intake and decreased manual review time across high-volume workflows.',
-    image: 'https://picsum.photos/seed/healthcare/800/600',
+    image: '/images/ai-document-processing-system.webp',
     challenges: [
       'Processing thousands of documents per week consumed clinical staff time.',
       'Manual data entry introduced transcription errors and delays.',
@@ -320,7 +320,7 @@ const industriesData = [
     tabName: 'Fintech',
     highlightText: 'Real-Time Fraud Monitoring Platform',
     subTitleText: 'Deployed a transaction monitoring system that flags anomalies in real time and routes alerts to review teams.',
-    image: 'https://picsum.photos/seed/finance/800/600',
+    image: 'images/real-time-fraud-monitoring-platform.webp',
     challenges: [
       'Legacy rules engine missed complex fraud patterns.',
       'Alert volumes overwhelmed the compliance team with false positives.',
@@ -343,7 +343,7 @@ const industriesData = [
     tabName: 'Logistics',
     highlightText: 'Route Optimization and Dispatch System',
     subTitleText: 'Replaced manual dispatch with an automated routing system that reduced planning time and improved delivery accuracy',
-    image: 'https://picsum.photos/seed/manufacturing/800/600',
+    image: 'images/route-optimization-and-dispatch-system.webp',
     challenges: [
       'Dispatchers planned routes manually each morning across hundreds of stops.',
       'Late deliveries and inefficient routes increased operational costs.',
