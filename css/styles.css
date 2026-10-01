@@ -2026,8 +2026,22 @@ dd {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   color: var(--text-primary);
+}
+
+.tech-category__title span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--primary);
+}
+
+.tech-category__title svg {
+  display: block;
+  width: 22px;
+  height: 22px;
 }
 
 .tech-badges {
