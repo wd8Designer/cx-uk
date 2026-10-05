@@ -2203,12 +2203,13 @@ dd {
 }
 
 .case-card__visual {
-  background: linear-gradient(45deg, var(--bg-dark) 0%, var(--primary-dark) 100%);
+  background-color: var(--bg-dark);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   min-height: 400px;
+  overflow: hidden;
 }
 
 .case-card__visual::before {
@@ -2218,6 +2219,26 @@ dd {
   background-image: radial-gradient(rgba(255, 255, 255, 0.1) 2px, transparent 2px);
   background-size: 30px 30px;
   opacity: 0.5;
+}
+
+.case-card__visual:has(.case-card__img)::before,
+.case-card__visual:has(img)::before {
+  display: none !important;
+}
+
+.case-card__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 2;
+  transition: transform 0.4s ease;
+}
+
+.case-card:hover .case-card__img {
+  transform: scale(1.03);
 }
 
 /* ==========================================================================
@@ -4032,7 +4053,24 @@ textarea.form-input {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 24px;
+  padding: 20px;
+}
+
+.featured-dropdown__graphic:has(.featured-dropdown__graphic-img)::after {
+  display: none;
+}
+
+.featured-dropdown__graphic-img {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: var(--radius-md, 8px);
+  display: block;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .featured-dropdown__graphic::after {
@@ -4190,7 +4228,24 @@ textarea.form-input {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 24px;
+  padding: 20px;
+}
+
+.featured-dropdown__graphic:has(.featured-dropdown__graphic-img)::after {
+  display: none;
+}
+
+.featured-dropdown__graphic-img {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: var(--radius-md, 8px);
+  display: block;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .featured-dropdown__graphic::after {

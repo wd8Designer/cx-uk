@@ -64,6 +64,7 @@ const navigationData = [
     label: 'Automation',
     href: 'javascript:;',
     type: 'dropdown',
+    graphicImg: '/images/automation.webp',
     graphicNum: '85%',
     graphicText: 'FASTER<br>PROCESSES',
     ctaTitle: 'Streamline Your Operations',
@@ -85,6 +86,7 @@ const navigationData = [
     label: 'Technology',
     href: 'javascript:;',
     type: 'dropdown',
+    graphicImg: '/images/technology.webp',
     graphicNum: '50+',
     graphicText: 'TECH<br>EXPERTS',
     ctaTitle: 'Build Scalable Software',
@@ -172,6 +174,7 @@ const navigationData = [
     label: 'Industries',
     href: 'javascript:;',
     type: 'dropdown',
+    graphicImg: '/images/industries.webp',
     graphicNum: '12+',
     graphicText: 'SECTORS<br>SERVED',
     ctaTitle: 'Tailored Industry Solutions',
@@ -196,6 +199,7 @@ const navigationData = [
     label: 'Company',
     href: 'javascript:;',
     type: 'dropdown',
+    graphicImg: '/images/company.webp',
     graphicNum: '100%',
     graphicText: 'CLIENT<br>FOCUS',
     ctaTitle: 'Partner with Cypherox',
@@ -1834,9 +1838,9 @@ function getWhyChooseData() {
   const cleanPage = rawPage.replace(/\.html$/, '');
   const withHtml = cleanPage + '.html';
   return whyChooseDataByPage[withHtml] ||
-         (whyChooseDataByPage[cleanPage] && whyChooseDataByPage[cleanPage] !== whyChooseData ? whyChooseDataByPage[cleanPage] : null) ||
-         whyChooseDataByPage[rawPage] ||
-         whyChooseData;
+    (whyChooseDataByPage[cleanPage] && whyChooseDataByPage[cleanPage] !== whyChooseData ? whyChooseDataByPage[cleanPage] : null) ||
+    whyChooseDataByPage[rawPage] ||
+    whyChooseData;
 }
 
 const techIcons = {
@@ -2413,36 +2417,51 @@ function getTechStackData() {
 const caseStudiesData = [
   {
     category: 'healthcare',
+    tab: 'Healthcare',
+    industry: 'Healthcare & MedTech',
     title: 'Healthcare Project: AI Document Processing System',
     description: 'Automated clinical document intake and decreased manual review time across high-volume workflows.',
+    challenge: 'Processing thousands of documents per week consumed clinical staff time. Manual data entry introduced transcription errors and delays.',
+    solution: 'Built a document classification and extraction pipeline using NLP. Integrated with the existing patient records system through secure APIs.',
     metrics: [
-      { label: 'Challenge', value: 'Processing thousands of documents per week consumed clinical staff time. Manual data entry introduced transcription errors and delays.' },
-      { label: 'Solution', value: 'Built a document classification and extraction pipeline using NLP. Integrated with the existing patient records system through secure APIs.' }
+      { number: '90', suffix: '%', label: 'Review Time Drop' },
+      { number: '10x', suffix: '', label: 'Intake Velocity' },
+      { number: '99.8', suffix: '%', label: 'Accuracy' }
     ],
     tech: ['Python', 'NLP', 'FastAPI', 'AWS', 'PostgreSQL', 'Docker'],
-    image: 'images/work-1.jpg'
+    image: '/images/ai-document-processing-system.webp'
   },
   {
     category: 'fintech',
+    tab: 'FinTech',
+    industry: 'FinTech & Banking',
     title: 'Fintech Project: Real-Time Fraud Monitoring Platform',
     description: 'Deployed a transaction monitoring system that flags anomalies in real time and routes alerts to review teams.',
+    challenge: 'Legacy rules engine missed complex fraud patterns. Alert volumes overwhelmed the compliance team with false positives.',
+    solution: 'Designed and trained a custom ML model on historical transaction data. Built an alert dashboard with adjustable risk thresholds and case management.',
     metrics: [
-      { label: 'Challenge', value: 'Legacy rules engine missed complex fraud patterns. Alert volumes overwhelmed the compliance team with false positives.' },
-      { label: 'Solution', value: 'Designed and trained a custom ML model on historical transaction data. Built an alert dashboard with adjustable risk thresholds and case management.' }
+      { number: '85', suffix: '%', label: 'False Positives Drop' },
+      { number: '24ms', suffix: '', label: 'Latency' },
+      { number: '£1.8M', suffix: '', label: 'Loss Averted' }
     ],
     tech: ['Python', 'TensorFlow', 'Kafka', 'PostgreSQL', 'React', 'AWS'],
-    image: 'images/work-2.jpg'
+    image: '/images/real-time-fraud-monitoring-platform.webp'
   },
   {
     category: 'logistics',
+    tab: 'Logistics',
+    industry: 'Logistics & Transportation',
     title: 'Logistics Project: Route Optimization and Dispatch System',
     description: 'Replaced manual dispatch with an automated routing system that reduced planning time and improved delivery accuracy.',
+    challenge: 'Dispatchers planned routes manually each morning across hundreds of stops. Late deliveries and inefficient routes increased operational costs.',
+    solution: 'Built a route optimization engine with real-time traffic integration. Connected the system to existing warehouse and driver mobile applications.',
     metrics: [
-      { label: 'Challenge', value: 'Dispatchers planned routes manually each morning across hundreds of stops. Late deliveries and inefficient routes increased operational costs.' },
-      { label: 'Solution', value: 'Built a route optimization engine with real-time traffic integration. Connected the system to existing warehouse and driver mobile applications.' }
+      { number: '35', suffix: '%', label: 'Fuel Savings' },
+      { number: '99.5', suffix: '%', label: 'On-Time Delivery' },
+      { number: '4x', suffix: '', label: 'Faster Planning' }
     ],
     tech: ['Python', 'React Native', 'Node.js', 'Google Maps API', 'PostgreSQL', 'AWS'],
-    image: 'images/work-3.jpg'
+    image: '/images/route-optimization-and-dispatch-system.webp'
   }
 ];
 
@@ -2543,8 +2562,7 @@ function renderMegaMenus() {
                 </div>
               </div>
               <div class="featured-dropdown__graphic">
-                <div class="featured-dropdown__graphic-number">${item.graphicNum || '250+'}</div>
-                <div class="featured-dropdown__graphic-text">${item.graphicText || 'ENTERPRISE<br>PROJECTS'}</div>
+                <img src="${item.graphicImg || '/images/web-development-company-banner-img.webp'}" alt="${item.label}" class="featured-dropdown__graphic-img">
               </div>
             </div>
             <div class="featured-dropdown__bottom">
@@ -3051,7 +3069,9 @@ function renderCaseStudy() {
           <div class="case-card__text"><span class="case-card__label">Solution:</span> ${f.solution}</div>
           <div class="case-card__metrics">${metricsHtml}</div>
         </div>
-        <div class="case-card__visual" style="background: linear-gradient(135deg, #f26e65, #d94f47);"></div>
+        <div class="case-card__visual">
+          <img src="${f.image || '/images/ai-document-processing-system.webp'}" alt="${f.title}" class="case-card__img">
+        </div>
       </div>
     `;
   });
