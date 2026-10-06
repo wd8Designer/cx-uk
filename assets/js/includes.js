@@ -24,6 +24,28 @@ async function loadInclude(selector, file) {
     }
 }
 
+// Preload primary brand fonts immediately with highest priority to eliminate any FOUT/jerk
+(function preloadCriticalFonts() {
+    const fonts = [
+        '/fonts/Poppins-Regular.woff2',
+        '/fonts/Poppins-Medium.woff2',
+        '/fonts/Poppins-SemiBold.woff2',
+        '/fonts/Poppins-Bold.woff2',
+        '/fonts/QAEFQSTTFirsNeue-Regular.woff2'
+    ];
+    fonts.forEach(href => {
+        if (!document.querySelector(`link[rel="preload"][href="${href}"]`)) {
+            const link = document.createElement('link');
+            link.rel = 'preload';
+            link.as = 'font';
+            link.type = 'font/woff2';
+            link.crossOrigin = 'anonymous';
+            link.href = href;
+            document.head.appendChild(link);
+        }
+    });
+})();
+
 document.addEventListener("DOMContentLoaded", async () => {
     // Load includes concurrently
     await Promise.all([
@@ -44,7 +66,15 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     }
     
-    // Dispatch a custom event so script.js knows the DOM is fully ready
+    // Dispatch a custom event so script.js / service.js knows the DOM is fully ready
     document.dispatchEvent(new Event("includesLoaded"));
+
+    // Ensure header transitions in smoothly without sudden jerk
+    requestAnimationFrame(() => {
+        const headerEl = document.querySelector('.header');
+        if (headerEl) {
+            headerEl.classList.add('header--visible');
+        }
+    });
 });
 

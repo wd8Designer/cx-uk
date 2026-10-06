@@ -680,6 +680,13 @@ function renderMegaMenus() {
   });
 
   navContainer.innerHTML = html;
+
+  const headerEl = document.querySelector('.header');
+  if (headerEl) {
+    requestAnimationFrame(() => {
+      headerEl.classList.add('header--visible');
+    });
+  }
 }
 
 function renderMobileDrawer() {
