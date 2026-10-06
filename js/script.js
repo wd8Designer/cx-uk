@@ -127,7 +127,9 @@ const navigationData = [
           links: [
             { label: 'Hire AngularJS Developers', href: '/hire-developers/angularjs-developers' },
             { label: 'Hire ReactJS Developers', href: '/hire-developers/reactjs-developers' },
-            { label: 'Hire VueJS Developers', href: '/hire-developers/vuejs-developers' }
+            { label: 'Hire VueJS Developers', href: '/hire-developers/vuejs-developers' },
+            { label: 'Hire Graphic Designers', href: '/hire-developers/graphic-designers' },
+            { label: 'Hire UI/UX Designers', href: '/hire-developers/ui-ux-designers' }
           ]
         },
         {
@@ -147,9 +149,6 @@ const navigationData = [
             { label: 'Hire Magento Developers', href: '/hire-developers/magento-developers' },
             { label: 'Hire BigCommerce Developers', href: '/hire-developers/bigcommerce-developers' },
             { label: 'Hire WooCommerce Developers', href: '/hire-developers/woocommerce-developers' },
-            { label: 'Hire Chatbot Developers', href: '/hire-developers/chatbot-developers' },
-            { label: 'Hire Graphic Designers', href: '/hire-developers/graphic-designers' },
-            { label: 'Hire UI/UX Designers', href: '/hire-developers/ui-ux-designers' },
             { label: 'Hire Digital Marketers', href: '/hire-developers/digital-marketers' }
           ]
         },
@@ -164,7 +163,8 @@ const navigationData = [
             { label: 'Hire AR Developers', href: '/hire-developers/ar-developers' },
             { label: 'Hire VR Developers', href: '/hire-developers/vr-developers' },
             { label: 'Hire Data Analytics Experts', href: '/hire-developers/data-analytics-experts' },
-            { label: 'Hire Full Stack Developers', href: '/hire-developers/full-stack-developers' }
+            { label: 'Hire Full Stack Developers', href: '/hire-developers/full-stack-developers' },
+            { label: 'Hire Chatbot Developers', href: '/hire-developers/chatbot-developers' }
           ]
         }
       ]
