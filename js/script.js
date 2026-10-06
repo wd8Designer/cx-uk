@@ -21,7 +21,9 @@ const navigationData = [
   {
     label: 'Services',
     href: 'javascript:;',
-    type: 'mega',
+    type: 'dropdown',
+    ctaTitle: 'Build Enterprise AI & Custom Software',
+    ctaDesc: 'Schedule a discovery session with our engineering team to explore custom solutions tailored to your business.',
     megaMenu: {
       columns: [
         {
@@ -108,7 +110,9 @@ const navigationData = [
   {
     label: 'Hire Developers',
     href: '/hire-developers',
-    type: 'mega',
+    type: 'dropdown',
+    ctaTitle: 'Hire Vetted Dedicated Developers',
+    ctaDesc: 'Scale your engineering team with pre-vetted senior developers ready to onboard in 48 hours.',
     megaMenu: {
       columns: [
         {
@@ -499,9 +503,9 @@ const caseStudiesData = [
 
 const testimonialsData = [
   {
-    quote: "A stellar WordPress design experience. Their team combined creativity with functionality to deliver a stunning website that engages visitors and drives results. Highly professional and results-driven.",
-    name: "Jeff",
-    clientImg: "https://placehold.net/avatar.svg"
+    quote: "Hi, my name is Gabrielle, and I'd like to share my experience working with Cypherox Technologies on one of the mobile apps and websites I built with them. The team members at Cypherox Technologies were attentive, diligent, communicative and very, very bright. I had an amazing experience working with them and I highly recommend.",
+    name: "Gabrielle",
+    clientImg: "/images/gabrielle.png"
   },
   {
     quote: "I'm Britney and I'm the head of conversion optimization for Acadia, a digital marketing agency. I've had the pleasure of working with the Cypherox team for over two, going on three years now. They're fast, hardworking and really diligent developers. They're really reliable, skilled developers and have been a great partner and a pleasure to work with.",
@@ -509,9 +513,9 @@ const testimonialsData = [
     clientImg: "/images/britney.png"
   },
   {
-    quote: "Hi, my name is Gabrielle and I'd like to share my experience working with Cypherox Technologies on one of the mobile apps and websites that I worked together with them building. I had an amazing experience. The team members at Cypherox Technologies were attentive, diligent, communicative and very, very bright. I had an amazing experience working with them and I highly recommend them.",
-    name: "Gabrielle",
-    clientImg: "/images/gabrielle.png"
+    quote: "Hey I'm Brian and I recently worked with Cypherox Technologies who developed an e-commerce platform. For me, working with Cypherox Technologies was truly an excellent experience. I recently collaborated with them to design and develop the custom e-commerce platform from the Groundhog and their expertise was evident from day one.",
+    name: "Brian",
+    clientImg: "/images/brian.png"
   },
   {
     quote: "Hi, I'm Becke. I've had the pleasure of working with Cypherox Technologies on a recent web development project. It was a custom, heavy CRM and the experience was seamless from start to finish. The product was delivered on time and he went the extra mile to ensure everything was done so that we understood the process. It was just, it was brilliant. It was really, really good service. So yeah, absolutely brilliant; I'd recommend it. Thank you so much. Thank you.",
@@ -521,7 +525,7 @@ const testimonialsData = [
   {
     quote: "I would highly recommend working with Cypherox Technologies if you need a custom CRM platform. They always exceed their clients' expectations at every stage of the project. Their team designs and builds fully customized ecommerce platforms from the ground up, approaching every project with remarkable skill and dedication.",
     name: "Lauren",
-    clientImg: "https://placehold.net/avatar.svg"
+    clientImg: "/images/lauren.png"
   }
 ];
 
@@ -574,66 +578,11 @@ function renderMegaMenus() {
   navigationData.forEach(item => {
     let panelHtml = '';
 
-    if (item.type === 'dropdown') {
-      let linksHtml = '';
-      if (item.megaMenu && item.megaMenu.columns) {
-        item.megaMenu.columns.forEach(col => {
-          col.links.forEach(link => {
-            linksHtml += `<a href="${link.href}" class="featured-dropdown__link">${link.label}</a>`;
-          });
-        });
-      }
-      panelHtml = `
-        <div class="mega-menu featured-dropdown">
-          <div class="featured-dropdown__inner container">
-            <div class="featured-dropdown__top">
-              <div class="featured-dropdown__content">
-                <h3 class="featured-dropdown__title">${item.label}</h3>
-                <div class="featured-dropdown__grid">
-                  ${linksHtml}
-                </div>
-              </div>
-              <div class="featured-dropdown__graphic">
-                <img src="${item.graphicImg || '/images/web-development-company-banner-img.webp'}" alt="${item.label}" class="featured-dropdown__graphic-img">
-              </div>
-            </div>
-            <div class="featured-dropdown__bottom">
-              <div class="featured-dropdown__bottom-text">
-                <h4>${item.ctaTitle || 'Accelerate Your Digital Transformation'}</h4>
-                <p>${item.ctaDesc || 'Schedule a free discovery session to explore your needs and find tailored solutions with no obligation.'}</p>
-              </div>
-              <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
-            </div>
-          </div>
-        </div>
-      `;
-    } else if (item.type === 'mega') {
-      const cols = item.megaMenu ? item.megaMenu.columns : [];
+    if (item.type === 'dropdown' || item.type === 'mega') {
+      const cols = (item.megaMenu && item.megaMenu.columns) ? item.megaMenu.columns : [];
 
-      if (item.label === 'About') {
-        // About: simple columns + image side-by-side (no tabs)
-        let colsHtml = '';
-        cols.forEach(col => {
-          let links = col.links.map(l => `<a href="${l.href}" class="mega-menu__link">${l.label}</a>`).join('');
-          colsHtml += `<div class="mega-menu__col"><div class="mega-menu__heading">${col.heading}</div><div class="mega-menu__list">${links}</div></div>`;
-        });
-        panelHtml = `
-          <div class="mega-menu">
-            <div class="mega-menu__inner">
-              <div class="mega-menu__about-layout">
-                <div class="mega-menu__about-cols">${colsHtml}</div>
-                <div class="mega-menu__about-image">
-                  <div class="mega-menu__about-image-inner">
-                    <span class="mega-menu__about-image-text">Enterprise Technology Partner</span>
-                  </div>
-                </div>
-              </div>
-              <div class="mega-menu__bottom"><span>High-quality, cost-effective technology solutions</span> <a href="#consultation" class="btn btn--primary">Schedule a Call</a></div>
-            </div>
-          </div>
-        `;
-      } else if (cols.length >= 2) {
-        // Tabbed mega menu (Services, Solutions, Industries, Technologies)
+      if (cols.length >= 2) {
+        // Multi-category tabbed menu (Services, Hire Developers) - inner layout preserved as tabbed
         let tabsHtml = '';
         let panelsHtml = '';
         cols.forEach((col, idx) => {
@@ -650,29 +599,68 @@ function renderMegaMenus() {
           </div>`;
         });
 
-        let ctaHtml = item.megaMenu.cta
-          ? `<div class="mega-menu__bottom"><span>Need help choosing the right solution?</span> <a href="#consultation" class="btn btn--primary">Schedule a Call</a></div>`
-          : '';
+        const graphicHtml = item.graphicImg ? `
+          <div class="featured-dropdown__graphic">
+            <img src="${item.graphicImg}" alt="${item.label}" class="featured-dropdown__graphic-img">
+          </div>
+        ` : '';
 
         panelHtml = `
-          <div class="mega-menu mega-menu--tabbed">
-            <div class="mega-menu__inner">
-              <div class="mega-tab">
-                <ul class="mega-tab__sidebar">${tabsHtml}</ul>
-                <div class="mega-tab__content">${panelsHtml}</div>
+          <div class="mega-menu featured-dropdown${item.graphicImg ? '' : ' featured-dropdown--no-image'}">
+            <div class="featured-dropdown__inner container">
+              <div class="featured-dropdown__top">
+                <div class="featured-dropdown__content featured-dropdown__content--tabbed">
+                  <div class="mega-tab">
+                    <ul class="mega-tab__sidebar">${tabsHtml}</ul>
+                    <div class="mega-tab__content">${panelsHtml}</div>
+                  </div>
+                </div>
+                ${graphicHtml}
               </div>
-              ${ctaHtml}
+              <div class="featured-dropdown__bottom">
+                <div class="featured-dropdown__bottom-text">
+                  <h4>${item.ctaTitle || 'Accelerate Your Digital Transformation'}</h4>
+                  <p>${item.ctaDesc || 'Schedule a free discovery session to explore your needs and find tailored solutions with no obligation.'}</p>
+                </div>
+                <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
+              </div>
             </div>
           </div>
         `;
       } else {
-        // Single column mega (Industries with 1 column)
-        let links = cols[0].links.map(l => `<a href="${l.href}" class="mega-menu__link">${l.label}</a>`).join('');
+        // Standard dropdown with grid (Automation, Technology, Industries, Company)
+        let linksHtml = '';
+        cols.forEach(col => {
+          col.links.forEach(link => {
+            linksHtml += `<a href="${link.href}" class="featured-dropdown__link">${link.label}</a>`;
+          });
+        });
+
+        const graphicHtml = item.graphicImg ? `
+          <div class="featured-dropdown__graphic">
+            <img src="${item.graphicImg}" alt="${item.label}" class="featured-dropdown__graphic-img">
+          </div>
+        ` : '';
+
         panelHtml = `
-          <div class="mega-menu">
-            <div class="mega-menu__inner">
-              <div class="mega-menu__heading">${cols[0].heading}</div>
-              <div class="mega-menu__single-grid">${links}</div>
+          <div class="mega-menu featured-dropdown">
+            <div class="featured-dropdown__inner container">
+              <div class="featured-dropdown__top">
+                <div class="featured-dropdown__content">
+                  <h3 class="featured-dropdown__title">${item.label}</h3>
+                  <div class="featured-dropdown__grid">
+                    ${linksHtml}
+                  </div>
+                </div>
+                ${graphicHtml}
+              </div>
+              <div class="featured-dropdown__bottom">
+                <div class="featured-dropdown__bottom-text">
+                  <h4>${item.ctaTitle || 'Accelerate Your Digital Transformation'}</h4>
+                  <p>${item.ctaDesc || 'Schedule a free discovery session to explore your needs and find tailored solutions with no obligation.'}</p>
+                </div>
+                <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
+              </div>
             </div>
           </div>
         `;
