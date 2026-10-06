@@ -574,6 +574,15 @@ function renderMegaMenus() {
   const navContainer = document.querySelector('.header__nav');
   if (!navContainer) return;
 
+  // Header navigation is pre-rendered in header.html. Prevent DOM destruction and repaint jerk.
+  if (navContainer.children && navContainer.children.length > 0) {
+    const headerEl = document.querySelector('.header');
+    if (headerEl) {
+      headerEl.classList.add('header--visible');
+    }
+    return;
+  }
+
   let html = '';
   navigationData.forEach(item => {
     let panelHtml = '';

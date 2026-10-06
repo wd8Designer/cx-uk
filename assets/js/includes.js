@@ -47,9 +47,19 @@ async function loadInclude(selector, file) {
 })();
 
 document.addEventListener("DOMContentLoaded", async () => {
-    // Load includes concurrently
+    // Load header first and reveal immediately to prevent any visual delay
+    const headerPromise = loadInclude("#site-header", "/header.html").then(() => {
+        const headerEl = document.querySelector('.header');
+        if (headerEl) {
+            requestAnimationFrame(() => {
+                headerEl.classList.add('header--visible');
+            });
+        }
+    });
+
+    // Load remaining includes concurrently
     await Promise.all([
-        loadInclude("#site-header", "/header.html"),
+        headerPromise,
         loadInclude("#site-footer", "/footer.html"),
         loadInclude("#consultation-form-wrapper, .consultation__form-wrapper", "/consultation-form.html")
     ]);

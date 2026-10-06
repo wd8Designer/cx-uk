@@ -431,7 +431,6 @@ dd {
    HEADER & NAVIGATION
    ========================================================================== */
 #site-header {
-  min-height: var(--header-height);
   display: block;
   position: relative;
   z-index: 1000;
@@ -450,23 +449,20 @@ dd {
   display: flex;
   align-items: center;
   opacity: 0;
-  transform: translateY(-8px);
-  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+  transition: opacity 0.25s ease,
               height 0.3s ease,
               box-shadow 0.3s ease;
-  animation: headerAutoFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards;
+  animation: headerFadeIn 0.3s ease 0.05s forwards;
+  will-change: opacity;
 }
 
 .header.header--visible {
   opacity: 1;
-  transform: translateY(0);
 }
 
-@keyframes headerAutoFadeIn {
+@keyframes headerFadeIn {
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -491,6 +487,17 @@ dd {
   align-items: center;
   gap: 8px;
   letter-spacing: -0.02em;
+  flex-shrink: 0;
+  width: 228px;
+  height: 20px;
+}
+
+.header__logo img {
+  width: 228px;
+  height: 20px;
+  max-height: 20px;
+  object-fit: contain;
+  display: block;
 }
 
 .header__logo svg {
