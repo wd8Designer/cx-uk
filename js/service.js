@@ -1920,7 +1920,7 @@ const techStackDataByPage = {
   'ai-chatbot-development.html': [
     { ...techStackData[0], category: 'Languages', items: ['Python', 'TypeScript', 'Node.js'] },
     { ...techStackData[1], category: 'LLM Providers', items: ['OpenAI', 'Anthropic Claude'] },
-    { ...techStackData[2], category: 'Data and Retrieval', items: ['Vector Databases', 'Embeddings'] },
+    { ...techStackData[2], category: 'Retrieval and Data', items: ['Vector Databases', 'Embeddings'] },
     { ...techStackData[3], category: 'Cloud and Infrastructure', items: ['AWS', 'Azure'] },
     { ...techStackData[4], category: 'Integration', items: ['REST APIs', 'Webhooks'] }
   ],
