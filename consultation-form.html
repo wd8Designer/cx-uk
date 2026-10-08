@@ -1,13 +1,13 @@
-<form class="consultation__form" id="consultation-form" novalidate>
+<form class="consultation__form" id="consultation-form" data-form-type="consultation" novalidate>
   <div class="form-row">
     <div class="form-group">
       <label class="form-label" for="full-name">Full Name *</label>
-      <input class="form-input" type="text" id="full-name" name="fullName" placeholder="e.g. David Wilson" required>
+      <input class="form-input" type="text" id="full-name" name="fullName" placeholder="e.g. David Wilson" minlength="2" maxlength="100" autocomplete="name" required>
       <span class="form-error-text">Please enter your full name</span>
     </div>
     <div class="form-group">
       <label class="form-label" for="work-email">Work Email *</label>
-      <input class="form-input" type="email" id="work-email" name="workEmail" placeholder="david@company.co.uk" required>
+      <input class="form-input" type="email" id="work-email" name="workEmail" placeholder="david@company.co.uk" maxlength="254" autocomplete="email" required>
       <span class="form-error-text">Please enter a valid work email</span>
     </div>
   </div>
@@ -15,11 +15,11 @@
   <div class="form-row">
     <div class="form-group">
       <label class="form-label" for="phone">Phone Number</label>
-      <input class="form-input" type="tel" id="phone" name="phone" placeholder="+44 20 7946 0912">
+      <input class="form-input" type="tel" id="phone" name="phone" placeholder="+44 20 7946 0912" minlength="7" maxlength="25" autocomplete="tel">
     </div>
     <div class="form-group">
       <label class="form-label" for="company">Company Name *</label>
-      <input class="form-input" type="text" id="company" name="company" placeholder="e.g. Acme Tech UK" required>
+      <input class="form-input" type="text" id="company" name="company" placeholder="e.g. Acme Tech UK" minlength="2" maxlength="120" autocomplete="organization" required>
       <span class="form-error-text">Please enter your company name</span>
     </div>
   </div>
@@ -53,7 +53,7 @@
 
   <div class="form-group">
     <label class="form-label" for="message">Tell us about your project &amp; requirements *</label>
-    <textarea class="form-input" id="message" name="message" rows="4"
+    <textarea class="form-input" id="message" name="message" rows="4" minlength="10" maxlength="5000"
       placeholder="Briefly describe your project scope, tech stack, team size needed, or timeline..." required></textarea>
     <span class="form-error-text">Please describe your project requirements</span>
   </div>
@@ -61,13 +61,16 @@
   <button class="btn btn--primary btn--large form-submit" type="submit" id="submit-btn">
     <span>Book Your Consultation &rarr;</span>
   </button>
+  <div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;">
+    <label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+  </div>
   <p class="form-privacy">By submitting this form, you agree to our <a href="/privacy-policy" style="color: inherit; text-decoration: underline;">privacy policy</a>. We'll respond within 24 hours.</p>
   <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite"></div>
 </form>
 
 <div class="form-success" id="form-success">
-  <div style="font-size: 48px; margin-bottom: 16px;">✅</div>
-  <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 8px;">Thank You!</h3>
-  <p style="color: var(--text-secondary, #555555); margin-bottom: 16px;">Your inquiry has been received. Our engineering team will review your requirements and get back to you within 24 hours.</p>
-  <button type="button" class="btn btn--outline btn--small" id="btn-submit-another" style="cursor: pointer;">Send Another Message</button>
+<div class="form-success__icon" aria-hidden="true">✓</div>
+<h3 class="form-success__title">Thank you!</h3>
+<p class="form-success__desc">Your request has been received. Our team will be in touch shortly.</p>
+<button type="button" class="btn form-success__again">Send another message</button>
 </div>

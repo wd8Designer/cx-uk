@@ -1,254 +1,394 @@
 <header class="header" id="header">
   <div class="header__container container-fluid">
     <a href="/" class="header__logo" aria-label="Cypherox Home">
-      <img src="/images/cypherox-logo.png" alt="Cypherox Logo" width="228" height="20" style="height: 20px; width: 228px; filter: invert(1) brightness(2);">
+      <img src="/images/cypherox-logo.png" alt="Cypherox Logo" width="228" height="20"
+        style="height: 20px; width: 228px; filter: invert(1) brightness(2);">
     </a>
     <nav class="header__nav" aria-label="Main navigation" id="main-nav">
 
       <div class="nav-item">
         <a href="/ai-agent" class="nav-item__link">AI Agent</a>
-        
+
       </div>
-    
+
       <div class="nav-item">
-        <a href="javascript:;" class="nav-item__link">Services<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-        
-          <div class="mega-menu featured-dropdown featured-dropdown--no-image">
-            <div class="featured-dropdown__inner container">
-              <div class="featured-dropdown__top">
-                <div class="featured-dropdown__content featured-dropdown__content--tabbed">
-                  <div class="mega-tab">
-                    <ul class="mega-tab__sidebar"><li class="mega-tab__item active" data-tab-idx="0" role="button" tabindex="0">
-            <span>Generative AI Solutions</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
-          </li><li class="mega-tab__item" data-tab-idx="1" role="button" tabindex="0">
-            <span>AI & ML Development</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
-          </li><li class="mega-tab__item" data-tab-idx="2" role="button" tabindex="0">
-            <span>Consulting Services</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
-          </li><li class="mega-tab__item" data-tab-idx="3" role="button" tabindex="0">
-            <span>UI/UX Design Services</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
-          </li></ul>
-                    <div class="mega-tab__content"><div class="mega-tab__panel active" data-tab-panel="0" style="display:block">
-            <p class="mega-tab__panel-title">Generative AI Solutions</p>
-            <div class="mega-tab__panel-links"><a href="/ai-chatbot-development" class="mega-menu__link">AI Chatbot Development</a><a href="/virtual-assistant" class="mega-menu__link">Virtual Assistant Services</a><a href="/ai-language-translator" class="mega-menu__link">AI Language Translator</a><a href="/ai-content-generator" class="mega-menu__link">AI Content Generator</a><a href="/virtual-research-assistant" class="mega-menu__link">Virtual Research Assistant</a></div>
-          </div><div class="mega-tab__panel" data-tab-panel="1" style="display:none">
-            <p class="mega-tab__panel-title">AI & ML Development</p>
-            <div class="mega-tab__panel-links"><a href="/predictive-maintenance" class="mega-menu__link">Predictive Maintenance</a><a href="/fraud-detection" class="mega-menu__link">Fraud Detection</a><a href="/auto-ml-development" class="mega-menu__link">AutoML</a></div>
-          </div><div class="mega-tab__panel" data-tab-panel="2" style="display:none">
-            <p class="mega-tab__panel-title">Consulting Services</p>
-            <div class="mega-tab__panel-links"><a href="/it-consulting" class="mega-menu__link">IT Consulting</a><a href="/startup-it-consulting" class="mega-menu__link">Startup IT Consulting</a><a href="/ai-strategy-consulting" class="mega-menu__link">AI Strategy Consulting</a></div>
-          </div><div class="mega-tab__panel" data-tab-panel="3" style="display:none">
-            <p class="mega-tab__panel-title">UI/UX Design Services</p>
-            <div class="mega-tab__panel-links"><a href="/responsive-web-design" class="mega-menu__link">Responsive Web Design</a><a href="/mobile-app-design" class="mega-menu__link">Mobile App Design</a></div>
-          </div></div>
+        <a href="javascript:;" class="nav-item__link">Services<svg class="chevron" width="16" height="16"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg></a>
+
+        <div class="mega-menu featured-dropdown featured-dropdown--no-image">
+          <div class="featured-dropdown__inner container">
+            <div class="featured-dropdown__top">
+              <div class="featured-dropdown__content featured-dropdown__content--tabbed">
+                <div class="mega-tab">
+                  <ul class="mega-tab__sidebar">
+                    <li class="mega-tab__item active" data-tab-idx="0" role="button" tabindex="0">
+                      <span>Generative AI Solutions</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="9 6 15 12 9 18" />
+                      </svg>
+                    </li>
+                    <li class="mega-tab__item" data-tab-idx="1" role="button" tabindex="0">
+                      <span>AI & ML Development</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="9 6 15 12 9 18" />
+                      </svg>
+                    </li>
+                    <li class="mega-tab__item" data-tab-idx="2" role="button" tabindex="0">
+                      <span>Consulting Services</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="9 6 15 12 9 18" />
+                      </svg>
+                    </li>
+                    <li class="mega-tab__item" data-tab-idx="3" role="button" tabindex="0">
+                      <span>UI/UX Design Services</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="9 6 15 12 9 18" />
+                      </svg>
+                    </li>
+                  </ul>
+                  <div class="mega-tab__content">
+                    <div class="mega-tab__panel active" data-tab-panel="0" style="display:block">
+                      <p class="mega-tab__panel-title">Generative AI Solutions</p>
+                      <div class="mega-tab__panel-links"><a href="/ai-chatbot-development" class="mega-menu__link">AI
+                          Chatbot Development</a><a href="/virtual-assistant" class="mega-menu__link">Virtual Assistant
+                          Services</a><a href="/ai-language-translator" class="mega-menu__link">AI Language
+                          Translator</a><a href="/ai-content-generator" class="mega-menu__link">AI Content
+                          Generator</a><a href="/virtual-research-assistant" class="mega-menu__link">Virtual Research
+                          Assistant</a></div>
+                    </div>
+                    <div class="mega-tab__panel" data-tab-panel="1" style="display:none">
+                      <p class="mega-tab__panel-title">AI & ML Development</p>
+                      <div class="mega-tab__panel-links"><a href="/predictive-maintenance"
+                          class="mega-menu__link">Predictive Maintenance</a><a href="/fraud-detection"
+                          class="mega-menu__link">Fraud Detection</a><a href="/auto-ml-development"
+                          class="mega-menu__link">AutoML</a></div>
+                    </div>
+                    <div class="mega-tab__panel" data-tab-panel="2" style="display:none">
+                      <p class="mega-tab__panel-title">Consulting Services</p>
+                      <div class="mega-tab__panel-links"><a href="/it-consulting" class="mega-menu__link">IT
+                          Consulting</a><a href="/startup-it-consulting" class="mega-menu__link">Startup IT
+                          Consulting</a><a href="/ai-strategy-consulting" class="mega-menu__link">AI Strategy
+                          Consulting</a></div>
+                    </div>
+                    <div class="mega-tab__panel" data-tab-panel="3" style="display:none">
+                      <p class="mega-tab__panel-title">UI/UX Design Services</p>
+                      <div class="mega-tab__panel-links"><a href="/responsive-web-design"
+                          class="mega-menu__link">Responsive Web Design</a><a href="/mobile-app-design"
+                          class="mega-menu__link">Mobile App Design</a></div>
+                    </div>
                   </div>
                 </div>
-                
               </div>
-              <div class="featured-dropdown__bottom">
-                <div class="featured-dropdown__bottom-text">
-                  <h4>Build Enterprise AI & Custom Software</h4>
-                  <p>Schedule a discovery session with our engineering team to explore custom solutions tailored to your business.</p>
-                </div>
-                <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
+
+            </div>
+            <div class="featured-dropdown__bottom">
+              <div class="featured-dropdown__bottom-text">
+                <h4>Build Enterprise AI & Custom Software</h4>
+                <p>Schedule a discovery session with our engineering team to explore custom solutions tailored to your
+                  business.</p>
               </div>
+              <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
             </div>
           </div>
-        
+        </div>
+
       </div>
-    
+
       <div class="nav-item">
-        <a href="javascript:;" class="nav-item__link">Automation<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-        
-          <div class="mega-menu featured-dropdown">
-            <div class="featured-dropdown__inner container">
-              <div class="featured-dropdown__top">
-                <div class="featured-dropdown__content">
-                  <h3 class="featured-dropdown__title">Automation</h3>
-                  <div class="featured-dropdown__grid">
-                    <a href="/business-process-automation" class="featured-dropdown__link">Business Process Automation (RPA)</a><a href="/workflow-automation" class="featured-dropdown__link">Workflow Automation</a><a href="/marketing-crm-automation" class="featured-dropdown__link">Marketing & CRM Automation</a>
+        <a href="javascript:;" class="nav-item__link">Automation<svg class="chevron" width="16" height="16"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg></a>
+
+        <div class="mega-menu featured-dropdown">
+          <div class="featured-dropdown__inner container">
+            <div class="featured-dropdown__top">
+              <div class="featured-dropdown__content">
+                <h3 class="featured-dropdown__title">Automation</h3>
+                <div class="featured-dropdown__grid">
+                  <a href="/business-process-automation" class="featured-dropdown__link">Business Process Automation
+                    (RPA)</a><a href="/workflow-automation" class="featured-dropdown__link">Workflow Automation</a><a
+                    href="/marketing-crm-automation" class="featured-dropdown__link">Marketing & CRM Automation</a>
+                </div>
+              </div>
+
+              <div class="featured-dropdown__graphic">
+                <img src="/images/automation.webp" alt="Automation" class="featured-dropdown__graphic-img">
+              </div>
+
+            </div>
+            <div class="featured-dropdown__bottom">
+              <div class="featured-dropdown__bottom-text">
+                <h4>Streamline Your Operations</h4>
+                <p>Schedule a discovery session to identify automation opportunities and reduce manual overhead.</p>
+              </div>
+              <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="nav-item">
+        <a href="javascript:;" class="nav-item__link">Technology<svg class="chevron" width="16" height="16"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg></a>
+
+        <div class="mega-menu featured-dropdown">
+          <div class="featured-dropdown__inner container">
+            <div class="featured-dropdown__top">
+              <div class="featured-dropdown__content">
+                <h3 class="featured-dropdown__title">Technology</h3>
+                <div class="featured-dropdown__grid">
+                  <a href="/web-development" class="featured-dropdown__link">Web Development</a><a
+                    href="/app-development" class="featured-dropdown__link">App Development</a><a
+                    href="/ecommerce-development" class="featured-dropdown__link">E-Commerce</a><a
+                    href="/cms-development" class="featured-dropdown__link">CMS (WordPress, Drupal)</a>
+                </div>
+              </div>
+
+              <div class="featured-dropdown__graphic">
+                <img src="/images/technology.webp" alt="Technology" class="featured-dropdown__graphic-img">
+              </div>
+
+            </div>
+            <div class="featured-dropdown__bottom">
+              <div class="featured-dropdown__bottom-text">
+                <h4>Build Scalable Software</h4>
+                <p>Let's discuss your tech stack and engineer a robust architecture for your next big product.</p>
+              </div>
+              <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="nav-item">
+        <a href="/hire-developers" class="nav-item__link">Hire Developers<svg class="chevron" width="16" height="16"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg></a>
+
+        <div class="mega-menu featured-dropdown featured-dropdown--no-image">
+          <div class="featured-dropdown__inner container">
+            <div class="featured-dropdown__top">
+              <div class="featured-dropdown__content featured-dropdown__content--tabbed">
+                <div class="mega-tab">
+                  <ul class="mega-tab__sidebar">
+                    <li class="mega-tab__item active" data-tab-idx="0" role="button" tabindex="0">
+                      <span>Mobile App Developers</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="9 6 15 12 9 18" />
+                      </svg>
+                    </li>
+                    <li class="mega-tab__item" data-tab-idx="1" role="button" tabindex="0">
+                      <span>Front-End Web Developers</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="9 6 15 12 9 18" />
+                      </svg>
+                    </li>
+                    <li class="mega-tab__item" data-tab-idx="2" role="button" tabindex="0">
+                      <span>Back-End Web Developers</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="9 6 15 12 9 18" />
+                      </svg>
+                    </li>
+                    <li class="mega-tab__item" data-tab-idx="3" role="button" tabindex="0">
+                      <span>E-Commerce Developers</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="9 6 15 12 9 18" />
+                      </svg>
+                    </li>
+                    <li class="mega-tab__item" data-tab-idx="4" role="button" tabindex="0">
+                      <span>Trending Developers</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="9 6 15 12 9 18" />
+                      </svg>
+                    </li>
+                  </ul>
+                  <div class="mega-tab__content">
+                    <div class="mega-tab__panel active" data-tab-panel="0" style="display:block">
+                      <p class="mega-tab__panel-title">Mobile App Developers</p>
+                      <div class="mega-tab__panel-links"><a href="/hire-developers/ios-developers"
+                          class="mega-menu__link">Hire iOS Developers</a><a href="/hire-developers/android-developers"
+                          class="mega-menu__link">Hire Android Developers</a><a href="/hire-developers/swift-developers"
+                          class="mega-menu__link">Hire Swift Developers</a><a href="/hire-developers/kotlin-developers"
+                          class="mega-menu__link">Hire Kotlin Developers</a><a
+                          href="/hire-developers/flutter-developers" class="mega-menu__link">Hire Flutter
+                          Developers</a><a href="/hire-developers/react-native-developers" class="mega-menu__link">Hire
+                          React Native Developers</a></div>
+                    </div>
+                    <div class="mega-tab__panel" data-tab-panel="1" style="display:none">
+                      <p class="mega-tab__panel-title">Front-End Web Developers</p>
+                      <div class="mega-tab__panel-links"><a href="/hire-developers/angularjs-developers"
+                          class="mega-menu__link">Hire AngularJS Developers</a><a
+                          href="/hire-developers/reactjs-developers" class="mega-menu__link">Hire ReactJS
+                          Developers</a><a href="/hire-developers/vuejs-developers" class="mega-menu__link">Hire VueJS
+                          Developers</a><a href="/hire-developers/graphic-designers" class="mega-menu__link">Hire
+                          Graphic Designers</a><a href="/hire-developers/ui-ux-designers" class="mega-menu__link">Hire
+                          UI/UX Designers</a></div>
+                    </div>
+                    <div class="mega-tab__panel" data-tab-panel="2" style="display:none">
+                      <p class="mega-tab__panel-title">Back-End Web Developers</p>
+                      <div class="mega-tab__panel-links"><a href="/hire-developers/nodejs-developers"
+                          class="mega-menu__link">Hire NodeJS Developers</a><a
+                          href="/hire-developers/laravel-developers" class="mega-menu__link">Hire Laravel
+                          Developers</a><a href="/hire-developers/python-developers" class="mega-menu__link">Hire Python
+                          Developers</a><a href="/hire-developers/php-developers" class="mega-menu__link">Hire PHP
+                          Developers</a></div>
+                    </div>
+                    <div class="mega-tab__panel" data-tab-panel="3" style="display:none">
+                      <p class="mega-tab__panel-title">E-Commerce Developers</p>
+                      <div class="mega-tab__panel-links"><a href="/hire-developers/wordpress-developers"
+                          class="mega-menu__link">Hire WordPress Developers</a><a
+                          href="/hire-developers/shopify-developers" class="mega-menu__link">Hire Shopify
+                          Developers</a><a href="/hire-developers/magento-developers" class="mega-menu__link">Hire
+                          Magento Developers</a><a href="/hire-developers/bigcommerce-developers"
+                          class="mega-menu__link">Hire BigCommerce Developers</a><a
+                          href="/hire-developers/woocommerce-developers" class="mega-menu__link">Hire WooCommerce
+                          Developers</a><a href="/hire-developers/digital-marketers" class="mega-menu__link">Hire
+                          Digital Marketers</a></div>
+                    </div>
+                    <div class="mega-tab__panel" data-tab-panel="4" style="display:none">
+                      <p class="mega-tab__panel-title">Trending Developers</p>
+                      <div class="mega-tab__panel-links"><a href="/hire-developers/devops-developers"
+                          class="mega-menu__link">Hire DevOps Developers</a><a href="/hire-developers/aws-developers"
+                          class="mega-menu__link">Hire AWS Developers</a><a href="/hire-developers/ai-developers"
+                          class="mega-menu__link">Hire AI Developers</a><a href="/hire-developers/ml-developers"
+                          class="mega-menu__link">Hire ML Developers</a><a href="/hire-developers/blockchain-developers"
+                          class="mega-menu__link">Hire Blockchain Developers</a><a href="/hire-developers/ar-developers"
+                          class="mega-menu__link">Hire AR Developers</a><a href="/hire-developers/vr-developers"
+                          class="mega-menu__link">Hire VR Developers</a><a
+                          href="/hire-developers/data-analytics-experts" class="mega-menu__link">Hire Data Analytics
+                          Experts</a><a href="/hire-developers/full-stack-developers" class="mega-menu__link">Hire Full
+                          Stack Developers</a><a href="/hire-developers/chatbot-developers" class="mega-menu__link">Hire
+                          Chatbot Developers</a></div>
+                    </div>
                   </div>
                 </div>
-                
-          <div class="featured-dropdown__graphic">
-            <img src="/images/automation.webp" alt="Automation" class="featured-dropdown__graphic-img">
-          </div>
-        
               </div>
-              <div class="featured-dropdown__bottom">
-                <div class="featured-dropdown__bottom-text">
-                  <h4>Streamline Your Operations</h4>
-                  <p>Schedule a discovery session to identify automation opportunities and reduce manual overhead.</p>
-                </div>
-                <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
+
+            </div>
+            <div class="featured-dropdown__bottom">
+              <div class="featured-dropdown__bottom-text">
+                <h4>Hire Vetted Dedicated Developers</h4>
+                <p>Scale your engineering team with pre-vetted senior developers ready to onboard in 48 hours.</p>
               </div>
+              <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
             </div>
           </div>
-        
+        </div>
+
       </div>
-    
+
       <div class="nav-item">
-        <a href="javascript:;" class="nav-item__link">Technology<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-        
-          <div class="mega-menu featured-dropdown">
-            <div class="featured-dropdown__inner container">
-              <div class="featured-dropdown__top">
-                <div class="featured-dropdown__content">
-                  <h3 class="featured-dropdown__title">Technology</h3>
-                  <div class="featured-dropdown__grid">
-                    <a href="/web-development" class="featured-dropdown__link">Web Development</a><a href="/app-development" class="featured-dropdown__link">App Development</a><a href="/ecommerce-development" class="featured-dropdown__link">E-Commerce</a><a href="/cms-development" class="featured-dropdown__link">CMS (WordPress, Drupal)</a>
-                  </div>
+        <a href="javascript:;" class="nav-item__link">Industries<svg class="chevron" width="16" height="16"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg></a>
+
+        <div class="mega-menu featured-dropdown">
+          <div class="featured-dropdown__inner container">
+            <div class="featured-dropdown__top">
+              <div class="featured-dropdown__content">
+                <h3 class="featured-dropdown__title">Industries</h3>
+                <div class="featured-dropdown__grid">
+                  <a href="/finance-banking" class="featured-dropdown__link">Finance & Banking</a><a href="/healthcare"
+                    class="featured-dropdown__link">Healthcare</a><a href="/retail-ecommerce"
+                    class="featured-dropdown__link">Retail & Ecommerce</a><a href="/manufacturing"
+                    class="featured-dropdown__link">Manufacturing</a><a href="/real-estate"
+                    class="featured-dropdown__link">Real Estate</a><a href="/logistics-transportation"
+                    class="featured-dropdown__link">Logistics & Transportation</a>
                 </div>
-                
-          <div class="featured-dropdown__graphic">
-            <img src="/images/technology.webp" alt="Technology" class="featured-dropdown__graphic-img">
-          </div>
-        
               </div>
-              <div class="featured-dropdown__bottom">
-                <div class="featured-dropdown__bottom-text">
-                  <h4>Build Scalable Software</h4>
-                  <p>Let's discuss your tech stack and engineer a robust architecture for your next big product.</p>
-                </div>
-                <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
+
+              <div class="featured-dropdown__graphic">
+                <img src="/images/industries.webp" alt="Industries" class="featured-dropdown__graphic-img">
               </div>
+
+            </div>
+            <div class="featured-dropdown__bottom">
+              <div class="featured-dropdown__bottom-text">
+                <h4>Tailored Industry Solutions</h4>
+                <p>Get bespoke technology strategies that comply with your specific industry regulations and needs.</p>
+              </div>
+              <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
             </div>
           </div>
-        
+        </div>
+
       </div>
-    
+
       <div class="nav-item">
-        <a href="/hire-developers" class="nav-item__link">Hire Developers<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-        
-          <div class="mega-menu featured-dropdown featured-dropdown--no-image">
-            <div class="featured-dropdown__inner container">
-              <div class="featured-dropdown__top">
-                <div class="featured-dropdown__content featured-dropdown__content--tabbed">
-                  <div class="mega-tab">
-                    <ul class="mega-tab__sidebar"><li class="mega-tab__item active" data-tab-idx="0" role="button" tabindex="0">
-            <span>Mobile App Developers</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
-          </li><li class="mega-tab__item" data-tab-idx="1" role="button" tabindex="0">
-            <span>Front-End Web Developers</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
-          </li><li class="mega-tab__item" data-tab-idx="2" role="button" tabindex="0">
-            <span>Back-End Web Developers</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
-          </li><li class="mega-tab__item" data-tab-idx="3" role="button" tabindex="0">
-            <span>E-Commerce Developers</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
-          </li><li class="mega-tab__item" data-tab-idx="4" role="button" tabindex="0">
-            <span>Trending Developers</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 6 15 12 9 18"/></svg>
-          </li></ul>
-                    <div class="mega-tab__content"><div class="mega-tab__panel active" data-tab-panel="0" style="display:block">
-            <p class="mega-tab__panel-title">Mobile App Developers</p>
-            <div class="mega-tab__panel-links"><a href="/hire-developers/ios-developers" class="mega-menu__link">Hire iOS Developers</a><a href="/hire-developers/android-developers" class="mega-menu__link">Hire Android Developers</a><a href="/hire-developers/swift-developers" class="mega-menu__link">Hire Swift Developers</a><a href="/hire-developers/kotlin-developers" class="mega-menu__link">Hire Kotlin Developers</a><a href="/hire-developers/flutter-developers" class="mega-menu__link">Hire Flutter Developers</a><a href="/hire-developers/react-native-developers" class="mega-menu__link">Hire React Native Developers</a></div>
-          </div><div class="mega-tab__panel" data-tab-panel="1" style="display:none">
-            <p class="mega-tab__panel-title">Front-End Web Developers</p>
-            <div class="mega-tab__panel-links"><a href="/hire-developers/angularjs-developers" class="mega-menu__link">Hire AngularJS Developers</a><a href="/hire-developers/reactjs-developers" class="mega-menu__link">Hire ReactJS Developers</a><a href="/hire-developers/vuejs-developers" class="mega-menu__link">Hire VueJS Developers</a><a href="/hire-developers/graphic-designers" class="mega-menu__link">Hire Graphic Designers</a><a href="/hire-developers/ui-ux-designers" class="mega-menu__link">Hire UI/UX Designers</a></div>
-          </div><div class="mega-tab__panel" data-tab-panel="2" style="display:none">
-            <p class="mega-tab__panel-title">Back-End Web Developers</p>
-            <div class="mega-tab__panel-links"><a href="/hire-developers/nodejs-developers" class="mega-menu__link">Hire NodeJS Developers</a><a href="/hire-developers/laravel-developers" class="mega-menu__link">Hire Laravel Developers</a><a href="/hire-developers/python-developers" class="mega-menu__link">Hire Python Developers</a><a href="/hire-developers/php-developers" class="mega-menu__link">Hire PHP Developers</a></div>
-          </div><div class="mega-tab__panel" data-tab-panel="3" style="display:none">
-            <p class="mega-tab__panel-title">E-Commerce Developers</p>
-            <div class="mega-tab__panel-links"><a href="/hire-developers/wordpress-developers" class="mega-menu__link">Hire WordPress Developers</a><a href="/hire-developers/shopify-developers" class="mega-menu__link">Hire Shopify Developers</a><a href="/hire-developers/magento-developers" class="mega-menu__link">Hire Magento Developers</a><a href="/hire-developers/bigcommerce-developers" class="mega-menu__link">Hire BigCommerce Developers</a><a href="/hire-developers/woocommerce-developers" class="mega-menu__link">Hire WooCommerce Developers</a><a href="/hire-developers/digital-marketers" class="mega-menu__link">Hire Digital Marketers</a></div>
-          </div><div class="mega-tab__panel" data-tab-panel="4" style="display:none">
-            <p class="mega-tab__panel-title">Trending Developers</p>
-            <div class="mega-tab__panel-links"><a href="/hire-developers/devops-developers" class="mega-menu__link">Hire DevOps Developers</a><a href="/hire-developers/aws-developers" class="mega-menu__link">Hire AWS Developers</a><a href="/hire-developers/ai-developers" class="mega-menu__link">Hire AI Developers</a><a href="/hire-developers/ml-developers" class="mega-menu__link">Hire ML Developers</a><a href="/hire-developers/blockchain-developers" class="mega-menu__link">Hire Blockchain Developers</a><a href="/hire-developers/ar-developers" class="mega-menu__link">Hire AR Developers</a><a href="/hire-developers/vr-developers" class="mega-menu__link">Hire VR Developers</a><a href="/hire-developers/data-analytics-experts" class="mega-menu__link">Hire Data Analytics Experts</a><a href="/hire-developers/full-stack-developers" class="mega-menu__link">Hire Full Stack Developers</a><a href="/hire-developers/chatbot-developers" class="mega-menu__link">Hire Chatbot Developers</a></div>
-          </div></div>
-                  </div>
+        <a href="javascript:;" class="nav-item__link">Company<svg class="chevron" width="16" height="16"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg></a>
+
+        <div class="mega-menu featured-dropdown">
+          <div class="featured-dropdown__inner container">
+            <div class="featured-dropdown__top">
+              <div class="featured-dropdown__content">
+                <h3 class="featured-dropdown__title">Company</h3>
+                <div class="featured-dropdown__grid">
+                  <a href="/about-us" class="featured-dropdown__link">About Us</a><a href="/contact-us"
+                    class="featured-dropdown__link">Contact Us</a><a href="/case-studies"
+                    class="featured-dropdown__link">Case Studies</a><a href="/blogs"
+                    class="featured-dropdown__link">Blog</a>
                 </div>
-                
               </div>
-              <div class="featured-dropdown__bottom">
-                <div class="featured-dropdown__bottom-text">
-                  <h4>Hire Vetted Dedicated Developers</h4>
-                  <p>Scale your engineering team with pre-vetted senior developers ready to onboard in 48 hours.</p>
-                </div>
-                <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
+
+              <div class="featured-dropdown__graphic">
+                <img src="/images/company.webp" alt="Company" class="featured-dropdown__graphic-img">
               </div>
+
+            </div>
+            <div class="featured-dropdown__bottom">
+              <div class="featured-dropdown__bottom-text">
+                <h4>Partner with Cypherox</h4>
+                <p>Reach out to our leadership team and discover how we can drive your digital transformation.</p>
+              </div>
+              <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
             </div>
           </div>
-        
+        </div>
+
       </div>
-    
-      <div class="nav-item">
-        <a href="javascript:;" class="nav-item__link">Industries<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-        
-          <div class="mega-menu featured-dropdown">
-            <div class="featured-dropdown__inner container">
-              <div class="featured-dropdown__top">
-                <div class="featured-dropdown__content">
-                  <h3 class="featured-dropdown__title">Industries</h3>
-                  <div class="featured-dropdown__grid">
-                    <a href="/finance-banking" class="featured-dropdown__link">Finance & Banking</a><a href="/healthcare" class="featured-dropdown__link">Healthcare</a><a href="/retail-ecommerce" class="featured-dropdown__link">Retail & Ecommerce</a><a href="/manufacturing" class="featured-dropdown__link">Manufacturing</a><a href="/real-estate" class="featured-dropdown__link">Real Estate</a><a href="/logistics-transportation" class="featured-dropdown__link">Logistics & Transportation</a>
-                  </div>
-                </div>
-                
-          <div class="featured-dropdown__graphic">
-            <img src="/images/industries.webp" alt="Industries" class="featured-dropdown__graphic-img">
-          </div>
-        
-              </div>
-              <div class="featured-dropdown__bottom">
-                <div class="featured-dropdown__bottom-text">
-                  <h4>Tailored Industry Solutions</h4>
-                  <p>Get bespoke technology strategies that comply with your specific industry regulations and needs.</p>
-                </div>
-                <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
-              </div>
-            </div>
-          </div>
-        
-      </div>
-    
-      <div class="nav-item">
-        <a href="javascript:;" class="nav-item__link">Company<svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; transition: transform 0.3s;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-        
-          <div class="mega-menu featured-dropdown">
-            <div class="featured-dropdown__inner container">
-              <div class="featured-dropdown__top">
-                <div class="featured-dropdown__content">
-                  <h3 class="featured-dropdown__title">Company</h3>
-                  <div class="featured-dropdown__grid">
-                    <a href="/about-us" class="featured-dropdown__link">About Us</a><a href="/contact-us" class="featured-dropdown__link">Contact Us</a><a href="/case-studies" class="featured-dropdown__link">Case Studies</a><a href="/blogs" class="featured-dropdown__link">Blog</a>
-                  </div>
-                </div>
-                
-          <div class="featured-dropdown__graphic">
-            <img src="/images/company.webp" alt="Company" class="featured-dropdown__graphic-img">
-          </div>
-        
-              </div>
-              <div class="featured-dropdown__bottom">
-                <div class="featured-dropdown__bottom-text">
-                  <h4>Partner with Cypherox</h4>
-                  <p>Reach out to our leadership team and discover how we can drive your digital transformation.</p>
-                </div>
-                <a href="#consultation" class="btn btn--dark">SCHEDULE A CALL</a>
-              </div>
-            </div>
-          </div>
-        
-      </div>
-    
+
     </nav>
     <div class="header__actions">
       <a href="/contact-us" class="header__cta btn btn--pill-outline">Let's Talk</a>
       <a href="#consultation" class="header__cta btn btn--pill-primary">Book A 15 Min Call</a>
     </div>
     <button class="mobile-toggle" aria-label="Open navigation menu" aria-expanded="false" id="mobile-menu-btn">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <line x1="3" y1="12" x2="21" y2="12"/>
-        <line x1="3" y1="18" x2="21" y2="18"/>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="18" x2="21" y2="18" />
       </svg>
     </button>
   </div>
   <!-- Mobile drawer will be rendered by JS via renderMobileDrawer() -->
   <div id="mobile-drawer-container"></div>
 </header>
+<!-- </body> -->
